@@ -1,0 +1,354 @@
+@use '../tokens/_font' as font
+@use '../tokens/_color' as color
+@use '../tokens/_spacing' as spacing
+@use '../tokens/_border-radius' as border
+@use '../base/_base' as base
+
+.html-page
+	position: relative
+
+//HERO BANNER
+.hero-banner
+	.img-wrap
+		@media (min-width: 992px) and (max-width: 1199.98px)
+			min-height: 50vh
+		@media (min-width: 768px) and (max-width: 991.98px)
+			min-height: 40vh
+		@media (min-width: 320px) and (max-width:576px)
+			min-height: 24vh 
+
+//HEADER
+.header-page
+	margin-block-start: spacing.$space-2xl
+	margin-block-end: spacing.$space--ldsg-4
+	.headline-display
+		margin-top: spacing.$space-lg
+
+	&__content
+		grid-column: 2 / -2
+
+//HEADER
+.header-page
+	margin-top: spacing.$space--ldsg-2
+
+//DEFINITION
+.definition
+	.definition-content
+		.definition-column
+			grid-column: span 7 / 14
+			@media (min-width: 992px) and (max-width: 1199.98px)
+				grid-column: span 9 / 14
+			@media (min-width: 320px) and (max-width: 991.98px)	
+				grid-column: 2 / -2
+			.role
+				margin-top: spacing.$space--ldsg
+				.role--ux
+					display: flex
+					flex-wrap: wrap
+					justify-content: space-between
+					margin-bottom: spacing.$space-sm
+					@media (min-width: 320px) and (max-width:576px)
+						flex-direction: column
+				.role--ux:last-child
+					margin-bottom: 0
+
+//ABOUT GOAL
+.about-goal
+	margin-block: spacing.$space--ldsg-8
+	@media (min-width: 768px) and (max-width: 991.98px)	
+		margin-block: spacing.$space--ldsg-6
+	@media (min-width: 320px) and (max-width: 991.98px)	
+		margin-block: spacing.$space--ldsg-5
+	&__content
+		.info-goal
+			grid-column: 2 / -6
+			margin-bottom: spacing.$space--ldsg-6
+			@media (min-width: 320px) and (max-width: 991.98px)	
+				grid-column: 2 / -2
+		.web-before
+			grid-column: 4 / -4
+			@media (min-width: 768px) and (max-width: 991.98px)	
+				grid-column: 3 / -3
+			@media (min-width: 320px) and (max-width:576px)
+				grid-column: 2 / -2
+			.ipad--place-content
+				display: flex
+				flex-direction: column
+				align-items: center
+				justify-content: center
+			.ipad-frame-image
+				margin-bottom: spacing.$space--ldsg
+				position: relative
+				@media (min-width: 320px) and (max-width:576px)
+					margin-bottom: 0
+				.ipad-frame-container
+					position: relative
+					z-index: 1
+					width: 100%
+					max-width: 90%
+					//margin: 2rem auto
+					img.ipad-frame
+						display: block
+						width: 100%
+						height: auto
+					.ipad-screen-content
+						position: absolute
+						inset: 6.315% 4.8% 4.12% 4.25%
+						overflow: hidden
+						z-index: -1
+						img
+							width: 100%
+							
+							object-fit: cover
+							display: block
+
+//OVERVIEW
+.overview
+	&__content-place
+		grid-column: 4 / -4
+		@media (min-width: 768px) and (max-width: 991.98px)	
+			grid-column: 3 / -3
+		@media (min-width: 320px) and (max-width:576px)
+			grid-column: 2 / -2
+
+//UX
+.ux
+	margin-block: spacing.$space--ldsg-8
+	&__title
+		grid-column: 2 / -6
+		@media (min-width: 320px) and (max-width: 991.98px)	
+			grid-column: 2 / -2
+	&__title.mg-08
+		@media (min-width: 320px) and (max-width: 991.98px)
+			margin-bottom: spacing.$space-xl
+	&__research
+		grid-column: 4 / -4
+		@media (min-width: 768px) and (max-width: 991.98px)	
+			grid-column: 3 / -3
+		@media (min-width: 320px) and (max-width:576px)
+			grid-column: 2 / -2
+
+//IDEATION
+.ideation
+	&__content-description
+		grid-column: 2 / -6
+		@media (min-width: 320px) and (max-width: 991.98px)	
+			grid-column: 2 / -2
+
+	&__table-insight
+		grid-column: 3 / -3
+		margin-bottom: spacing.$space--ldsg-4
+		overflow-x: auto
+		-webkit-overflow-scrolling: touch
+		margin: 1rem 0
+		@media (min-width: 320px) and (max-width: 991.98px)	
+			grid-column: 2 / -2
+		.table-data-label
+			width: 100%
+			min-width: 600px        
+			border-collapse: collapse
+			.tr--column
+				position: relative
+				border: 1px solid
+				border-color: color.$color-black-100
+				padding: spacing.$space-sm
+
+//site-map_goal
+.site-map_goal
+	&__content
+		.head--text
+			grid-column: 2 / -6
+
+//IDEATION
+.user-flow
+	&__text
+		grid-column: 2 / -6
+		@media (min-width: 320px) and (max-width: 991.98px)	
+			grid-column: 2 / -2
+	&__image
+		grid-column: 4 / -4
+		margin-block-start: spacing.$space--ldsg-6
+		margin-block-end: spacing.$space--ldsg-xs
+		@media (min-width: 320px) and (max-width:576px)
+			grid-column: 2 / -2
+			margin-block: spacing.$space--ldsg
+
+
+//IDEATION
+.desicion
+	&__title
+		grid-column: 2 / -2
+		padding-inline-end: spacing.$space--ldsg-x
+	&__design
+		grid-column: 3 / -3
+		@media (min-width: 768px) and (max-width: 991.98px)	
+			grid-column: 3 / -3
+		@media (min-width: 320px) and (max-width:576px)
+			grid-column: 2 / -2
+			.image-old
+				margin-bottom: spacing.$space-xl
+		figure > img
+			padding: 0
+			margin-bottom: spacing.$space-lg
+			width: 100%
+			max-width: 100%
+			height: auto
+			display: block
+			//aspect-ratio: 200 / 234
+			object-fit: cover
+			
+			
+		.chat-bot
+			.content-image
+				margin-block-start: spacing.$space-4xl
+				.image-wireframe img
+					margin-bottom: spacing.$space--ldsg
+				.result
+					margin-top: spacing.$space--ldsg-2
+					.image img
+						margin-bottom: spacing.$space--ldsg-2
+
+
+//IDEATION
+.impact
+	margin-top: spacing.$space--ldsg-7
+	&__title
+		grid-column: 2 / -6
+		@media (min-width: 320px) and (max-width: 991.98px)	
+			grid-column: 2 / -2
+
+
+//IDEATION
+.ui
+	width: 100%
+	margin-top: spacing.$space--ldsg-5
+	background-color: color.$color-goal-primary
+	padding-block: spacing.$space--ldsg-7
+	@media (min-width: 320px) and (max-width:576px)
+		padding-block: spacing.$space--ldsg-2
+	&__wrapper
+		grid-column: 3 / -3
+		@media (min-width: 320px) and (max-width:576px)
+			grid-column: 2 / -2
+		.spacing-section
+			margin-bottom: spacing.$space--ldsg-7
+			.body-text
+				max-width: 350px
+				margin-top: spacing.$space--ldsg
+				letter-spacing: .5px
+		.grid-section
+			.device-size
+				gap: 2rem
+				img
+					margin-bottom: spacing.$space-md
+				.device--mobile
+					display: flex
+					flex-direction: column
+					align-items: center
+					@media (min-width: 320px) and (max-width:576px)
+						margin-top: spacing.$space-2xl
+					img
+						width: 243px
+						@media (min-width: 768px) and (max-width: 991.98px)	
+							width: 130px
+
+//COMPONENTS
+.components
+	margin-block-start: spacing.$space--ldsg-7
+	margin-block-end: spacing.$space--ldsg-8
+	@media (min-width: 320px) and (max-width:576px)
+		margin-block: spacing.$space--ldsg-3
+	&__content
+		grid-column: 3 / -3
+		@media (min-width: 320px) and (max-width:576px)
+			grid-column: 2 / -2
+
+
+//PARALLAX
+.media
+	.videoFrame
+		@media (min-width: 320px) and (max-width: 991.98px)	
+			height: auto !important
+
+
+//PARALLAX
+.parallax
+	margin-top: spacing.$space--ldsg-8
+	@media (min-width: 320px) and (max-width:576px)
+		margin-top: spacing.$space--ldsg-3
+	.parallax--content
+		grid-column: 2 / -2
+
+
+//PARALLAX MOBILE
+.mobile-parallax
+	margin-top: spacing.$space--ldsg-8
+	@media (min-width: 320px) and (max-width:576px)
+		margin-top: spacing.$space--ldsg-3
+	&__content
+		.mobile-text
+			grid-column: 2 / -10
+			@media (min-width: 768px) and (max-width: 991.98px)	
+				grid-column: 2 / -6
+				.body-text
+					margin-bottom: spacing.$space--ldsg-4
+			@media (min-width: 320px) and (max-width:576px)
+				grid-column: 2 / -2
+				margin-bottom: spacing.$space--ldsg
+		.mobile-image
+			grid-column: 14 / -10
+			.col-left,
+			.col-right
+				display: flex
+				flex-direction: column
+				align-items: center
+			@media (min-width: 320px) and (max-width: 991.98px)	
+				grid-column: 2 / -2
+
+
+//IDEATION
+.reflexion
+	margin-block-start: spacing.$space--ldsg-6
+	margin-block-end: spacing.$space--ldsg-8
+	&__content
+		grid-column: 2 / -6
+		@media (min-width: 320px) and (max-width: 991.98px)	
+			grid-column: 2 / -2
+
+
+
+
+
+
+
+
+.frame01
+	grid-column: 2 / -10
+
+.frame02
+	grid-column: 6 / 12
+
+.grid-02
+	grid-column: 2 / -2
+
+.grid-03
+	grid-column: 3 / -3
+
+.flex1
+	flex: 1 0 0
+
+.flex2
+	flex: 2 0 0
+
+.flex3
+	flex: 2 0 0
+
+
+.tag
+	display: inline-block
+	background-color: color.$color-white
+	padding: spacing.$space-xxs spacing.$space-xs
+	border-radius: 5rem
+	color: #767981
+	border: 1p solid
+	border-color: #767981

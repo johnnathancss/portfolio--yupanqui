@@ -1,0 +1,242 @@
+@use '../tokens/_font' as font
+@use '../tokens/_color' as color
+@use '../tokens/_spacing' as spacing
+@use '../tokens/_border-radius' as border
+@use '../base/_base' as base
+
+.card--group
+	background-color: color.$color-white
+	padding: spacing.$space-md
+	border-radius: .25rem
+
+
+//ABOUT ELECTRIC
+
+//ABOUT ELECTRIC
+.about-electric
+	margin-top: spacing.$space--ldsg-8
+	@media (min-width: 320px) and (max-width:576px)
+		.content-wrap .info-goal
+			margin-bottom: spacing.$space--ldsg
+	.ipad--place-content
+		display: flex
+		flex-direction: column
+		align-items: center
+		justify-content: center
+	.ipad-frame-image
+		grid-column: 3 / -3
+		margin-bottom: spacing.$space--ldsg-4
+		position: relative
+		@media (min-width: 320px) and (max-width:576px)
+			margin-bottom: 0
+			grid-column: 1 / -1
+		.ipad-frame-container
+			position: relative
+			z-index: 1
+			width: 100%
+			max-width: 90%
+			//margin: 2rem auto
+			img.ipad-frame
+				display: block
+				width: 100%
+				height: auto
+			.ipad-screen-content
+				position: absolute
+				inset: 6.2% 4.8% 4.12% 4.25%
+				overflow: hidden
+				z-index: -1
+				img
+					width: 100%
+					height: 100%
+					object-fit: cover
+					display: block
+
+
+//UX
+.ux
+	.ux--note
+		background-color: color.$color-white
+		padding: spacing.$space-lg
+		border-radius: .5rem
+		margin-top: spacing.$space--ldsg-2
+		.ph
+			font-size: 1.85rem
+			margin-bottom: spacing.$space-sm
+			color: #8CBCFF
+			display: block
+
+
+//ENFOQUE
+.enfoque
+	&__cards-content
+		margin-block: spacing.$space--ldsg-4
+		.card--enfoque
+			.ph
+				font-size: 1.85rem
+				margin-bottom: spacing.$space-sm
+				color: #8CBCFF
+				display: block
+	
+//PROBLEM
+.problem
+	margin-top: spacing.$space--ldsg-7
+
+
+//PROBLEM
+.desicion--clave
+	&__title
+		grid-column: 2 / -6
+		@media (min-width: 320px) and (max-width:576px)
+			grid-column: 2 / -2
+	&__design--electric
+		grid-column: 3 / -3
+		margin-top: spacing.$space--ldsg-3
+		@media (min-width: 320px) and (max-width:576px)
+			grid-column: 2 / -2
+		.menu-aside-image
+			.flex1
+				display: flex
+				flex-direction: column
+				align-items: flex-start
+				justify-content: flex-start
+				img
+					width: 100%
+					height: 100%
+					//object-fit: contain
+					//aspect-ratio: 960 / 1280
+				figcaption.figcaption--description
+					margin-top: spacing.$space-md
+		.platform--image
+			.flex1
+				figcaption.figcaption--text
+					margin-top: 8.74rem //11.218rem
+				figcaption.figcaption--description
+					margin-top: spacing.$space-md
+			.image--pq
+				.pq--text
+					margin-top: 3rem
+		.rol-user
+			&__rol--image
+				figcaption.figcaption--description
+					margin-top: spacing.$space-md
+				img
+					width: 100%
+					//height: 100%
+
+//SIMPLIFICATION
+.simplificaton
+	&__content
+		grid-column: 3 / -3
+		@media (min-width: 320px) and (max-width:576px)
+			grid-column: 2 / -2
+		.content-images
+			margin-top: spacing.$space--ldsg-7
+			img.img--first,
+			img.img--second
+				margin-bottom: spacing.$space--ldsg-7
+				@media (min-width: 320px) and (max-width:576px)
+					margin-bottom: spacing.$space--ldsg
+		
+
+//MAP SITE
+.site--map
+	margin-top: spacing.$space--ldsg-8
+	@media (min-width: 320px) and (max-width:576px)
+		margin-top: spacing.$space--ldsg-6
+	&__content
+		grid-column: 3 / -3
+		@media (min-width: 320px) and (max-width:576px)
+			grid-column: 2 / -2
+
+
+.impact-electric
+	@media (min-width: 320px) and (max-width:576px)
+		margin-top: spacing.$space--ldsg-6
+
+
+//MAP SITE
+.visual--design
+	margin-top: spacing.$space--ldsg-7
+	&__content
+		.headline-h1
+			padding-inline-start: spacing.$space-sm
+			display: inline-block
+		.color
+			@media (min-width: 320px) and (max-width:576px)
+				margin-bottom: spacing.$space-4xl
+			&__content
+				grid-column: 3 / -3
+				@media (min-width: 320px) and (max-width:576px)
+					grid-column: 2 / -2
+				.body-text-sans
+					color: color.$color-black
+		.wrapper
+			background-color: #0055D3
+			&__ui
+				grid-column: 3 / -3
+				padding-block: spacing.$space--ldsg-2
+				@media (min-width: 320px) and (max-width:576px)
+					grid-column: 2 / -2
+					padding-block: spacing.$space-4xl
+					.components
+						margin-bottom: 0
+
+
+.horizontal-scroll
+	@media (min-width: 320px) and (max-width: 991.98px)
+		.wrapper-viewport
+			display: none
+	.viewport--responsive
+		display: none
+		//img
+		//	border-radius: .5rem
+		//	border: 10px solid
+		//	margin-bottom: spacing.$space-3xl
+		img:last-child
+			margin-bottom: 0
+		@media (min-width: 320px) and (max-width: 991.98px)
+			display: block
+		.viewport--content
+			grid-column: 3 / -3
+			@media (min-width: 320px) and (max-width:576px)
+				grid-column: 2 / -2
+			
+.horizontal-scroll
+	height: auto    // 70vw  altura inicial (se pinnea)
+	position: relative
+	display: flex
+	flex-direction: column
+	align-items: center
+	justify-content: center
+	margin-top: spacing.$space--ldsg-8
+	@media (min-width: 320px) and (max-width:576px)
+		margin-top: 0
+
+	.wrapper-viewport
+		width: 80%
+		//max-width: 1600px
+		position: relative
+		//height: 100%
+		//min-height: 600px
+		//max-height: 740px
+		//border: 1px solid
+		//overflow: hidden
+
+		.horizontal-wrapper
+			//margin-block-start: 3rem
+			//margin-block-end: 3rem
+			border-radius: 1rem
+			border: 15px solid
+			overflow: hidden
+			display: flex
+			flex-wrap: nowrap
+			position: relative
+			z-index: 1
+			height: 80%
+		.panel
+			flex: 0 0 100%
+			height: 100%
+			position: relative
+			margin-right: 1rem
+		.panel:last-child
+			margin-right: 0

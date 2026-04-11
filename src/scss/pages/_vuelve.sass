@@ -1,0 +1,274 @@
+@use '../tokens/_font' as font
+@use '../tokens/_color' as color
+@use '../tokens/_spacing' as spacing
+@use '../tokens/_border-radius' as border
+@use '../base/_base' as base
+
+
+
+//BOCETOS
+.diagram
+	margin-bottom: spacing.$space--ldsg-4
+	&__answer
+		.list-card-answer
+			display: flex
+			flex-wrap: wrap
+			gap: spacing.$space-md
+			margin-top: spacing.$space-sm
+			.c-green
+				color: #A2B260
+			.card-answer
+				background-color: color.$color-white
+				padding: spacing.$space-sm
+				border-radius: .25rem
+				flex: 1 0 0
+				.ph
+					font-size: font.$font-size-h5
+				.text-small
+					margin-top: spacing.$space-sm
+
+//BOCETOS
+.enfoque
+	.flex-cards
+		margin-block: spacing.$space--ldsg-4
+		.card-enfoque
+			background-color: color.$color-white
+			padding: spacing.$space-sm
+			border-radius: .5rem
+
+
+//BOCETOS
+.bocetos
+	margin-top: spacing.$space--ldsg-2
+	.bocetos-image
+		margin-bottom: spacing.$space-4xl
+		.flex-col
+			img:first-child
+				margin-bottom: 1.5rem
+			img
+				display: inline-block
+				max-width: 100%
+				height: auto
+
+.media-fidelidad
+	&__body-content
+		.sidebar
+			margin-top: spacing.$space--ldsg-2
+			.sidebar-image
+				.before-image
+					display: flex
+					flex-direction: column
+					align-items: center
+					img
+						width: 250px
+				.after-image
+					display: flex
+					flex-direction: column
+					align-items: center
+					img
+						width: 250px
+		.perfil-management
+			margin-top: spacing.$space--ldsg-5
+		.perfil-operario
+			margin-top: spacing.$space--ldsg-5
+
+
+//IDEATION
+.ideation
+	&__table-insight
+		margin-bottom: spacing.$space--ldsg-7
+
+//RESULT DASHBOARD
+.result-dashboard
+	margin-top: spacing.$space--ldsg-7
+	.headline-h5
+		max-width: 420px
+
+
+//MAPA DE SITIO
+.site-map
+	margin-top: spacing.$space--ldsg-7
+	&__image
+		margin-top: spacing.$space--ldsg-4
+
+
+//IMPACT
+.impact
+	&__content
+		grid-column: 2 / -6
+		@media (min-width: 320px) and (max-width:576px)
+			grid-column: 2 / -2
+
+
+//VISUAL DESIGN
+.visual-design-ui.mg-09
+	margin-bottom: spacing.$space-lg
+.visual-design-ui
+	background-color: #389482
+	padding-top: spacing.$space--ldsg
+	&__content
+		grid-column: 4 / -4
+		@media (min-width: 320px) and (max-width:576px)
+			grid-column: 2 / -2
+
+
+//PARALLAX HORIZONTAL
+.horizontal-section
+	position: relative
+	margin-block: spacing.$space--ldsg-6
+	//height: 97vh//controla duración del scroll 
+	.viewport
+		border: 20px solid black
+		//top: 50%
+		//transform: translateY(-50%)
+		width: 65vw	
+		height: auto
+		margin: auto
+		overflow: hidden
+		border-radius: 1.25rem
+		//background: #111
+		.track
+			display: flex
+			//height: 100%
+			border-radius: 10px
+			.item
+				min-width: 100%
+				height: 100%
+				border-radius: 20px
+				img
+					max-width: 100%
+					max-height: 100%
+					object-fit: cover
+					display: block
+					transition: transform .3s ease
+
+.parallax
+	margin-bottom: spacing.$space--ldsg-8
+
+.deviceMobile
+	//margin-top: spacing.$margin-ldsg-9
+	background-color: #389482
+	padding-block-start: spacing.$space-4xl
+	padding-block-end: spacing.$space--ldsg-8
+.mobile__innerSection
+	.mobile-parallax
+		grid-column: 2 / -2
+		margin-top: spacing.$space-lg !important
+		&__wrapp
+			gap: spacing.$margin-xmd
+			.mobile-text
+				flex: 2 0 0
+				color: color.$color-white
+				@media (min-width: 320px) and (max-width: 991.98px)
+					flex: 0 0 100%
+			.mobile-image
+				flex: 3 0 0
+				display: flex
+				flex-wrap: wrap
+				justify-content: center
+				gap: spacing.$space-lg
+				@media (min-width: 991.98px) and (max-width: 1025px)	
+					flex: 5 0 0
+				@media (min-width: 320px) and (max-width: 820px)
+					flex: 0 0 100%
+					margin-top: spacing.$space-4xl
+				.col13,
+				.col14
+					.img-wrap
+						margin-bottom: spacing.$space-2xl
+					.img-wrap:last-child
+						margin-bottom: 0
+				.col14
+					margin-top: spacing.$space--ldsg-8
+					@media (min-width: 320px) and (max-width:576px)
+						margin-top: spacing.$space-lg
+
+.reflexion
+	&__content
+		grid-column: 2 / -6
+		@media (min-width: 320px) and (max-width:576px)
+			grid-column: 2 / -2
+
+
+
+//WIREFRAME
+//.wireframes
+//	margin-top: spacing.$margin-ldsg-10
+//	.bocetos,
+//	.wireframe-low-fidelity,
+//	.wireframe-medium-fidelity
+//		margin-top: spacing.$margin-ldsg-7
+//	.wireframe-low-fidelity
+//		.low-fidelity 
+//			&__content
+//				grid-column: 1 / -7
+//	.wireframe-medium-fidelity
+//		.medium-fidelity
+//			&__content
+//				grid-column: 1 / -7
+//	.bocetos
+//		.bocetos-col
+//			img:first-child
+//				margin-bottom: spacing.$margin-md
+
+//style-guide
+.style-guide.bgVuelve
+	background-color: #389482
+.style-guide
+	padding-block: spacing.$padding-xxl
+	margin-top: spacing.$margin-ldsg-12
+	.color
+		margin-block: spacing.$margin-ldsg-9
+	.spacing,
+	.grid-colum
+		margin-bottom: spacing.$margin-ldsg-9
+
+.bg-vuelve
+	//background-color: #276359
+	position: relative
+.visual-design.bg-vuelve
+	padding-bottom: spacing.$padding-xxl
+
+	.imgFlex
+		margin-block: spacing.$margin-ldsg-9
+		&__content
+			border-radius: 1px solid black
+			.col-1h
+				grid-column: 2 / 8
+				border-radius: .8vw
+				height: 680px
+				overflow: hidden
+				//border: 1px solid black
+				img
+					height: 100vw
+					max-height: 100%
+					//position: absolute
+					//top: 0
+					//left: 0
+					//background-image: url('/src/image/vuelve/iphone.webp')
+					//background-repeat: no-repeat
+					//background-position: top center
+					//object-fit: cover
+			.col-rh
+				grid-column: 8 / 14
+				border-radius: .84vw
+				overflow: hidden
+				height: 680px
+				img
+					height: 100vw
+					max-height: 100%
+
+
+
+.screen-section
+	background-color: #389482
+	padding: spacing.$padding-ldsg-9 0 spacing.$padding-ldsg-9 spacing.$padding-l
+	margin-block: spacing.$margin-ldsg-9
+
+.visual_bg-mobile
+	margin-bottom: spacing.$margin-ldsg-7
+	.col-1
+		grid-column: 1 / -1
+	.designInner
+		.img-wrap
+			background-color: #276359

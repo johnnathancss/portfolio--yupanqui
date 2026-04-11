@@ -1,0 +1,215 @@
+@use '../tokens/_font' as font
+@use '../tokens/_spacing' as spacing
+@use '../tokens/_color' as color
+@use '../base/_base' as base
+
+// SWIP IMAGE HOVER HERO SECTION
+.full__img
+	max-width: 350px !important
+
+.pointer__img
+	max-width: 250px
+	position: absolute
+	top: 0
+	left: 0
+	opacity: 0
+	will-change: transform
+	filter: none
+
+.pointer__img--full
+	width: 100%
+	height: 100%
+	background-size: cover
+
+@media screen and (min-width: 53em)
+	.pointer
+		//height: 100vh
+		overflow: hidden
+
+/***************************************
+	HOVER SKILL ABOUT ME ***************************************/
+.frame-origin
+	position: relative
+	margin: 0
+	padding-block: spacing.$padding-s
+	user-select: none
+	display: block
+	border-bottom: 1px solid $color-black
+	transition-timing-function: cubic-bezier(.445, .05, .55, .95)
+	transition-duration: .32s ease
+	white-space: nowrap
+	z-index: 1
+	@media (min-width: 320px) and (max-width:576px)
+		padding-block: 1.25rem
+	
+.frame-origin::before
+	position: absolute
+	left: 0
+	bottom: 0
+	content: ""
+	width: 100%
+	height: .15rem
+	background-color: color.$color-black
+	transform: scaleY(0)
+	transform-origin: bottom
+	transition: transform .36s cubic-bezier(1,1,0.22,1)
+	transition-duration: .2s ease-in-out
+	z-index: -1
+
+.frame-origin:hover::before
+	transform: scaleY(1)
+	transform-origin: bottom
+
+.skill_modules
+	display: grid
+	grid-template-rows: min-content 0fr
+	&:first-child
+		border-top: 0
+
+	&:nth-of-type(1)
+		animation-delay: 0.5s ease
+    
+	&:nth-of-type(2)
+		animation-delay: 0.75s
+        
+	&:nth-of-type(3)
+		animation-delay: 1.0s
+    
+	//&:last-of-type
+	//	padding-bottom: 0
+
+	.skill_ux
+		position: relative
+		overflow: hidden
+		&__head_skill
+			cursor: pointer
+			margin-bottom: spacing.$margin-s
+			@media (min-width: 320px) and (max-width:576px)
+				margin-bottom: 0
+			.i_icon
+				position: absolute
+				transform: translate( -6px , 0 )
+				margin-top: 12px
+				right: 0
+				@media (min-width: 320px) and (max-width:576px)
+					margin-top: -3px
+					transform: translate(7px, 0)
+
+				&:before , &:after
+					content: ""
+					position: absolute
+					background-color: color.$color-primary
+					width: 2px
+					height: 9px
+
+				&:before
+					transform: translate( -2px , 0 ) rotate( 45deg )
+
+				&:after
+					transform: translate( 2px , 0 ) rotate( -45deg )
+		&__body_description
+			max-height: 0
+			//overflow: hidden
+			opacity: 0
+			transform: translateY(20px)
+			transition: max-height .5s cubic-bezier(0.23, 1, 0.32, 1), opacity .55s ease, transform .55s ease
+			transition-delay: 0s, 0s, 0s  // reset al cerra
+			//will-change: max-height, opacity, transform
+			//display: grid
+			//grid-template-rows: 0fr
+			//padding-left: 1.25rem
+			//padding-right: 1.25rem
+			.font-text
+				margin: 0
+
+		input[type=checkbox]
+			position: absolute
+			inset: 0
+			width: 100%
+			height: 100%
+			z-index: 1
+			opacity: 0
+			cursor: pointer
+
+// El icono + → ×
+.i_icon
+	position: relative
+	width: 48px
+	height: 48px
+	display: block
+	flex-shrink: 0
+	transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1)
+	transform: rotate(0deg)
+
+	&:before,
+	&:after 
+		content: ""
+		position: absolute
+		inset: 0
+		margin: auto
+		width: 100%
+		height: 5px
+		background: currentColor
+		border-radius: 2px
+		transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1)
+		transform-origin: center
+
+	&:before
+		transform: rotate(0deg)
+
+	&:after
+		transform: rotate(90deg)
+
+input[type="checkbox"]:checked ~ .skill_ux__body_description
+	max-height: 1000px
+	opacity: 1
+	transform: translateY(0)
+	transition: max-height 0.6s ease, opacity 0.5s ease, transform 0.5s ease
+	transform-delay: 0, .18s, .18s
+	transition-duration: 0.85s, 0.65s, 0.65s
+
+input[type="checkbox"]:checked ~ .skill_ux__head_skill .i_icon
+	transform: rotate(180deg)
+
+input[type="checkbox"]:checked ~ .skill_ux__body_description
+	grid-template-rows: min-content 1fr
+
+// CURSOR CANVAS
+#cursor-canvas
+	position: fixed
+	top: 0
+	left: 0
+	pointer-events: none     // ← importante: no bloquea clics
+	z-index: 99999        // por encima de todo
+	mix-blend-mode: difference // opcional: hace que se vea bien sobre fondos claros/oscuros
+	opacity: 0
+	transition: opacity 0.2s ease
+
+
+//body
+//	cursor: none !important
+
+body:hover #cursor-canvas
+	opacity: 1
+
+
+//SCROOL LENIS
+//html.lenis 
+//	height: auto
+//
+//.lenis.lenis-smooth
+//	scroll-behavior: auto !important
+//
+//.lenis.lenis-smooth [data-lenis-prevent] 
+//	overscroll-behavior: contain
+//
+//html.smooth-lenis
+//	margin: 0
+//	overflow: hidden
+//
+//html.lenis, 
+//html.lenis body.smooth-lenis
+//	height: auto !important
+//
+//.lenis.lenis-smooth 
+//	scroll-behavior: auto !important

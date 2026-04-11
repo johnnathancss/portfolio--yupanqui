@@ -1,0 +1,140 @@
+@use '../tokens/_font' as font
+@use '../tokens/_spacing' as spacing
+@use '../tokens/_color' as color
+
+$font-family-primary: "Stack Sans Headline", sans-serif //'PowerGrotesk-Regular', sans-serif
+$font-family-secondary: "Stack Sans Text", sans-serif //'SuizaDEMO-Regular', sans-serif
+
+//FONT
+@font-face
+  font-family: 'PowerGrotesk-Regular'
+  src: url("/src/font/PowerGrotesk-Regular.woff2") format("woff2")
+  font-weight: normal
+  font-style: normal
+  font-display: swap
+
+@font-face
+  font-family: 'SuizaDEMO-Regular'
+  src: url("/src/font/SuizaDEMO-Regular.woff2") format("woff2")
+  font-weight: normal
+  font-style: normal
+  font-display: swap
+
+@font-face
+  font-family: 'SuizaDEMO-Regular'
+  src: url("/src/font/SuizaDEMO-SemiBold.woff2") format("woff2")
+  font-weight: 600
+  font-style: normal
+  font-display: swap
+
+@font-face
+  font-family: 'SuizaDEMO-Regular'
+  src: url("/src/font/SuizaDEMO-Bold.woff2") format("woff2")
+  font-weight: bold
+  font-style: normal
+  font-display: swap
+
+@font-face
+  font-family: 'Migra', sans-serif
+  src: url("/src/font/MigraItalic-ExtraboldItalic.woff2") format("woff2")
+  font-weight: bold
+  font-style: italic
+  font-display: swap
+
+body
+  background-color: color.$color-light-neutro-bg
+  color: color.$color-black
+
+p, li
+  font-size: font.$font-body
+  line-height: 1.5
+
+//PADDING
+.p1
+  padding-inline: spacing.$padding
+
+img
+  //max-width: 1600px
+  width: 100%
+  display: block
+  object-fit: cover
+
+//LI ITEMS
+.item-li
+  font-size: font.$font-small-tiny
+  line-height: 1.5
+
+.item-li-bold
+  font-weight: 700
+
+.header-main
+  margin-bottom: spacing.$margin-ldsg-7
+  .heading-h2
+    max-width: 20rem
+    margin-top: spacing.$margin-xxl
+
+/*  HERO BANNER */
+.dflex
+  display: flex
+  flex-wrap: wrap
+  gap: 1.5rem
+  @media (min-width: 320px) and (max-width:576px)
+    flex-direction: column
+
+.flex
+  flex: 1 0 0
+  @media (min-width: 320px) and (max-width:576px)
+    flex: 0 0 100%
+
+.flex2
+  flex: 2 0 0
+  @media (min-width: 320px) and (max-width:576px)
+    flex: 0 0 100%
+
+.flex-center
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+
+.white
+  color: color.$color-white
+
+
+//LOADER ANIMATION
+.img-wrap.mediaInner
+  width: 100%
+.img-wrap
+  position: relative
+  width: 100%
+  min-height: 100vh
+  .item-bg
+    position: absolute
+    inset: 0
+    top: 0
+    left: 0
+    //z-index: -1
+    //padding-top: 56.25%
+    background-size: cover
+    will-change: transform
+    background-repeat: no-repeat
+    transition: background-image 0.3s ease
+
+.innerMobile
+  width: 20rem
+  height: 32rem
+  overflow: hidden
+  position: relative
+  border-radius: .75rem
+
+//.img-wrap:first-child,
+//.img-wrap:nth-child(2)
+//  margin-bottom: spacing.$margin-ldsg-9
+
+.visual-design
+  .designInner
+    .img-wrap
+      grid-column: 2 / -2
+
+.frame_sectionTop
+  margin-top: spacing.$margin-ldsg-7

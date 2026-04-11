@@ -1,0 +1,85 @@
+@use '../tokens/_font' as font
+@use '../base/_base' as base
+@use '../tokens/_color' as color
+@use '../tokens/_spacing' as spacing
+
+.site-header
+	//width: 100%
+	position: fixed
+	top: 0
+	left: 0	
+	z-index: 1000
+	.container--header
+		grid-column: 2 / -2
+		position: relative
+		.container-desktop
+			position: relative
+			display: flex
+			justify-content: space-between
+			align-items: center
+			padding-top: spacing.$padding-xxs
+			@media (min-width: 344px) and (max-width:576px)
+				padding-top: spacing.$padding
+			@media ( max-width: 768px)
+				width: 100%
+			.logo
+				flex: 1 0 0
+				&__name-logo
+					text-transform: uppercase
+					display: flex
+					flex-direction: column
+					align-items: flex-start
+					color: color.$color-primary
+					.name
+						font-family: font.$font-suiza
+						font-size: font.$font-small
+						font-weight: 600
+						letter-spacing: .05em
+						@media (min-width: 344px) and (max-width:576px)
+							letter-spacing: .025em
+						.text_migra
+							font-family: 'Migra', serif
+							font-style: italic
+							font-weight: bold
+							margin-left: -.2rem
+							margin-right: .14rem
+			.navigation
+				flex: 2 0 0
+				.nav_bar
+					display: flex
+					align-items: center
+					justify-content: space-between
+					gap: 1.5rem
+					.nav-item
+						position: relative
+						font-size: font.$fs-body
+						font-family: font.$font--text
+						line-height: 1.5
+						text-transform: uppercase
+						font-weight: 600
+						color: color.$color-black
+						transition: color .22s ease-in-out
+						padding-bottom: .55rem
+						cursor: pointer
+						outline: none
+						&::after
+							content: ''
+							position: absolute
+							bottom: 0
+							left: 0
+							width: 0
+							height: 2px
+							background: color.$color-primary
+							transition: width 0.4s all 0.4s cubic-bezier(0.22, 0.61, 0.36, 1)
+						&:hover
+							color: color.$color-primary
+							&::after
+								width: 100%
+
+						&.active
+							color: color.$color-primary
+							font-weight: 700
+							&::after
+								width: 100%
+		.menu-container
+			position: relative

@@ -1,0 +1,124 @@
+@use '../tokens/_font' as font
+@use '../tokens/_color' as color
+@use '../tokens/_spacing' as spacing
+@use '../tokens/_grid'
+
+//FOOTER HOME
+.footer
+  position: relative
+  overflow: hidden
+  background-color: color.$color-black
+  color: color.$color-white
+  
+  &__wrap
+    grid-column: 2 / -2
+    .footer--data
+      padding-top: spacing.$space--ldsg
+      margin-bottom: spacing.$margin-ldsg-5
+      @media (min-width: 320px) and (max-width:576px)
+        margin-bottom: spacing.$margin-xxl
+      .data
+        grid-column: 1 / -6
+        @media (min-width: 320px) and (max-width:576px)
+          grid-column: 1 / -1
+        .text-contact
+          font-family: font.$font--text
+          font-size: font.$font-size-h2
+          color: #ffffff94
+        .data-contact
+          margin-top: 3rem
+          .email
+            .headline-h5
+              display: block
+              color: #ffffffc0
+              letter-spacing: .05rem
+          .phone
+            .headline-h5
+              display: block
+              color: #ffffffc0
+              letter-spacing: .05rem
+          .headline-h1,
+          .headline-h2
+            @media (min-width: 320px) and (max-width:576px)
+              font-size: font.$font-size-h4
+              letter-spacing: .05rem
+          @media (min-width: 320px) and (max-width:576px)
+            .email.mg-3
+              margin-bottom: spacing.$margin-md
+      .redes
+        grid-column: 10 / 14
+        display: flex
+        flex-direction: column
+        align-items: end
+        justify-content: end
+        @media (min-width: 320px) and (max-width:576px)
+          grid-column: 1 / -1
+          align-items: start
+        .link-redes
+          display: flex
+          flex-direction: column
+          align-items: end
+    .footer-name
+      margin-top: 9rem
+      &__my-name
+        font-size: clamp(4.188rem, calc(0.824rem + 16.818vw), 13.438rem) //clamp(5.625rem, calc(2.784rem + 14.205vw), 13.438rem) //clamp(13.456rem, 4vw, 5.625rem)
+        margin-bottom: -4rem
+        line-height: 1.1
+        font-weight: 700
+        font-family: font.$font-suiza
+        @media (min-width: 320px) and (max-width:576px)
+          margin-bottom: -1.25rem
+          line-height: 1.15
+
+//FOOTER PAGES
+.footer-page
+  width: 100%
+  background-color: color.$color-black
+  position: relative
+  overflow: hidden
+  box-sizing: border-box
+  padding-block: spacing.$space--ldsg
+  @media (min-width: 320px) and (max-width:576px)
+    padding-block-end: spacing.$space-2xl
+
+  &__footer-content
+    .scroll-top
+      width: 100%
+      display: flex
+      justify-content: flex-end
+      margin-bottom: spacing.$margin-md
+
+    .link-item-next
+      width: 100%
+      display: flex
+      justify-content: center
+      align-items: center
+      .font-body
+        color: #ffffffa8
+        letter-spacing: .75px
+        text-align: center
+        font-weight: 100
+      .assets-container
+        color: color.$color-white
+        text-align: center
+        .assets-heading
+          font-size: font.$font-Heading
+          font-family: 'PowerGrotesk-Regular'
+          letter-spacing: 1px
+          font-weight: 100
+
+.copy-btn
+  border: none
+  cursor: pointer
+  transition: all 0.25s ease
+  background-color: transparent
+  color: color.$color-white
+  font-family: 'SuizaDEMO-Regular', sans-serif
+  font-weight: 500
+  font-size: font.$font-heading-body
+  line-height: 1.5
+  &:hover
+    color: color.$color-primary //#ffffffa1
+
+.copy-btn.copied
+  color: color.$color-primary

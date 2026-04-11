@@ -1,0 +1,63 @@
+@use '../tokens/_font' as font
+@use '../tokens/_spacing' as spacing
+@use '../tokens/_color' as color
+
+
+//title	
+.page-case-study
+	&__header
+		margin: 3rem 0 7rem 0
+
+.promart_visual-D
+	.content_media 
+		margin-bottom: spacing.$margin-ldsg-9
+
+//.definition-ideation
+	margin-top: spacing.$margin-ldsg-12
+
+.map-site
+	&__image
+		margin-top: spacing.$margin-ldsg-7
+
+.wireframes
+	margin-top: spacing.$margin-ldsg-9
+	&__content-images
+		margin-top: spacing.$margin-ldsg-7
+		.col-1h
+			grid-column: 2 / 8
+			img
+				margin-bottom: spacing.$margin-l
+			img:last-child
+				margin-bottom: 0
+		.col-rh
+			grid-column: 8 / 14
+			img
+				margin-bottom: spacing.$margin-l
+			img:last-child
+				margin-bottom: 0
+
+.grid_resposive
+	margin-bottom: spacing.$margin-ldsg-9
+	.grid-figure
+		color: color.$color-white
+		.figure-description
+			margin-top: spacing.$margin-xl
+		.img-mobile
+			width: 230px
+
+.bgPromart
+	background-color: #5B43B1
+
+.visual-design.bg_device
+	padding-bottom: spacing.$padding-ldsg-9
+
+.framePromart
+	padding-bottom: spacing.$padding-ldsg-9
+
+.conclusion_project
+	padding-block: spacing.$padding-ldsg-9
+	.col-conclusion
+		&__content
+			grid-column: 1 / -7
+			.heading-title-h3
+				margin-bottom: spacing.$margin-md
