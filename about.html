@@ -1,0 +1,179 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Portfolio</title>
+
+	<link rel="stylesheet" href="dist/css/main.css">
+  <link rel="stylesheet" href="dist/css/reset.css">
+
+	<link
+    rel="stylesheet"
+    type="text/css"
+    href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"
+    />
+  <link
+    rel="stylesheet"
+    type="text/css"
+    href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css"
+  />
+
+</head>
+<body>
+	<section class="smooth-wrapper">
+		<!-- header -->
+		<header class="header">
+			<section class="header__wrapper p1">
+				<div class="logo">
+					<a href="index.html" class="logo__name-logo">
+						<span>JOHNNATHAN</span>	
+						<span>YUPANQUI</span>
+					</a>
+				</div>
+				<nav class="navigation">
+					<ul class="nav_bar">
+						<li><a href="index.html" class="nav-item">Inicio</a></li>
+						<li><a href="about.html" class="nav-item">About</a></li>
+						<li><a href="#projectsindex.html" class="nav-item">Proyectos</a></li>
+					</ul>
+				</nav>
+			</section>
+		</header>
+		<!-- main -->
+		<main>
+			<!-- Sección antes -->
+			<section class="section-dummy">
+        <div>Scroll hacia abajo ↓</div>
+    </section>
+			<!-- Contenedor Horizontal Scroll -->
+			<div class="horizontal-container" id="horizontalContainer">
+        <div class="horizontal-wrapper">
+            
+            <!-- Panel 1 -->
+            <div class="panel">
+              <img class=""
+										src="/src/img/electric/platform-active--1x.png"
+										loading="lazy" decoding="async" data-nimg="1"
+										srcset="/src/img/electric/platform-active--1x.png 16w"
+										alt="image">
+            </div>
+
+            <!-- Panel 2 -->
+            <div class="panel">
+              <img class=""
+												src="/src/img/electric/platform-active--2x.png"
+												loading="lazy" decoding="async" data-nimg="1"
+												srcset="/src/img/electric/platform-active--2x.png 16w"
+												alt="image">
+            </div>
+
+            <!-- Panel 3 -->
+            <div class="panel">
+              <img class=""
+								src="/src/img/electric/platform-active--3x.png"
+												loading="lazy" decoding="async" data-nimg="1"
+												srcset="/src/img/electric/platform-active--3x.png 16w"
+												alt="image">
+            </div>
+
+            <!-- Panel 4 -->
+            <div class="panel">
+              <img class=""
+										src="/src/img/electric/platform-active--1x.png"
+										loading="lazy" decoding="async" data-nimg="1"
+										srcset="/src/img/electric/platform-active--1x.png 16w"
+										alt="image">
+            </div>
+
+            <!-- Panel 5 -->
+            <div class="panel">
+							<img class=""
+							src="/src/img/electric/platform-active--2x.png"
+							loading="lazy" decoding="async" data-nimg="1"
+							srcset="/src/img/electric/platform-active--2x.png 16w"
+							alt="image">
+            </div>
+
+        </div>
+
+        <!-- iPad Fijo (PIN) -->
+        <div class="ipad-container">
+            <!-- OPCIÓN 1: Si tienes una imagen PNG del iPad -->
+            <!-- <img src="tu-ipad.png" alt="iPad" class="ipad-image"> -->
+            
+            <!-- OPCIÓN 2: SVG placeholder del iPad -->
+						<img class=""
+						src="/src/img/electric/ipad.png"
+						loading="lazy" decoding="async" data-nimg="1"
+						srcset="/src/img/electric/ipad.png 16w"
+						alt="image">
+            
+            <!-- Contenido dentro del iPad (opcional) -->
+            <div class="ipad-screen" id="ipadScreen">
+                <span>Contenido del Dashboard</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Indicadores de progreso -->
+    <div class="progress-indicators">
+        <div class="indicator active" data-index="0"></div>
+        <div class="indicator" data-index="1"></div>
+        <div class="indicator" data-index="2"></div>
+        <div class="indicator" data-index="3"></div>
+        <div class="indicator" data-index="4"></div>
+    </div>
+
+    <!-- Sección después -->
+    <section class="section-dummy">
+        <div>¡Continúa scrollando! ↑</div>
+    </section>
+
+			<script>
+					
+			</script>
+		</main>
+		<!-- footer -->
+		<footer class="footer grid">
+			<article class="footer__wrap wrap p1">
+				<!-- header -->
+				<ol class="wrap__header grid">
+					<li class="dates grid-item-footer">
+						<div class="">
+							<p class="heading-h4">jqyupanqui@outlook.com</p>
+							<p class="heading-h4">925806337 / 01 657-4931</p>
+						</div>
+					</div>
+					<li class="redes grid-item-footer">
+						<div class="link-redes">
+							<a href="" class="nav-item-link">Linkedink</a>
+							<a href="" class="nav-item-link">Behance</a>
+							<a href="" class="nav-item-link">Instagarm</a>
+						</div>
+						<!-- btn-scroll -->
+						<div class="footer-scroll">
+							<a href="" class="item-link">
+								<i class="ph ph-arrow-up"></i>
+								scroll-top
+							</a>
+						</div>
+					</div>
+				</ol>
+				<!-- name -->
+				<div class="footer-name">
+					<p class="tipography">JOHNNATHAN</p>
+					<p class="tipography">YUPANQUI</p>
+				</div>
+			</article>
+		</footer>
+	</section>
+
+	<script src="/node_modules/gsap/dist/gsap.min.js"></script>
+	<script src="/node_modules/gsap/dist/ScrollTrigger.min.js"></script>
+	<script src="/node_modules/gsap/dist/ScrollToPlugin.min.js"></script>
+	<script src="/node_modules/gsap/dist/ScrollSmoother.min.js"></script>
+	<script src="./js/index.js"></script>
+	<script src="./js/main.js"></script>
+</body>
+</html>

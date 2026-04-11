@@ -1,0 +1,482 @@
+<html lang="en"><!-- class="lenis" -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Portfolio</title>
+	<!-- CSS -->
+	<link rel="stylesheet" href="dist/css/main.css">
+  <link rel="stylesheet" href="dist/css/reset.css">
+	
+	<!-- FONT stack-sans-text -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Stack+Sans+Text:wght@200..700&display=swap" rel="stylesheet">
+
+	<!-- FONT stack-sans-headline -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Stack+Sans+Headline:wght@200..700&display=swap" rel="stylesheet">
+
+	<!-- ICON -->
+	<link
+    rel="stylesheet"
+    type="text/css"
+    href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"
+    />
+  <link
+    rel="stylesheet"
+    type="text/css"
+    href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css"
+  />
+</head>
+<body>
+	<section> <!-- smooth-wrapper -->
+		<div>
+		<!-- header -->
+		<header class="site-header grid">
+			<div class="container--header">
+				<div class="container-desktop">
+					<div class="logo">
+						<a href="index.html" class="logo__name-logo">
+							<span class="name">J<span class="text_migra">o</span>hnnathan</span>	
+							<span class="name">Y<span class="text_migra">u</span>panqui</span>
+						</a>
+					</div>
+					<nav class="navigation menu-desktop">
+						<ul class="nav_bar">
+							<li>
+								<a href="#projects" class="nav-item" data-section="projects">
+									<span class="f_migra">02 </span>
+									Proyectos
+								</a>
+							</li>
+							<li>
+								<a href="#about" class="nav-item" data-section="about">
+									<span class="font_migra">03 </span> About
+								</a>
+							</li>
+							<li>
+								<a href="#contact" class="nav-item" data-section="contact">
+									<span class="font_migra">04 </span> Contacto
+								</a>
+							</li>
+						</ul>
+					</nav>
+					<!-- Trigger mobile: solo visible < ~1024px -->
+					<button class="menu-trigger" aria-label="Abrir menú" aria-expanded="false">
+						Menu
+					</button>
+				</div>
+				<!-- Menú overlay mobile (se muestra al clic) -->
+				<div class="menu-container">
+					<article class="menu-overlay" id="menuOverlay">
+						<button class="menu-close" aria-label="Cerrar menú">×</button>
+						
+						<nav class="menu-mobile">
+							<ul class="menu-mobile__list">
+								<li><a class="menu-mobile__nav-item--link" href="#home">HOME</a></li>     <!-- Agregué HOME como en ref 3 -->
+								<li><a class="menu-mobile__nav-item--link" href="#proyectos">02 PROYECTOS</a></li>
+								<li><a class="menu-mobile__nav-item--link" href="#about">03 ABOUT</a></li>
+								<li><a class="menu-mobile__nav-item--link" href="#contacto">04 CONTACTO</a></li>
+							</ul>
+						</nav>
+		
+						<!-- Redes sociales al fondo, como en tu ref 
+						<div class="menu-social">
+							<a href="#" target="_blank">LINKEDIN</a>
+							<a href="#" target="_blank">BEHANCE</a>
+							<a href="#" target="_blank">INSTAGRAM</a>
+						</div>-->
+						</article>
+				</div>
+			</div>
+		</header>
+		<!-- main -->
+		<main>
+			<section class="wrapper">
+				<!-- hero-section -->
+				<section class="hero-section grid">
+					<!-- hero-section -->
+					<article class="pointer">
+						<img class="pointer__img full__img" src="/src/img/hover_hero/full1.webp" alt="Some image" loading="lazy" />
+						<img class="pointer__img full__img" src="/src/img/hover_hero/full2.webp" alt="Some image" loading="lazy" />
+						<img class="pointer__img " src="/src/img/hover_hero/4.webp" alt="Some image" loading="lazy" />
+						<img class="pointer__img " src="/src/img/hover_hero/1.webp" alt="Some image" loading="lazy" />
+						<img class="pointer__img full__img" src="/src/img/hover_hero/full3.webp" alt="Some image" loading="lazy" />
+						<img class="pointer__img " src="/src/img/hover_hero/3.webp" alt="Some image" loading="lazy" />
+						<img class="pointer__img " src="/src/img/hover_hero//5.webp" alt="Some image" loading="lazy" />
+						<img class="pointer__img " src="/src/img/hover_hero/6.webp" alt="Some image" loading="lazy" />
+						<img class="pointer__img " src="/src/img/hover_hero/7.webp" alt="Some image" />
+						<img class="pointer__img full__img" src="/src/img/hover_hero/full4.webp" alt="Some image" loading="lazy" />
+						<img class="pointer__img full__img" src="/src/img/hover_hero/full8.webp" alt="Some image" loading="lazy" />
+						<img class="pointer__img " src="/src/img/hover_hero/8.webp" alt="Some image" loading="lazy" />
+						<img class="pointer__img full__img" src="/src/img/hover_hero/full6.webp" alt="Some image" loading="lazy" />
+						<img class="pointer__img " src="/src/img/hover_hero/9.webp" alt="Some image" loading="lazy" />
+						<img class="pointer__img " src="/src/img/hover_hero/10.webp" alt="Some image" loading="lazy" />							
+					</article>
+					<article class="title_index col-1 grid">
+						<div class="index-frame">
+						<!--	<span class="name-subtitle">Soy Johnnathan, Diseñador UX/UI</span>-->
+							<h1 class="hero-section__title pointer__title">
+								Convierto problemas complejos en experiencias para las marcas que conectan con las personas
+							</h1>
+						</div>
+					</article>
+				</section>
+				<!-- freelance -->
+				<section class="section-intro grid">
+					<article class="section-intro__description">
+						<figure class="icon_logo icon-top">
+							<img src="/src/img/icon_logo.svg" alt="">
+						</figure>
+						<div>
+							<p class="headline-h3 fw-2">
+								Cada proyecto empieza por entender el contexto: entender el problema, el usuario y el negocio. Diseñar sin estrategia — es decoración.
+							</p>
+						</div>
+						<figure class="icon_logo icon-bottom">
+							<img src="/src/img/icon_logo.svg" alt="">
+						</figure>
+					</arti>
+				</section>
+				<!-- projects -->
+				<section class="case-study" id="projects">
+					<article class="case-study__content content-head grid">
+						<article class="case-study__head">
+							<h3 class="headline-h1 fw-6">Casos de Estudio</h3>
+						</article>
+						<article class="case-study__text">
+							<p class="body-text">
+								Algunos proyectos seleccionados que muestran mi pasión por crear experiencias web, productos y marcas memorables.
+							</p>
+						</article>
+					</article>
+					<article class="case-study__projects-case-study p1">
+						<!-- projects  -->
+						<article role="assets-projects" class="projects-swip">
+							<!-- assets 1 -->
+							<a class="assets-container" href="goal-capital.html">
+								<!-- https://assets.codepen.io/16327/portrait-image-3.jpg -->
+								<img class="swipeimage" src="src/img/hover/hover-goal.webp">
+								<div class="assets-container__inner">
+									<div class="assets--subtitle">
+										<h6 class="headline-h2 fw-4">Goal Capital</h6>
+										<i class="ph ph-arrow-down-right"></i>
+									</div>
+									<div class="assets--description">
+										<p class="text-small">UX/UI/Web/Mobile/Maquetación-Web <span class="headline-h4 fw-6 separator"> *</span></p>
+									</div>
+									<div class="assets--subject">
+										<p class="text-small">Rediseño Web</p>
+									</div>
+								</div>
+							</a>
+							<!-- assets 2 -->
+							<a class="assets-container" href="electric.html">
+								<!-- https://assets.codepen.io/16327/portrait-image-1.jpg -->
+								<img class="swipeimage" src="src/img/hover/hover-caja.webp">
+								<div class="assets-container__inner">
+									<div class="assets--subtitle">
+										<h6 class="headline-h2 fw-4">EIRL Electric</h6>
+										<i class="ph ph-arrow-down-right"></i>
+									</div>
+									<div class="assets--description">
+										<p class="text-small">UX/UI/Visual/Web/Mobile <span class="headline-h4 fw-6 separator"> *</span></p>
+									</div>
+									<div class="assets--subject">
+										<p class="text-small">Diseño Plataforma</p>
+									</div>
+								</div>
+							</a>
+							<!-- assets 3 -->
+							<a class="assets-container" href="vuelve-compostario.html">
+								<!-- https://assets.codepen.io/16327/portrait-image-3.jpg -->
+								<img class="swipeimage" src="src/img/hover/hover-vuelve.webp">
+								<div class="assets-container__inner">
+									<div class="assets--subtitle">
+										<h6 class="headline-h2 fw-4">V. Compostario</h6>
+										<i class="ph ph-arrow-down-right"></i>
+									</div>
+									<div class="assets--description">
+										<p class="text-small">UX/UI/Web/Mobile<span class="headline-h4 fw-6 separator"> *</span></p>
+									</div>
+									<div class="assets--subject">
+										<p class="text-small">Diseño Dashboard Web</p>
+									</div>
+								</div>
+							</a>
+							<!-- assets 4 -->
+							<a class="assets-container" href="promart.html">
+								<!-- https://assets.codepen.io/16327/portrait-image-14.jpg -->
+								<img class="swipeimage" src="src/img/hover/hover-promart.webp">
+								<div class="assets-container__inner">
+									<div class="assets--subtitle">
+										<h6 class="headline-h2 fw-4">Promart</h6>
+										<i class="ph ph-arrow-down-right"></i>
+									</div>
+									<div class="assets--description">
+										<p class="text-small">UI/Visual/Web/Mobile <span class="headline-h4 fw-6 separator"> *</span></p>
+									</div>
+									<div class="assets--subject">
+										<p class="text-small">Diseño Web Ecommerce</p>
+									</div>
+								</div>
+							</a>
+						</article>
+					</article>
+				</section>
+				<!-- about-me 
+				<section class="about-me p1">
+					<article class="about-me__title font-body-title">
+						<h3 class="font-body-title">Sobre Mi</h3>
+					</article>
+					<article class="about-me__info grid">
+						<article class="about-me__info-content">
+							<p class="heading-body">
+								Soy Diseñador UX/UI & FreeLancer, mi pasión por transformar problemas. Mi experiencia abarca desde la investigación UX profunda para descubrir insights clave, hasta el diseño de productos digitales funcionales y visualmente impactante que generan resultados medibles para garantizar experiencias claras.
+
+								Hice equipos multifuncionales para alinear los objetivos del negocio con las necesidades del usuario. Mi enfoque está en crear productos innovadores que no solo destaquen por su estética, sino que también ofrezcan un impacto real y sostenible.
+							</p>
+
+							<a href="">
+								Descargar CV
+								<i></i>
+							</a>
+						</article>
+						<article class="frame-info">
+							<img src="" alt="">
+						</article>
+					</article>
+				</section>-->
+				<!-- project design 
+				<section class="graphic-design p1">
+					<article class="">
+						<h3 class="headline-h1 fw-6">Diseño Gráfico</h3>
+					</article>
+					<article>
+						<div class="box-image"></div>
+					</article>
+				</section>-->
+				<!-- project design -->
+				<section class="about-me" id="about">
+					<div class="about-me__title-head grid">
+						<h3 class="headline-h1 head-cursor fw-6">Acerca de Johnnathan</h3>
+					</div>
+					<article class="about-me__description">
+						<div class="about-me__content grid">
+							<div class="name_text">
+								<h3 class="headline-h3">Soy Johnnathan Yupanqui,
+									Diseñador UX/UI y Freelancer</h3>
+							</div>
+							<figure class="my_photo-mobile">
+								<img src="src/img/foto_perfil.png" alt="foto">
+							</figure>
+							<div class="paragraph">
+								<p class="font-body mg-02">
+									Mi pasión por transformar problemas. Mi experiencia abarca desde la investigación UX profunda para descubrir insights clave, hasta el diseño de productos digitales funcionales y visualmente que impacte generando resultados medibles para garantizar experiencias claras.
+								</p>
+								<p class="font-body">
+									Otra de mis pasiones es hacer senderismo, con la cual experimento 
+								</p>
+								<div class="button-download">
+									<a class="button-ghost headline-h5" href="/src/img/CV-UX-UI-JOHNNATHAN.pdf" target="_blank">
+									<span class="button_content">Descargar CV</span>
+									</a>
+								</div>
+							</div>
+							<figure class="my_photo">
+								<img src="src/img/foto_perfil.png" alt="foto">
+							</figure>
+						</div>
+						<article class="skill col-1 grid">
+							<div class="skill__content_skill">
+								<h5 class="headline-h1 fw-6">Skill</h5>
+								<ul class="skill__list">
+									<li class="skill_modules frame-origin">
+										<article class="skill_ux">
+											<input type="checkbox" id="ux1">
+											<label class="skill_ux__head_skill" for="ux1">
+												<div class="number">
+													<h4 class="headline-h2 fw-4"><i class="ph ph-arrow-down-right"></i></h4>
+												</div>
+												<div class="title_skill">
+													<h4 class="headline-h2 fw-4">Diseño UX-UI</h4>
+												</div>
+												<i class="i_icon"></i>
+											</label>
+											<div class="skill_ux__body_description">
+												<p class="font-text">Diseño UX, Investigación de usuarios, Arquitectura de la información, Wireframe, Creación de prototipos,</p>
+												<p class="font-text">Pruebas de usabilidad, Moodboard, Diseño de interfaz, Diseño visual, Sistemas de diseño, UI-Kit.</p>
+											</div>
+										</article>
+									</li>
+									<!--<li class="skill-text">*</li>-->
+									<li class="skill_modules frame-origin">
+										<article class="skill_ux">
+											<input type="checkbox" id="ux2">
+											<label class="skill_ux__head_skill" for="ux2">
+												<div class="number">
+													<h4 class="headline-h2 fw-4"><i class="ph ph-arrow-down-right"></i></h4>
+												</div>
+												<div class="title_skill">
+													<h4 class="headline-h2 fw-4"> Diseño Gráfico</h4>
+												</div>
+												<i class="i_icon"></i>
+											</label>
+											<div class="skill_ux__body_description transition">
+												<p class="font-text">Diseño visual, Principios del diseño, Teoría y uso de Colores, Tipografías, Estética visual, Concepto de diseño.</p>
+											</div>
+										</article>
+									</li>
+									<!--<li class="skill-text">*</li>-->
+									<li class="skill_modules frame-origin">
+										<article class="skill_ux">
+											<input type="checkbox" id="ux3">
+											<label class="skill_ux__head_skill" for="ux3">
+												<div class="number">
+													<h4 class="headline-h2 fw-4"><i class="ph ph-arrow-down-right"></i></h4>
+												</div>
+												<div class="title_skill">
+													<h4 class="headline-h2 fw-4">Diseño Web</h4>
+												</div>
+												<i class="i_icon"></i>
+											</label>
+											<div class="skill_ux__body_description transition">
+												<p class="font-text">Brief,  Bocetos, Principios del diseño, Moodboard, Wireframe, Teoría y uso de Colores, Tipografías, Interfaz de Usuario, UI-Kit, Diseño visual, Estética visual,</p>
+											</div>
+										</article>
+									</li>
+									<!--<li class="skill-text">*</li>-->
+									<li class="skill_modules frame-origin">
+										<article class="skill_ux">
+											<input type="checkbox" id="x4">
+											<label class="skill_ux__head_skill" for="x4">
+												<div class="number">
+													<h4 class="headline-h2 fw-4"><i class="ph ph-arrow-down-right"></i></h4>
+												</div>
+												<div class="title_skill">
+													<h4 class="headline-h2 fw-4">Maquetación Web</h4>
+												</div>
+												<i class="i_icon"></i>
+											</label>
+											<div class="skill_ux__body_description">
+												<p class="font-text">Github, HTML, SASSS, Java Script, Desktop, Responive, Tokens, </p>
+											</div>
+										</article>
+									</li>
+									<!--<li class="skill-text">*</li>-->
+									<li class="skill_modules frame-origin">
+										<article class="skill_ux">
+											<input type="checkbox" id="x4">
+											<label class="skill_ux__head_skill" for="x4">
+												<div class="number">
+													<h4 class="headline-h2 fw-4"><i class="ph ph-arrow-down-right"></i></h4>
+												</div>
+												<div class="title_skill">
+													<h4 class="headline-h2 fw-4">Habilidades Blandas</h4>
+												</div>
+												<i class="i_icon"></i>
+											</label>
+											<div class="skill_ux__body_description transition">
+												<p class="font-text">Creatividad, Colaboración, Resolución de Problemas, Pensamiento crítico, Communicación</p>
+											</div>
+										</article>
+									</li>
+								</ul>
+							</div>
+						</article>
+					</article>
+				</section>
+				<!-- slider 
+				<section class="slider">
+					<div class="slider__content">
+						<p></p>
+					</div>
+				</section>-->
+			</section>
+		</main>
+		<!-- footer -->
+		<footer class="footer grid">
+			<section class="footer__wrap" id="contact">
+				<!-- header -->
+				<article class="footer--data grid">
+					<div class="data">
+						<span class="headline-h3 fw-3">Contacto</span>
+						<div class="data-contact">
+              <div class="email mg-3">
+								<span class="headline-h5 fw-2">Email:</span>
+								<button class="headline-h1 fw-2 copy-btn" data-email="hello@midominio.com">
+									jqyupanqui@outlook.com
+								</button>
+							</div>
+							<div class="phone mg-1">
+								<small class="headline-h5 fw-2">WhatsApp:</small>
+								<p class="headline-h2 fw-2">+51 934362175</p>
+							</div>
+						</div>
+					</div>
+					<div class="redes">
+						<div class="link-redes">
+							<a href="https://www.linkedin.com/in/johnnathan-yupanqui-789ab5245/" target="_blank" class="headline-h5 link--item">LinkedInk</a>
+						<!--<a href="" class="nav-item-link">Behance</a>-->
+						<a href="" class="headline-h5 link--item">Instagram</a>
+						</div>
+						<!-- btn-scroll 
+						<div class="scroll-top">
+							<button class="btn-scroll-top" aria-label="Volver arriba">
+								<i class="ph ph-arrow-up"></i>
+							</button>
+						</div>-->
+					</div>
+				</article>
+				<!-- name -->
+				<div class="footer_name">
+					<p class="footer-name__my-name">JOHNNATHAN</p>
+					<p class="footer-name__my-name">YUPANQUI</p>
+				</div>
+			</section>
+		</footer>
+		</div>
+	</section>
+
+	<!-- Cursor Canvas -->
+	<canvas id="cursor-canvas" width="120" height="120"></canvas>
+	
+	<script src="/node_modules/gsap/dist/gsap.min.js"></script>
+	<script src="/node_modules/gsap/dist/ScrollTrigger.min.js"></script>
+	
+	<script src="./js/imagesloaded.pkgd.min.js"></script>
+	<script src="./js/index.js"></script>
+	<script src="./js/demo2.js"></script>
+	<script src="./js/main.js"></script>
+	<script src="./js/script.js"></script>
+	<script>
+	//	const lenis = new Lenis({
+	//		duration: 1.4,
+	//		easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+	//		smoothWheel: true,
+	//		smoothTouch: false,
+	//		normalizeWheel: true
+	//	});
+//
+	//	lenis.on('scroll', ScrollTrigger.update);
+//
+	//	function raf(time) {
+	//		lenis.raf(time);
+	//		requestAnimationFrame(raf);
+	//	}
+	//	requestAnimationFrame(raf);
+//
+	//	// Fuerza captura de rueda (solución común cuando scroll sigue duro)
+	//	document.addEventListener('wheel', (e) => {
+	//		if (!e.ctrlKey) {
+	//			e.preventDefault();
+	//			lenis.scrollTo(lenis.scroll + e.deltaY * -1, { immediate: false });
+	//		}
+	//	}, { passive: false });
+//
+	//	console.log('Lenis iniciado correctamente + wheel listener agregado');
+	</script>
+</body>
+</html>
