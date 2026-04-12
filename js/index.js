@@ -5,7 +5,7 @@ const getRatio = el =>
 
 gsap.utils.toArray(".section").forEach((section, i) => {
   const bg = section.querySelector(".item-bg");
-  const img = section.dataset.bg; // ✅ AQUÍ estaba el problema
+  const img = section.dataset.bg; // 
 
   if (!bg || !img) {
     console.warn("data-bg", section);
