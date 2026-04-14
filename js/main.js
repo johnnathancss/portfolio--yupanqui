@@ -1,17 +1,27 @@
 document.addEventListener("DOMContentLoaded", () => {
   gsap.registerPlugin(ScrollTrigger);
 
-  //SCROLL SMOTH VELOCITY
-  gsap.registerPlugin(ScrollTrigger);
-
-  ScrollSmoother.create({
-    wrapper: ".smooth-wrapper",
-    content: ".smooth-content",
-    smooth: 1.5,
-    effects: true,
-    smoothTouch: 0.1
+  gsap.to(".box", {
+    y: 200,
+    scrollTrigger: {
+      trigger: ".box",
+      scrub: 1.2
+    }
   });
 });
+
+//document.addEventListener("DOMContentLoaded", () => {
+//  gsap.registerPlugin(ScrollTrigger);
+//
+//  //SCROLL SMOTH VELOCITY
+//  ScrollSmoother.create({
+//    wrapper: ".smooth-wrapper",
+//    content: ".smooth-content",
+//    smooth: 1.5,
+//    effects: true,
+//    smoothTouch: 0.1
+//  });
+//});
 
 
 
