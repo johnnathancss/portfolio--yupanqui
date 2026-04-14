@@ -1,16 +1,22 @@
-//SCROLL SMOTH VELOCITY
-gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
+document.addEventListener("DOMContentLoaded", () => {
+  gsap.registerPlugin(ScrollTrigger);
 
-ScrollSmoother.create({
-  wrapper: "#smooth-wrapper",
-  content: "#smooth-content",
-  smooth: 1.5,
-  effects: true
+  //SCROLL SMOTH VELOCITY
+  gsap.registerPlugin(ScrollTrigger);
+
+  ScrollSmoother.create({
+    wrapper: ".smooth-wrapper",
+    content: ".smooth-content",
+    smooth: 1.5,
+    effects: true,
+    smoothTouch: 0.1
+  });
 });
 
 
+
 //SCROLL-TOP-FOOTER-CLICK
-gsap.registerPlugin(ScrollTrigger);
+//gsap.registerPlugin(ScrollTrigger);
 
 const btn = document.querySelector(".btn-scroll-top");
 const footer = document.querySelector("footer");
