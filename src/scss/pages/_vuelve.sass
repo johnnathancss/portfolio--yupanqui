@@ -108,6 +108,8 @@
 	padding-top: spacing.$space--ldsg
 	&__content
 		grid-column: 4 / -4
+		@media (min-width: 768px) and (max-width: 991.98px)
+			grid-column: 3 / -3
 		@media (min-width: 320px) and (max-width:576px)
 			grid-column: 2 / -2
 
@@ -189,28 +191,6 @@
 		@media (min-width: 320px) and (max-width:576px)
 			grid-column: 2 / -2
 
-
-
-//WIREFRAME
-//.wireframes
-//	margin-top: spacing.$margin-ldsg-10
-//	.bocetos,
-//	.wireframe-low-fidelity,
-//	.wireframe-medium-fidelity
-//		margin-top: spacing.$margin-ldsg-7
-//	.wireframe-low-fidelity
-//		.low-fidelity 
-//			&__content
-//				grid-column: 1 / -7
-//	.wireframe-medium-fidelity
-//		.medium-fidelity
-//			&__content
-//				grid-column: 1 / -7
-//	.bocetos
-//		.bocetos-col
-//			img:first-child
-//				margin-bottom: spacing.$margin-md
-
 //style-guide
 .style-guide.bgVuelve
 	background-color: #389482
@@ -258,12 +238,18 @@
 					height: 100vw
 					max-height: 100%
 
-
+.horizontal-scroll
+	.viewport--responsive
+		img
+			margin-bottom: spacing.$space--ldsg
+		img:last-child
+			margin-bottom: 0
 
 .screen-section
 	background-color: #389482
 	padding: spacing.$padding-ldsg-9 0 spacing.$padding-ldsg-9 spacing.$padding-l
 	margin-block: spacing.$margin-ldsg-9
+
 
 .visual_bg-mobile
 	margin-bottom: spacing.$margin-ldsg-7

@@ -1,14 +1,14 @@
-document.addEventListener("DOMContentLoaded", () => {
-  gsap.registerPlugin(ScrollTrigger);
-
-  gsap.to(".box", {
-    y: 200,
-    scrollTrigger: {
-      trigger: ".box",
-      scrub: 1.2
-    }
-  });
-});
+//document.addEventListener("DOMContentLoaded", () => {
+//  gsap.registerPlugin(ScrollTrigger);
+//
+//  gsap.to(".box", {
+//    y: 200,
+//    scrollTrigger: {
+//      trigger: ".box",
+//      scrub: 1.2
+//    }
+//  });
+//});
 
 //document.addEventListener("DOMContentLoaded", () => {
 //  gsap.registerPlugin(ScrollTrigger);
@@ -47,3 +47,4 @@ btn.addEventListener("click", () => {
     ease: "power2.out"
   });
 });
+

@@ -1111,57 +1111,6 @@ img {
 }
 
 /* From Uiverse.io by Madflows */
-.button-ghost {
-  position: relative;
-  overflow: hidden;
-  display: inline-block;
-  border: 1px solid;
-  border-color: #DE1215;
-  color: #1A1A1A;
-  font-weight: 600;
-  border-radius: 20rem;
-  padding: 1rem 2rem;
-  background: transparent;
-  background-size: 400%;
-  cursor: pointer;
-  transition: transform 0.45s ease;
-}
-@media (min-width: 360px) and (max-width: 576px) {
-  .button-ghost {
-    padding: 1rem 5rem;
-  }
-}
-
-.button-ghost:hover {
-  color: #FFF;
-  border: transparent;
-  border-color: transparent;
-}
-
-.button-ghost:hover::before {
-  transform: scaleX(1);
-}
-
-.button_content {
-  position: relative;
-  z-index: 1;
-}
-
-.button-ghost::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  transform: scaleX(0);
-  transform-origin: 0 50%;
-  width: 100%;
-  height: 4rem;
-  padding-block: 1rem;
-  border-radius: 15rem;
-  background-color: #DE1215;
-  transition: all 0.475s ease;
-}
-
 .menu-trigger {
   display: none;
   background: #FFF;
@@ -1333,6 +1282,76 @@ img {
   color: #DE1215;
 }
 
+/* From Uiverse.io by Creatlydev */
+.button {
+  cursor: pointer;
+  border: none;
+  background: #DE1215;
+  color: #fff;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  display: grid;
+  place-content: center;
+  transition: background 300ms ease-in-out, transform 200ms;
+}
+
+.button__text {
+  position: absolute;
+  inset: 0;
+  animation: text-rotation 8s linear infinite;
+}
+.button__text > span {
+  position: absolute;
+  transform: rotate(calc(19deg * var(--index)));
+  inset: 3px;
+  margin-right: 0.25rem;
+}
+
+.button__circle {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  background: #fff;
+  color: #DE1215;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button__icon--copy {
+  position: absolute;
+  transform: translate(-150%, 150%);
+}
+
+.button:hover {
+  background: #000;
+  transform: scale(1.05);
+}
+
+.button:hover .button__icon {
+  color: #000;
+}
+
+.button:hover .button__icon:first-child {
+  transition: transform 0.3s ease-in-out;
+  transform: translate(150%, -150%);
+}
+
+.button:hover .button__icon--copy {
+  transition: transform 0.3s ease-in-out 0.1s;
+  transform: translate(0);
+}
+
+@keyframes text-rotation {
+  to {
+    rotate: 360deg;
+  }
+}
 .stack-sans-text {
   font-family: "Stack Sans Text", sans-serif;
   font-optical-sizing: auto;
@@ -4674,18 +4693,36 @@ img {
   margin-top: 7rem;
 }
 
-.html-page {
-  position: relative;
+html, body {
+  height: auto;
 }
 
-@media (min-width: 992px) and (max-width: 1199.98px) {
-  .hero-banner .img-wrap {
-    min-height: 50vh;
+.lenis {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto;
+}
+
+.hero-banner {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .hero-banner {
+    height: 40vh;
   }
+}
+.hero-banner .img-wrap {
+  position: relative;
+  height: 100%;
+  width: 100%;
 }
 @media (min-width: 768px) and (max-width: 991.98px) {
   .hero-banner .img-wrap {
-    min-height: 40vh;
+    min-height: 60vh;
   }
 }
 @media (min-width: 320px) and (max-width: 576px) {
@@ -4693,7 +4730,6 @@ img {
     min-height: 24vh;
   }
 }
-
 .header-page {
   margin-block-start: 3rem;
   margin-block-end: 6rem;
@@ -4903,6 +4939,13 @@ img {
 }
 .user-flow__image {
   grid-column: 4/-4;
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .user-flow__image {
+    grid-column: 3/-3;
+  }
+}
+.user-flow__image {
   margin-block-start: 7rem;
   margin-block-end: 14rem;
 }
@@ -5744,6 +5787,11 @@ img {
 .visual-design-ui__content {
   grid-column: 4/-4;
 }
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .visual-design-ui__content {
+    grid-column: 3/-3;
+  }
+}
 @media (min-width: 320px) and (max-width: 576px) {
   .visual-design-ui__content {
     grid-column: 2/-2;
@@ -5897,6 +5945,13 @@ img {
 .visual-design.bg-vuelve .imgFlex__content .col-rh img {
   height: 100vw;
   max-height: 100%;
+}
+
+.horizontal-scroll .viewport--responsive img {
+  margin-bottom: 4.5rem;
+}
+.horizontal-scroll .viewport--responsive img:last-child {
+  margin-bottom: 0;
 }
 
 .screen-section {
