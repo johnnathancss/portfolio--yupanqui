@@ -1110,7 +1110,6 @@ img {
   color: rgba(255, 255, 255, 0.7058823529);
 }
 
-/* From Uiverse.io by Madflows */
 .menu-trigger {
   display: none;
   background: #FFF;
@@ -1266,7 +1265,7 @@ img {
   transition: color 0.2s ease-in;
 }
 .link--item:hover {
-  color: rgba(255, 255, 255, 0.6156862745);
+  color: #DE1215;
 }
 
 .btn-text-link {
@@ -2509,7 +2508,10 @@ img {
 .section-intro__description .icon_logo img {
   width: 16px;
 }
-.section-intro__text {
+.section-intro__text-intro {
+  padding-block: 6rem;
+}
+.section-intro__headline-h2 {
   text-align: center;
 }
 
@@ -3195,6 +3197,20 @@ img {
 }
 
 .copy-btn.copied {
+  color: #DE1215;
+}
+
+.whatsapp--item {
+  cursor: pointer;
+  transition: all 0.25s ease;
+  background-color: transparent;
+  color: #FFF;
+  font-family: "SuizaDEMO-Regular", sans-serif;
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 1.5;
+}
+.whatsapp--item:hover {
   color: #DE1215;
 }
 
