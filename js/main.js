@@ -95,3 +95,4 @@ if (document.readyState === 'loading') {
 } else {
   boot()
 }
+//AQUI TERMINA - CÓDIGO DE SCROLLING EVENT MOUSE Y PARALLAX IMAGE - CASO DE ESTUDIO

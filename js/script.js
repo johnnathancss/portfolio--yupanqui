@@ -124,6 +124,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // ────── 1. Definir colores por sección ──────
   const colorMap = {
+    '.hero-section': '#FFFFFF',
     '.section-intro': '#FFFFFF',  // rojo #3e20dc
     '.content-head': '#FFFFFF',  // verde menta
     '.about-me': '#FFFFFF',  // azul #0066ff
