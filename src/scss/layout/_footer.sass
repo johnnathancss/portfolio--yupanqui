@@ -14,9 +14,9 @@
     grid-column: 2 / -2
     .footer--data
       padding-top: spacing.$space--ldsg
-      margin-bottom: spacing.$margin-ldsg-5
+      margin-bottom: spacing.$space--ldsg-5
       @media (min-width: 320px) and (max-width:576px)
-        margin-bottom: spacing.$margin-xxl
+        margin-bottom: spacing.$space--ldsg-7
       .data
         grid-column: 1 / -6
         @media (min-width: 320px) and (max-width:576px)
@@ -44,7 +44,7 @@
               letter-spacing: .05rem
           @media (min-width: 320px) and (max-width:576px)
             .email.mg-3
-              margin-bottom: spacing.$margin-md
+              margin-bottom: spacing.$space--ldsg-x
       .redes
         grid-column: 10 / 14
         display: flex
@@ -53,11 +53,16 @@
         justify-content: end
         @media (min-width: 320px) and (max-width:576px)
           grid-column: 1 / -1
-          align-items: start
         .link-redes
           display: flex
           flex-direction: column
           align-items: end
+          @media (min-width: 320px) and (max-width:576px)
+            flex-direction: row
+            align-items: center
+            justify-content: space-between
+            width: 100%
+            margin-top: spacing.$space-3xl
     .footer-name
       margin-top: 9rem
       &__my-name
@@ -75,37 +80,27 @@
   width: 100%
   background-color: color.$color-black
   position: relative
-  overflow: hidden
-  box-sizing: border-box
   padding-block: spacing.$space--ldsg
   @media (min-width: 320px) and (max-width:576px)
     padding-block-end: spacing.$space-2xl
 
   &__footer-content
-    .scroll-top
-      width: 100%
-      display: flex
-      justify-content: flex-end
-      margin-bottom: spacing.$margin-md
-
     .link-item-next
-      width: 100%
-      display: flex
-      justify-content: center
-      align-items: center
-      .font-body
+      .text--link-next
         color: #ffffffa8
         letter-spacing: .75px
         text-align: center
         font-weight: 100
-      .assets-container
-        color: color.$color-white
+      .text--next-headline
+        letter-spacing: 1px
+        font-size: clamp(1.4757rem, -0.4919rem + 8.7447vw, 7.3783rem)
+        font-family: font.$font--headline
+        font-weight: 100
         text-align: center
-        .assets-heading
-          font-size: font.$font-Heading
-          font-family: 'PowerGrotesk-Regular'
-          letter-spacing: 1px
-          font-weight: 100
+        display: block
+        margin-top: spacing.$space-md
+        //font-size: font.$font-Heading
+        //font-family: 'PowerGrotesk-Regular'
 
 .copy-btn
   border: none
@@ -115,7 +110,7 @@
   color: color.$color-white
   font-family: 'SuizaDEMO-Regular', sans-serif
   font-weight: 500
-  font-size: font.$font-heading-body
+  //font-size: font.$font-heading-body
   line-height: 1.5
   &:hover
     color: color.$color-primary //#ffffffa1
@@ -130,7 +125,7 @@
   color: color.$color-white
   font-family: 'SuizaDEMO-Regular', sans-serif
   font-weight: 500
-  font-size: font.$font-heading-body
+  //font-size: font.$font-heading-body
   line-height: 1.5
   &:hover
     color: color.$color-primary

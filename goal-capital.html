@@ -35,262 +35,527 @@
     type="text/css"
     href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css"
   />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lenis@1.3.26/dist/lenis.css">
 </head>
 <body class="body-page-main">
+	<!-- header -->
+	<header class="header--nav grid">
+		<div class="container--header">
+			<div class="container-desktop">
+				<div class="logo">
+					<a href="index.html" class="logo__name-logo">
+						<span class="name">J<span class="text_migra">o</span>hnnathan</span>	
+						<span class="name">Y<span class="text_migra">u</span>panqui</span>
+					</a>
+				</div>
+				<nav class="navigation menu-desktop">
+					<ul class="nav_bar">
+						<li>
+							<a href="index.html#projects" class="nav-item" data-section="projects">
+								<span class="f_migra">02 </span>
+								Proyectos
+							</a>
+						</li>
+						<li>
+							<a href="index.html#about" class="nav-item" data-section="about">
+								<span class="font_migra">03 </span> Acerca de mi
+							</a>
+						</li>
+						<li>
+							<a href="index.html#contact" class="nav-item" data-section="contact">
+								<span class="font_migra">04 </span> Contacto
+							</a>
+						</li>
+					</ul>
+				</nav>
+				<!-- Trigger mobile: solo visible < ~1024px -->
+				<button class="menu-trigger" aria-label="Abrir menú" aria-expanded="false">
+					Menu
+				</button>
+			</div>
+			<!-- Menú overlay mobile (se muestra al clic) -->
+			<div class="menu-container">
+				<article class="menu-overlay" id="menuOverlay">
+					<button class="menu-close" aria-label="Cerrar menú">×</button>
+					
+					<nav class="menu-mobile">
+						<ul class="menu-mobile__list">
+							<li><a class="menu-mobile__nav-item--link" href="index.html">HOME</a></li>     <!-- Agregué HOME como en ref 3 -->
+							<li><a class="menu-mobile__nav-item--link" href="index.html#proyectos">02 PROYECTOS</a></li>
+							<li><a class="menu-mobile__nav-item--link" href="index.html#about">03 ABOUT</a></li>
+							<li><a class="menu-mobile__nav-item--link" href="index.html#contacto">04 CONTACTO</a></li>
+						</ul>
+					</nav>
+					</article>
+			</div>
+		</div>
+	</header>
 	<!-- main -->
-		<main>
-			<section class="hmtl-page">
-				<article class="html-page-content">
-					<!-- banenr header -->
-					<section class="hero-banner">
-							<div class="img-wrap section" data-bg="/src/img/goal/heroGoal.webp">
-								<div class="item-bg"></div>
-							</div>
-					</section>
-					<!-- case study -->
-					<section class="page-case-study">
-							<article class="page-case-study__container">
-								<!-- header -->
-								<header class="header-page grid">
-									<article class="header-page__content">
-										<a href="index.html#projects" class="btn-text-link">
-											<i class="ph ph-arrow-left"></i>
-											<span>Ir a Proyectos</span>
-										</a>
-										<h2 class="headline-display fw-5">Goal Capital</h2>
-									</article>
-								</header>
-								<!-- description case study -->
-								<article class="definition">
-									<!-- intro -->
-									<div class="definition-content grid">
-										<div class="definition-column">
-											<div class="info">
-												<p class="body-text fw-2">
-													Rediseñé la web de Goal Capital para transformar una presencia digital informativa en una experiencia estratégica orientada a la conversión. El objetivo fue mejorar la usabilidad, fortalecer el posicionamiento de la marca y comunicar con mayor claridad el valor de sus servicios de asesoría financiera.
-												</p>
+	<main>
+		<section class="hmtl-page">
+			<section class="html-page-content">
+				<!-- banenr header 
+				case study -->
+				<section class="page-case-study">
+					<article class="page-case-study__container">
+						<!-- header -->
+						<header class="header-page grid">
+							<article class="header-page__content">
+								<a href="index.html#projects" class="btn-text-link">
+									<span class="body-text-sans fw-5">◁</span>
+									<!-- 
+									<i class="ph ph-arrow-left"></i>
+									-->
+									<span>Ir a Proyectos</span>
+								</a>
+								<div class="ux--title">
+									<p class="headline-h4 mg-01">Goal Capital</p>
+									<h2 class="headline-display fw-4">
+										Investigación y diseño UX para optimizar conversión de leads en una firma de asesoría financiera
+									</h2>
+									<div class="tags--case dflex">
+										<div class="tag--headltcare effect-card">
+											<p class="text-small">Fintech</p>
+										</div>
+										<div class="tag--headltcare effect-card">
+											<p class="text-small">B2C/B2B</p>
+										</div>
+										<div class="tag--headltcare effect-card">
+											<p class="text-small">UX/UI</p>
+										</div>
+										<div class="tag--headltcare effect-card">
+											<p class="text-small">Clínica</p>
+										</div>
+									</div>
+								</div>
+							</article>
+						</header>
+						<section class="content-wrapper grid">
+							<div class="content-wrapper__container">
+								<!-- resultado -->
+								<section class="resultado">
+									<div class="resultado--content grid">
+										<div class="col col--center">
+											<div class="head--title-result">
+												<h4 class="headline-h1 fw-3 mg-03">Resultado del proyecto</h4>
 											</div>
-											<!-- role -->
-											<div class="role">
-												<ul class="role--ux">
-													<li class="flex1 text-small-sans fw-4">Role:</li>
-													<ol class="flex2">
-														<li class="text-small fw-3">Investigación UX - Diseño de la interfaz de usuario (UI) - IA (Arquitectura de información) - Diseño responsivae y móvil</li>
-													</ol>
-												</ul>
-				
-												<ul class="role--ux">
-													<li class="flex1 text-small-sans fw-4">Cliente:</li>
-													<ol class="flex2">
-														<li class="text-small fw-3">Goal Capital</li>
-													</ol>
-												</ul>
-				
-												<ul class="role--ux">
-													<li class="flex1 text-small-sans fw-4">Tarea:</li>
-													<ol class="flex2">
-														<li class="text-small fw-3">Fui el  único  diseñador responsable del Rediseño Web & Maquetación Web</li>
-													</ol>
-												</ul>
-				
-												<ul class="role--ux">
-													<li class="flex1 text-small-sans fw-4">Duración:</li>
-													<ol class="flex2">
-														<li class="text-small fw-3">4 Semanas</li>
-													</ol>
-												</ul>
+											<p class="headline-h5 mg-01">
+												<span class="headline-h5-sans fw-6">Goal Capital</span> es una firma con una trayectoria y reputación reconocida a nivel internacional: con asesores especializados y clientes que llegaban principalmente por recomendación. El reto era trasladar us identidad y esa misma confianza en la web y convertirla en una experiencia de acompañar al cliente.
+											</p>
+											<p class="headline-h5">
+												El rediseño transformó un sitio que solo informaba en una experiencia clara cercana. Durante la validación, los participantes completaron con éxito las tareas propuestas, incluyendo el flujo más crítico: agendar una asesoría, el punto donde anteriormente se concentraba la mayor fricción.
+											</p>
+										</div>
+									</div>
+									<div class="imagen-resultado effect-card">
+										<div class="imagen-resultado__wrapp">
+											<figure class="br-2"
+												data-scroll-image data-parallax-speed="12" >
+												<img
+												class="br-2"
+												src="/src/img/goal/laptop-landing.webp"
+												loading="lazy" decoding="async" data-nimg="1"
+												srcset="/src/img/goal/laptop-landing.webp"
+												alt="image" >
+											</figure>
+										</div>
+									</div>
+								</section>
+								<!-- resultado -->
+								<section class="role--team effect-card br-2">
+									<div class="role--team__content">
+										<div class="dflex">
+											<div class="card--wrap flex3">
+												<div class="role-card--goal content-card-white br-2 flex3 mg-01">
+													<p class="body-text-sans fw-6">Mi Rol</p>
+													<p class="body-text">
+														Diseñador UX/UI — investigación, definición, arquitectura de información, diseño de flujo, UI, y maquetación web
+													</p>
+												</div>
+												<div class="role-card--goal content-card-white br-2 flex3">
+													<p class="body-text-sans fw-6">Equipo</p>
+													<p class="body-text">Fui el único diseñadorUX/UI</p>
+												</div>
+											</div>
+											<div class="card--wrap flex3">
+												<div class="role-card--goal content-card-white br-2 flex3 mg-01">
+													<p class="body-text-sans fw-6">Cliente</p>
+													<p class="body-text">
+														Goal Capital (firma de asesoría financiera)
+													</p>
+												</div>
+												<div class="role-card--goal content-card-white br-2 flex3">
+													<p class="body-text-sans fw-6">Timeline</p>
+													<p class="body-text">
+														Diseño Desktop & Mobile: 4 semanas + Maquetación front-end: 5 semanas
+													</p>
+												</div>
 											</div>
 										</div>
 									</div>
-								</article>
-								<!-- abotut-goal-capital -->
-								<article class="about-goal">
-									<div class="about-goal__content grid">
-										<div class="info-goal">
-											<h4 class="headline-h3 fw-5 mg-04">Acerca de Goal Capital</h4>
-											<p class="body-text mg-02">
-												Es una firma de asesoría financiera que ofrece servicios de inversión, protección patrimonial y financiamiento para empresas y personas. Su sitio web funciona como canal informativo y de contacto, pero no logra atraer ni convertir a nuevos clientes de forma efectiva.
+								</section>
+								<!-- resultado -->
+								<section class="problema">
+									<div class="problema__wrapper">
+										<div class="problema--content">
+											<h4 class="headline-h1 fw-3 mg-03">El Problema</h4>
+											<p class="body-text mg-01">Un potencial cliente busca asesoría de inversión, encuentra Goal Capital, y entra a su web esperando encontrar la misma solidez que la firma tiene en el mercado. Pero la web no comunica esa trayectoria — la navegación es confusa, las herramientas de simulación se sienten como formularios largos, y el camino hacia hablar con un asesor no es evidente.
 											</p>
-
 											<p class="body-text">
-												Es una firma de asesoría financiera que ofrece servicios de inversión, protección patrimonial y financiamiento para empresas y personas. Su sitio web funciona como canal informativo y de contacto, pero no logra atraer ni convertir a nuevos clientes de forma efectiva.
+												<strong class="body-text-sans fw-5">El resultado: </strong> la mayoría de los clientes reales llegan por recomendación o marketplaces externos, no por la web — la firma tiene reputación offline, pero su experiencia digital no la sostiene.
 											</p>
-										</div>
-										<div class="web-before">
-											<article class="ipad-frame-image ipad--place-content">
-												<div class="ipad-frame-container">
-													<img class="ipad-frame"
-													src="/src/img/electric/ipad.png"
-													loading="lazy" decoding="async" data-nimg="1"
-													srcset="/src/img/electric/ipad.png 16w"
-													alt="image">
-													<figure class="ipad-screen-content">
-														<img
-														src="/src/img/goal/filosofia--1x.webp"
-														loading="lazy" decoding="async" data-nimg="1"
-														srcset="/src/img/goal/filosofia--1x.webp 16w"
-														alt="image">
-													</figure>
+											<article class="pantallas--problema">
+												<div class="pantallas--problema__content">
+													<!-- imagen 1 -->
+													<div class="pantallas--problema__item dflex">
+														<figure class="pantallas--problema__item-img flex3 br-5">
+															<img
+																src="./src/img/goal/p-home.webp"
+																loading="lazy" decoding="async" data-nimg="1"
+																srcset="/src/img/goal/p-home.webp 88w" 
+																alt="imagen home" >
+														</figure>
+														<div class="flex2">
+															<p class="text-small mg-01">
+																La página principal mostraba una estructura rígida y poco jerárquica, con un formulario protagonista pero sin un mensaje claro de valor para el usuario.
+															</p>
+															<p class="text-small">
+																Aunque comunicaba seriedad, la información estaba fragmentada y repetitiva, lo que dificultaba entender qué ofrecía realmente la firma y cómo iniciar contacto.
+															</p>
+														</div>
+													</div>
+													<!-- imagen 2 -->
+													<div class="pantallas--problema__item dflex">
+														<figure class="pantallas--problema__item-img flex3 br-5">
+															<img 
+																src="./src/img/goal/calculadora.png"
+																	loading="lazy" decoding="async" data-nimg="1"
+																	srcset="/src/img/goal/calculadora.png 16w" 
+																	alt="imagen home" >
+														</figure>
+														<div class="flex2">
+															<p class="text-small mg-01">
+																La herramienta presentaba una estructura plana y poco jerárquica, con campos alineados horizontalmente que dificultaban la lectura y el flujo visual.
+															</p>
+															<p class="text-small">
+																Los elementos interactivos, como los checkboxes, estaban mal ubicados y carecían de orientación clara, lo que generaba confusión en el usuario. El diseño no guiaba el proceso ni transmitía sensación de asistencia, provocando que la experiencia se sintiera más como llenar un formulario que como una herramienta útil y confiable.
+															</p>
+														</div>
+													</div>
+													<!-- imagen 3 -->
+													<div class="pantallas--problema__item dflex">
+														<figure class="pantallas--problema__item-img flex3 br-5">
+															<img 
+																src="./src/img/goal//blog.webp"
+																loading="lazy" decoding="async" data-nimg="1"
+																srcset="/src/img/goal//blog.webp 16w" 
+																alt="imagen home" >
+														</figure>
+														<div class="flex2">
+															<p class="text-small">
+																La sección del blog mostraba artículos sin una estructura clara ni categorías definidas. Aunque el contenido era relevante, carecía de organización y jerarquía visual, lo que dificultaba al usuario encontrar temas de interés o relacionarlos con los servicios de la firma.
+															</p>
+														</div>
+													</div>
 												</div>
+											</article>
+											<article class="problema--resumen">
+												<div class="container grid">
+													<div class="wrapp col--center">
+														<h4 class="headline-h5-sans fw-6 mg-01">
+															Resumen del problema:
+														</h4>
+														<p class="body-text">
+															El sitio no estaba diseñado con foco en el usuario: no generaba leads ni comunicaba con claridad el valor de los servicios financieros — dejando una brecha entre el posicionamiento real de la firma y su experiencia digital.
+														</p>
+													</div>
+												</div>
+											</article>
+											<article class="problema--componentes grid">
+												<div class="problema--componentes__content col--center">
+													<div class="wrapp mg-03">
+														<h4 class="headline-h5-sans fw-6 mg-01">Componentes del problema:</h4>
+													</div>
+													<div class="item--components">
+														<div class="content-item">
+															<ul class="componentes--item">
+																<li class="body-text mg-01">
+																	<strong class="body-text-sans fw-5">✦ Desalineación de marca:</strong>
+																	la web no refleja la autoridad ni trayectoria que la firma sí tiene offline.
+																</li>
+																<li class="body-text mg-01">
+																	<strong class="body-text-sans fw-5">✦ Servicios sin claridad de valor: </strong>
+																	la información sobre protección patrimonial y asesoría de inversión era limitada, dificultando que el usuario entendiera el diferencial.
+																</li>
+																<li class="body-text mg-01">
+																	<strong class="body-text-sans fw-5">✦ Contenido desaprovechado: </strong>
+																	artículos, podcast y eventos existían, pero sin una narrativa que conectara educación financiera con conversión.
+																</li>
+																<li class="body-text mg-01">
+																	<strong class="body-text-sans fw-5">✦ Herramientas de alto potencial, baja efectividad: </strong>
+																	las calculadoras podían ser el puente directo a un lead, pero su estructura poco intuitiva generaba fricción.
+																</li>
+																<li class="body-text">
+																	<strong class="body-text-sans fw-5">✦ Fricción en el contacto: </strong>
+																	el flujo de agendamiento no motivaba a la acción.
+																</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+											</article>
+											<article class="impact--nivel">
+												<h4 class="headline-h4 fw-5 mg-02">Impacto por nivel:</h4>
+												<ul class="impact--nivel-item dflex">
+													<li class="body-text item--impact flex">
+														<span class="body-text-sans fw-6">✦ Usuario:</span>
+														<br>
+														<span>
+															No llega directo a la web para buscar asesoría — mayormente no tiene información concreta ni sabe cómo buscarla dentro del sitio.
+														</span>
+													</li>
+													<li class="body-text item--impact flex">
+														<span class="body-text-sans fw-6">✦ Negocio:</span>
+														<br>
+														<span>
+															Las consultas por WhatsApp se perdían por falta de un flujo estructurado; había clientes que no llegaban a conocer la profundidad real del servicio.
+														</span>
+													</li>
+													<li class="body-text item--impact flex">
+														<span class="body-text-sans fw-6">✦ Marca:</span>
+														<br>
+														<span>
+															La web no comunicaba quiénes son, qué los diferencia, ni la continuidad del servicio más allá de la asesoría puntual.
+														</span>
+													</li>
+												</ul>
 											</article>
 										</div>
 									</div>
-								</article>
-								<!-- overview -->
-								<article class="overview grid">
-									<div class="overview__content-place">
-										<!-- challengue -->
-										<div class="challengue mg-05">
-											<h4 class="headline-h3 fw-4 mg-01">Desafío</h4>
-											<p class="body-text">
-												La web actual no está diseñada pensando en la experiencia del usuario. La navegación es confusa, los contenidos están desorganizados y la interacción con herramientas como las calculadoras es poco intuitiva. Además, el formulario de contacto no motiva a los usuarios a agendar una asesoría, generando una brecha entre la empresa y sus potenciales clientes.
-											</p>
-										</div>
-										<!-- goals -->
-										<div class="goals mg-05">
-											<h4 class="headline-h3 fw-4 mg-03">Objetivo</h4>
-											<p class="body-text">
-												Mejorar la experiencia de usuario clara, atractiva y centrada en las necesidades de los usuarios, optimizando la usabilidad, la navegación y la conversión de leads.
-											</p>
-										</div>
-										<!-- solution -->
-										<div class="solution">
-											<h4 class="headline-h3 fw-4 mg-03">Solución</h4>
-											<p class="body-text">
-												Rediseñar la web bajo un enfoque centrado en el usuario, reorganizando la arquitectura de información, optimizando la navegación y simplificando las herramientas financieras para hacerlas más intuitivas. Asimismo, se plantea un nuevo flujo de contacto más claro y persuasivo, orientado a generar confianza y facilitar la conversión de leads, alineando la experiencia con los objetivos estratégicos de la firma.
-											</p>
-										</div>
-									</div>
-								</article>
-								<!-- UX -->
-								<article class="ux grid">
-									<div class="ux__title mg-08">
-										<h2 class="head-display fw-5 mg-03">Investigación UX</h2>
-										<p class="body-text">
-											Durante la investigación hice un anállisis de competidores directos, combinando un enfoque investigación cualitativo y desktop,  lo que me permitió entender cómo las firmas financieras comunican sus servicios, generan confianza y se relacionan con sus usuarios.
-										</p>
-									</div>
-									<div class="ux__research">
-										<div class="desktop mg-04">
-											<h5 class="headline-h4 fw-4 mg-01">Investigación Desktop</h5>
-											<p class="body-text">
-												Las firmas financieras revelan que el contenido educativo (webinars, artículos, guías) genera hasta 30% más leads calificados que la publicidad directa, ya que los usuarios prefieren informarse antes de dejar sus datos. También se identificó que formularios largos y poco claros provocan abandono (62%) y que la confianza visual y la usabilidad impactan directamente en la conversión, las prácticas más efectivas incluyen formularios breves, CTA visibles y optimización móvil, aumentando la captación de leads hasta en un 25%.
-											</p>
-										</div>
-										<div class="ux__overview-ux mg-08">
-											<h5 class="headline-h3 fw-4 mg-02">Entrevistas</h5>
-											<div class="overview-ux--stake mg-03">
-												<p class="headline-h5-sans fw-4">✦ Stakeholder</p>
-												<p class="body-text mg-01">
-													Durante las entrevistas, los socios de Goal Capital coincidieron en que la web actual no refleja su trayectoria ni reputación profesional. A pesar de contar con los años de experiencia y una amplia oferta de inversión, el sitio no comunica confianza ni genera leads, ya que los usuarios llegan por canales externos.
-												</p>
+								</section>
+								<!-- research -->
+								<section class="research">
+									<div class="research__content">
+										<div class="research--header grid">
+											<div class="col col--head">
+												<h4 class="headline-h1 fw-3 mg-03">
+													Investigación
+												</h4>
 												<p class="body-text">
-													Expresaron la necesidad de convertir la web en una herramienta de conexión y conversión, que muestre su identidad financiera, contenido educativo y asesoría personalizada. También señalaron la falta de claridad en la navegación y formularios poco intuitivos como los principales obstáculos para atraer nuevos clientes.
-												</p>
-											</div>
-											<div class="overview-ux--stake">
-												<p class="headline-h5-sans fw-4">✦ Clientes</p>
-												<p class="body-text mg-01">
-													Con los clientes surgió que valoran la transparencia, credibilidad y seguridad al buscar asesoría financiera. Esperan una web con información clara, testimonios reales y contacto directo con asesores, que les permita evaluar riesgos y tomar decisiones con confianza.
+													Se combinó investigación desktop (análisis de mercado sobre generación de leads en firmas de asesoría financiera) con entrevistas a los socios de Goal Capital y usuarios.
 												</p>
 											</div>
 										</div>
-										<div class="ux__conclusion mg-08">
-											<p class="body-text mg-02">
-												Con la información recopilada de las entrevistas a los socios de Goal Capital, organicé sus respuestas en un diagrama de afinidad para identificar las principales prioridades del negocio. Coincidieron en la necesidad de reforzar la credibilidad y reflejar la trayectoria de la firma en el entorno digital, destacando su experiencia, valores y servicios con una comunicación más clara y profesional.
-											</p>
-											<p class="body-text">
-												De las entrevistas con stakeholders y clientes identifiqué 3 patrones recurrentes, que se tradujeron en estos 5 problemas de diseño:
-											</p>
-										</div>
-										<div class="statement mg-08">
-											<div class="problem-home mg-04">
-												<h5 class="headline-h5-sans fw-4">✦ Problema N°1</h5>
-												<div class="body-problem">
-													<p class="body-text mg-01">
-														Desalineación entre la marca
-													</p>
-													<p class="body-text mg-02">
-														Cuenta con sólida trayectoria y reconocimiento en el sector financiero; sin embargo, su sitio web no refleja esa autoridad. La mayoría de los clientes llegan por recomendación o marketplaces externos, lo que evidencia que la web no funciona como canal activo de captación.
-													</p>
-													<p class="body-text">
-														Existe una brecha entre el posicionamiento offline de la firma y la experiencia digital que ofrece, debilitando su potencial como herramienta estratégica de conversión.
-													</p>
+										<article class="entrevistas">
+											
+											<div class="imagen-entrevistas dflex">
+												<figure class="flex2">
+													<img 
+														src="./src/img/goal/stakeholder--interview.png"
+														loading="lazy" decoding="async" data-nimg="1"
+														srcset="./src/img/goal/stakeholder--interview.png 16w" 
+														alt="imagen entrevista" >
+												</figure>
+												<figure class="flex2">
+													<img 
+														src="./src/img/goal/user--interview.png"
+														loading="lazy" decoding="async" data-nimg="1"
+														srcset="./src/img/goal/user--interview.png 16w" 
+														alt="imagen entrevista" >
+												</figure>
+											</div>
+										</article>
+										<article class="explore effect-card br-2">
+											<div class="explore--content dflex content-card-white">
+												<div class="explore--card flex2">
+													<p class="body-text-sans fw-3 mg-02">Qué exploré</p>
+													<ul class="">
+															<li class="body-text">
+																✦ Cómo firmas de asesoría financiera generan y convierten leads.
+															</li>
+															<li class="body-text">
+																✦ Qué hace que un usuario abandone el proceso de contacto.
+															</li>
+															<li class="body-text">
+																✦ Qué esperaban los socios de la web.
+															</li>
+															<li class="body-text">
+																✦ Qué esperaban los usuarios al buscar asesoría financiera.
+															</li>
+													</ul>
+												</div>
+												<div class="explore--card flex2">
+													<p class="body-text-sans fw-3 mg-02">Qué encontré</p>
+													<ul class="">
+															<li class="body-text">
+																✦ Los usuarios eligen informarse antes de dejar sus datos.
+															</li>
+															<li class="body-text">
+																✦ Formulario poco claro que genera abandono; la confianza visual y la usabilidad impactan directamente la conversión.
+															</li>
+															<li class="body-text">
+																✦ Que refleje su trayectoria y reputación profesional, actualmente los clientes llegan por canales externos, no por la web.
+															</li>
+															<li class="body-text">
+																✦ Transparencia, credibilidad, testimonios reales y contacto directo con un asesor.
+															</li>
+													</ul>
 												</div>
 											</div>
-											<div class="problem- mg-04">
-												<h5 class="headline-h5-sans fw-4">✦ Problema N°2</h5>
-												<div class="body-problem">
-													<p class="body-text">
-														Servicios que no comunican seguridad ni valor diferencial
-													</p>
-													<p class="body-text">
-														Los servicios financieros, especialmente en protección patrimonial, requieren transmitir confianza y claridad. Sin embargo, la información presentada era limitada y poco estratégica, dificultando que los usuarios comprendan el alcance, beneficios y diferenciadores de la firma.
-													</p>
-												</div>
+										</article>
+									</div>
+								</section>
+								<section class="insigth--goal">
+									<div class="insigth--goal__wrapper">
+										<div class="insigth--goal--header grid">
+											<div class="insigth--goal-content col col--head">
+												<h4 class="headline-h4 fw-4 mg-02">
+													Insights
+												</h4>
+												<ul>
+													<li class="body-text mg-01">
+														<strong class="body-text-sans">
+															I1:
+														</strong>
+														Los usuarios sienten desconfianza al no entender con claridad los servicios financieros ofrecidos.
+													</li>
+													<li class="body-text mg-01">
+														<strong class="body-text-sans">
+															I2:
+														</strong>
+														Los usuarios abandonan el formulario de asesoría por ser extenso y poco guiado.
+													</li>
+													<li class="body-text mg-01">
+														<strong class="body-text-sans">
+															I3:
+														</strong>
+														Los usuarios usan las herramientas de simulación pero no saben qué hacer con el resultado, falta un siguiente paso claro.
+													</li>
+													<li class="body-text">
+														<strong class="body-text-sans">
+															I4:
+														</strong>
+														Los socios quieren mostrar su trayectoria y logros, pero el sitio actual no lo transmite.
+													</li>
+												</ul>
 											</div>
-											<div class="problem-blog mg-04">
-												<h5 class="headline-h5-sans fw-4">✦ Problema N°3</h5>
-												<div class="body-problem">
-													<p class="body-text mg-02">El contenido como artículos, noticias, eventos, podcast, están desaprovechado como herramienta de posicionamiento</p>
-													<p class="body-text">
-														A pesar de contar con artículos, eventos, entrevistas y podcasts, el contenido no estaba estructurado como un ecosistema estratégico. No existía una narrativa clara que conectara la educación financiera con la conversión.
-													</p>
-												</div>
-											</div>
-											<div class="problem-tools mg-04">
-												<h5 class="headline-h5-sans fw-4 mg-01">✦ Problema N°4</h5>
-												<div class="body-problem">
-													<p class="body-text mg-01">Herramientas con alto potencial, pero baja efectividad</p>
-													<p class="body-text">
-														Las calculadoras y perfiles financieros podían ser un puente directo hacia la generación de leads. Sin embargo, su estructura poco intuitiva y jerarquía visual limitada reducían su impacto. Las herramientas no están en orientación estratégica, se percibían como formularios extensos, generando fricción en el proceso.
-													</p>
-												</div>
-											</div>
-											<div class="problem-chatbot">
-												<h5 class="headline-h5-sans fw-4 mg-01">✦ Problema N°5</h5>
-												<div class="body-problem">
-													<p class="body-text mg-01">
-														Fricción en el contacto y agendamiento de asesorías
-													</p>
-													<p class="body-text">
-														La conexión con un asesor debe ser simple y rápida. Sin embargo, el flujo de contacto no motivaba a la acción. La falta de claridad y fluidez en el proceso de agendamiento generaba abandono, afectando directamente la captación de nuevos clientes.
-													</p>
-												</div>
-											</div>
-										</div>
-										<div class="result">
-											<h5 class="headline-h3 fw-4 mg-01">Conclusión de la investigación</h5>
-											<p class="body-text mg-01">
-												Durante la investigación identifiqué el problema de la web, iba más allá de lo visual: era una cuestión de estrategia, comunicación y confianza. Aunque la firma tenía una identidad fuerte y bien posicionada en el mercado financiero, su sitio web no lograba transmitir esa confianza en conectar con los usuarios, buscaban orientación clara, contacto y una experiencia más cercana.
-											</p>
-											<p class="body-text">
-												Este contraste marcó el rumbo del rediseño: Transformar la web en una experiencia digital confiable, transparente y empática, donde cada usuario pueda comprender, interactuar y tomar decisiones financieras con seguridad.
-											</p>
 										</div>
 									</div>
-								</article>
-								<!-- definition -->
-								<article class="ideation">
-									<div class="ideation__content grid">
-										<div class="ideation__content-description mg-06">
-											<h2 class="head-display fw-4 mg-03">Definición & Ideación</h2>
-											<p class="body-text">
-												El sitio web actual de Goal Capital no logra comunicar de manera clara el valor de sus servicios ni generar confianza suficiente para motivar a los usuarios a solicitar una asesoría. Los usuarios no entienden fácilmente qué ofrece la firma, encuentran fricción en los formularios y abandonan antes de completar una acción. Como resultado, la web no está cumpliendo su objetivo principal: convertir visitantes en leads calificados.
-											</p>
+								</section>
+								<!-- benchmark -->
+								<section class="benchmark">
+									<div class="benchmark__wrapper">
+										<div class="benchmark--header grid">
+											<div class="col col--head">
+												<h4 class="headline-h4 fw-4 mg-01">
+													Benchmark competitivo
+												</h4>
+												<p class="body-text">
+													En la entrevista la firma confirmaron en la entrevista inicial que no tienen competencia directa en su segmento. Por eso el benchmark se construyó sobre 3 firmas de asesoría financiera como competencia indirecta: Pristine Capital Group, Aspain11 y Estudioshaddai.
+												</p>
+											</div>
 										</div>
-										<div class="ideation__table-insight">
-											<table class="table-data-label" style="width: 100%; border-collapse: collapse;">
+										<figure class="benchmark--imagen">
+											<img 
+												class="flex2"
+												src="./src/img/goal/bench--goal.webp"
+												loading="lazy" decoding="async" data-nimg="1"
+												srcset="./src/img/goal/bench--goal.webp 16w" 
+												alt="imagen entrevista" >
+										</figure>
+										<article class="cards-benchmark effect-card dflex br-2">
+											<div class="card-bench flex2">
+												<p class="body-text-sans fw-6 text-green mg-02">
+													Dónde funcionaron (competencia)
+												</p>
+												<div class="group--item-benchmark ">
+													<div class="bb-line div--line">
+														<p class="body-text">
+															Estudioshaddai — buena arquitectura de información, navegación fácil, blog activo, carga de 1 segundo, 100% responsive.
+														</p>
+													</div>
+													<div class="bb-line div--line">
+														<p class="body-text">
+															Pristine Capital Group — buena estructura, información relevante e iterativa, carga rápida (2s), estilo visual coherente.
+														</p>
+													</div>
+													<div class="div--line">
+														<p class="body-text">
+															
+														</p>
+													</div>
+												</div>
+											</div>
+											<div class="card-bench flex2">
+												<p class="body-text-sans fw-6 text-red mg-02">
+													Dónde fallaba Montesur en comparación
+												</p>
+												<div class="group--item-benchmark ">
+													<div class="bb-line div--line">
+														<p class="body-text">
+															Aspain11 — sin estructura clara, navegación poco intuitiva, blog inactivo, baja accesibilidad (no compatible con W3C).
+														</p>
+													</div>
+													<div class="bb-line div--line">
+														<p class="body-text">
+															Pristine Capital Group — blog inactivo y contenido desactualizado, pese a tener buena estructura.
+														</p>
+													</div>
+													<div class="div--line">
+														<p class="body-text">
+															Estudioshaddai — algunas secciones visualmente desequilibradas, navegación aún mejorable.
+														</p>
+													</div>
+												</div>
+											</div>
+										</article>
+										<article class="conflicto grid">
+											<div class="coflicto--content col">
+												<h4 class="headline-h4 fw-4 mg-02">
+													Patrón transversal(oportunidad clara para Goal Capital)
+												</h4>
+												<p class="body-text">
+													Ninguna de las tres tiene sección de comentarios en su blog, y las tres muestran una interacción "poco viable" en su diseño eso señala de que el sector de asesoría financiera en general subinvierte en interacción y engagement de contenido, no solo en conversión.
+												</p>
+											</div>
+										</article>
+									</div>
+								</section>
+								<!-- user -->
+								<div class="user frame-top">
+									<h4 class="headline-h4 fw-4 mg-01">User persona</h4>
+									<figure class="user-figure">
+										<img
+											src="/src/img/goal/user-01.webp"
+											loading="lazy" decoding="async" data-nimg="1"
+											srcset="/src/img/goal/user-01.webp 200w 80w"
+											alt="image" >
+										<img
+											src="/src/img/montesur/user-02.webp"
+											loading="lazy" decoding="async" data-nimg="1"
+											srcset="/src/img/montesur/user-02.webp 200w 80w"
+											alt="image" >
+									</figure>
+								</div>
+								<section class="definition definition--goal">
+									<div class="definition__content definition--goal__content">
+										<div class="definition--titles">
+											<h2 class="headline-h1 fw-4 mg-03">Definición</h2>
+											<h4 class="headline-h4">
+												HMW — ¿Cómo podríamos?
+											</h4>
+										</div>
+										<table class="table-data-label-goal" style="width: 100%; border-collapse: collapse;">
 												<thead>
 													<tr class="">
-														<th class="body-text-sans fw-4 tr--column">Insights</th>
-														<th class="body-text-sans fw-4 tr--column">POV (Point of View)</th>
-														<th class="body-text-sans fw-4 tr--column">¿Cómo podríamos? (HMW)</th>
+														<th class="body-text-sans fw-5 tr--column">Insights</th>
+														<th class="body-text-sans fw-5 tr--column">POV (Point of View)</th>
+														<th class="body-text-sans fw-5 tr--column">¿Cómo podríamos? (HMW)</th>
 													</tr>
 												</thead>
 												<tbody>
 													<!-- tr 1 -->
-													<tr	>
+													<tr>
 														<td class="text-small fw-2 tr--column">
 															Los usuarios sienten desconfianza al no entender claramente los servicios financieros.
 														</td>
@@ -338,438 +603,462 @@
 														</td>
 													</tr>
 												</tbody>
-											</table>
-										</div>
+										</table>
 									</div>
-								</article>
-								<!-- ai  -->
-								<article class="site-map_goal">
-									<div class="site-map_goal__content grid">
-										<div class="head--text mg-05">
-											<h5 class="headline-h5-sans fw-5 mg-01">Mapa de Sitio</h5>
-											<p class="body-text">
-												Para comenzar a restructurar la arquitectura de la pagina web, creé un mapa para organizar las pantallas de una manera que fuera lógica e intuitiva para nuestro usuario.
-											</p>
-										</div>
-										<div class="user-flow__image">
-											<img
-												src="/src/img/goal/site-map.webp"
-												loading="lazy" decoding="async" data-nimg="1"
-												srcset="/src/img/goal/site-map.webp 16w"
-												alt="image" >
-										</div>
-									</div>
-								</article>
-								<!-- user-flow -->
-								<article class="user-flow">
-									<div class="user-flow__space grid">
-										<div class="user-flow__text">
-											<h5 class="headline-h5-sans fw-5 mg-01">Flujo de Usuario</h5>
-											<p class="body-text">
-												Para comenzar a restructurar la arquitectura de la pagina web, creé un mapa para organizar las pantallas de una manera que fuera lógica e intuitiva para nuestro usuario.
-											</p>
-										</div>
-										<div class="user-flow__image">
-											<img
-												src="/src/img/goal/user-flow.webp"
-												loading="lazy" decoding="async" data-nimg="1"
-												srcset="/src/img/goal/user-flow.webp 16w"
-												alt="image" >
-										</div>
-									</div>
-								</article>
-								<!-- user-flow -->
-								<article class="desicion grid">
-									<div class="desicion__title mg-07">
-										<h2 class="head-display fw-4">Decisiones clave de diseño</h2>
-									</div>
-									<div class="desicion__design">
-										<!-- home -->
-										<div class="home mg-09">
-											<h5 class="headline-h5-sans fw-4 mg-01">Home</h5>
-											<div class="content-image-home dflex">
-												<figure class="image-old image--home flex1">
-													<img
-													src="/src/img/goal/home-before.png"
-													loading="lazy" decoding="async" data-nimg="1"
-													srcset="/src/img/goal/home-before.png 16w"
-													alt="image">
-													<figcaption>
-														<p class="text-small tag mg-01">Antes</p>
-														<p class="text-small">
-															La página principal mostraba una estructura rígida y poco jerárquica, con un formulario protagonista pero sin un mensaje claro de valor para el usuario. Aunque comunicaba seriedad, lo que dificultaba entender qué ofrecía realmente la firma.
-														</p>
-													</figcaption>
-												</figure>
-												<figure class="image-new image--home flex1">
-													<img
-													src="/src/img/goal/landing.webp"
-													loading="lazy" decoding="async" data-nimg="1"
-													srcset="/src/img/goal/landing.webp 16w"
-													alt="image">
-													<figcaption>
-														<p class="text-small tag mg-01">Después</p>
-														<p class="text-small">
-															Con el rediseño transmite claridad la identidad y solidez, priorizando una navegación más intuitiva. Se destacaron los servicios y herramientas con mensajes claros, se integraron contenidos educativos como el blog y los podcasts, y se optimizó el flujo de interacción con CTA visibles y directos.
-														</p>
-													</figcaption>
-												</figure>
-											</div>
-										</div>
-										<!-- tools -->
-										<div class="tools mg-09">
-											<h5 class="headline-h5-sans fw-4 mg-04">Herramientas / Calculadora de Seguros de Vida</h5>
-											<div class="content-image-home dflex">
-												<figure class="image-old flex1">
-													<img
-													src="/src/img/goal/calculadora.png"
-													loading="lazy" decoding="async" data-nimg="1"
-													srcset="/src/img/goal/calculadora.png 16w"
-													alt="image">
-													<figcaption>
-														<p class="text-small tag mg-01">Antes</p>
-														<p class="text-small">
-															La herramienta mostraba una disposición confusa y poco guiada, con campos desalineados horizontalmente y falta de claridad en los campos de iteración para marcas y completar. La falta de orientación hacía que el proceso se sintiera mecánico, restando claridad y confianza al usuario.
-														</p>
-													</figcaption>
-												</figure>
-												<figure class="image-new flex1">
-													<img
-													src="/src/img/goal/calculadora-after.webp"
-													loading="lazy" decoding="async" data-nimg="1"
-													srcset="/src/img/goal/calculadora-after.webp 16w"
-													alt="image">
-													<figcaption>
-														<p class="text-small tag mg-01">Despues</p>
-														<p class="text-small">
-															El formulario muestra una jerarquía visual clara y un flujo más intuitivo, facilitando que los usuarios comprendan cada paso. Se incorporaron iconos de ayuda para brindar información contextual y checkboxes con mejor orientación, logrando una interacción más guiada, accesible y coherente con las buenas prácticas UX.
-														</p>
-													</figcaption>
-												</figure>
-											</div>
-										</div>
-										<!-- tools -->
-										<div class="blog mg-09">
-											<h5 class="headline-h5-sans fw-4 mg-04">Blog</h5>
-											<div class="content-image-home dflex">
-												<figure class="image-old flex1">
-													<img
-													src="/src/img/goal/blog-old.webp"
-													loading="lazy" decoding="async" data-nimg="1"
-													srcset="/src/img/goal/blog-old.webp 16w"
-													alt="image">
-													<figcaption>
-														<p class="text-small tag mg-01">Antes</p>
-														<p class="text-small">
-															La sección del blog muestra artículos sin una estructura clara ni categorías definidas. Aunque el contenido era relevante, carecía de organización y jerarquía visual, lo que dificultaba al usuario encontrar temas de interés o relacionarlos con los servicios de la firma.
-														</p>
-													</figcaption>
-												</figure>
-												<figure class="image-new flex1">
-													<img
-													src="/src/img/goal/blog.webp"
-													loading="lazy" decoding="async" data-nimg="1"
-													srcset="/src/img/goal/blog.webp 16w"
-													alt="image">
-													<figcaption>
-														<p class="text-small tag mg-01">Después</p>
-														<p class="text-small">
-															El rediseño propone una sección más estratégica y educativa, donde el contenido se organiza por categorías y tipos de publicaciones (eventos, entrevistas, noticias y artículos financieros). El objetivo es que el blog no solo informe, sino que también eduque, conecte y guíe al usuario dentro del ecosistema de asesoría financiera de Goal Capital.
-														</p>
-													</figcaption>
-												</figure>
-											</div>
-										</div>
-										<!-- tools -->
-										<div class="chat-bot">
-											<h5 class="headline-h5-sans fw-4 mg-04">ChatBot</h5>
-											<p class="body-text">Así abordé y amplié este problema:</p>
-											<div class="content-image">
-												<figure class="image image-wireframe">
-													<img
-													src="/src/img/goal/wireframes/chatbot.webp"
-													loading="lazy" decoding="async" data-nimg="1"
-													srcset="/src/img/goal/wireframes/chatbot.webp 16w"
-													alt="image">
-													<figcaption>
-														<p class="body-text mg-02">
-															La investigación mostró que los usuarios no querían solo dejar sus datos, sino recibir orientación inmediata y sentirse acompañados. El problema no era el canal, sino la fricción de los formularios tradicionales, percibidos como impersonales.
-														</p>
-														<p class="body-text">
-															La solución fue diseñar un chat Bot con identidad de marca, integrado en el recorrido del usuario. A través de un flujo simple seleccionar servicio, completar datos y recibir confirmación inmediata el contacto se transforma en una conversación guiada.
-														</p>
-													</figcaption>
-												</figure>
-												<div class="result">
-													<p class="headline-h5-sans mg-03">Resultado</p>
-													<figure class="image">
-														<img
-														src="/src/img/goal/chatbot-design.webp"
-														loading="lazy" decoding="async" data-nimg="1"
-														srcset="/src/img/goal/chatbot-design.webp 16w"
-														alt="image">
-														<figcaption>
-															<p class="body-text mg-02">
-																Tras la validación de la prueba de usabilidad, el Chat Bot evolucionó hacia una experiencia limpia, clara y fácil de entender. No se diseñó como un bot automático más, sino como un asistente financiero digital que guía con naturalidad y transmite confianza en cada paso.
-															</p>
-															<p class="body-text">
-																El resultado final es una interacción conversacional simple, coherente con la marca y orientada a la acción, donde el usuario no siente que está completando un formulario, sino iniciando una conversación real para tomar decisiones con mayor seguridad.
-															</p>
-														</figcaption>
+									<!-- task flow -->
+									<div class="user-flow frame-top">
+										<div class="user-flow__content">
+											<h4 class="headline-h5-sans fw-4">
+												Flujo de usuario
+											</h4>
+											<div class="effect-card br-2">
+												<div class="content-card-white br-2">
+													<figure class="figure--user-flow">
+														<img src="./src/img/goal/user-flow.webp"
+															loading="lazy" decoding="async" data-nimg="1"
+															srcset="/src/img/goal/user-flow.webp 16w" 
+														alt="">
 													</figure>
 												</div>
 											</div>
 										</div>
 									</div>
-								</article>
-								<!-- user-flow -->
-								<article class="impact grid">
-									<div class="impact__title">
-										<h2 class="head-display fw-4 mg-03">Impacto</h2>
-										<p class="body-text mg-02">
-											Para validar la efectividad del rediseño, realicé pruebas de usabilidad remotas y moderadas con 5 participantes, entre clientes potenciales y actuales.
+									<!-- task flow -->
+									<div class="site-map frame-top">
+										<div class="site-map__content">
+											<div class="site-map--description grid">
+												<div class="site-map--frame col--head">
+													<h4 class="headline-h5-sans fw-4 mg-01">
+														Mapa de Sitio
+													</h4>
+												</div>
+											</div>
+											<div class="effect-card br-2">
+												<figure class="site-map-figure content-card-white br-2">
+													<img 
+														src="./src/img/goal/site-map.webp"
+														loading="lazy" decoding="async" data-nimg="1"
+														srcset="./src/img/goal/site-map.webp 200w 80w 16w" 
+														alt="imagen mapa de sitio" >
+												</figure>
+											</div>
+										</div>
+									</div>
+								</section>
+								<!-- solución -->
+								<section class="solution">
+									<article class="solution__wrapper">
+										<article class="solution--description">
+											<h2 class="headline-h2 fw-4 mg-03">Solución</h2>
+											<div class="clave-design grid">
+												<div class="clave-design--content col--center">
+													<h5 class="headline-h5-sans fw-4 mg-02">
+														Decisiones clave de diseño
+													</h5>
+													<ul>
+														<li class="body-text mg-02">
+															<strong class="body-text-sans fw-5">✦ Qué encontramos: </strong> Durante la investigación identificamos que el problema no era solo visual. Cada canal funcionaba de forma aislada: las calculadoras entregaban un resultado sin siguiente paso, el formulario de contacto no se sentía parte del mismo flujo que las herramientas, y la información de servicios (Asesoría en Inversiones, Protección Patrimonial) no estaba organizada de forma que comunicara el valor real de cada uno. El benchmark con competencia indirecta confirmó además que todo el sector subinvierte en interacción no es solo un problema, es una oportunidad de diferenciación real.
+														</li>
+														<li class="body-text">
+															<strong class="body-text-sans fw-5">✦ Qué resolvimos: </strong>
+															Reorganizamos la arquitectura de información por tipo de servicio, para que cada uno comunique su propio valor en vez de competir por el mismo espacio. Rediseñamos las calculadoras (perfil inversionista, inversiones, seguros de vida) para que cada resultado conecte directamente con una acción concreta — agendar en vez de terminar en un dato suelto. E integramos el agendamiento dentro de un chatbot pensado como asistente financiero, no como un formulario más, centralizando en un solo flujo de 3 pasos lo que antes estaba disperso.
+														</li>
+													</ul>
+												</div>
+											</div>
+										</article>
+										<article class="solution--study">
+											<!-- solución 1 -->
+											<div class="card--solution dflex mg-t3">
+												<div class="flex frame--card">
+													<p class="text-small-sans fw-6 mg-01">
+														01 — Como usuario que busca asesoría, quiero entender con claridad qué ofrece Goal Capital, para decidir con confianza antes de dejar mis datos.
+													</p>
+													<p class="text-small">
+														<span class="text-small-sans fw-4">Antes: </span> 
+														información limitada y poco estratégica sobre los servicios.
+													</p>
+													<p class="text-small">
+														<span class="text-small-sans fw-4">Después: </span> 
+														Con la arquitectura de información reorganizada por tipo de servicio, con jerarquía clara entre Asesoría en Inversiones y Protección Patrimonial.
+													</p>
+												</div>
+												<div class="flex2 effect-card br-2">
+													<figure class="figure--solution">
+														<img
+															src="/src/img/goal/home--s01.webp"
+															loading="lazy" decoding="async" data-nimg="1"
+															srcset="/src/img/goal/home--s01.webp 16w"
+															alt="imagen home" >
+													</figure>
+												</div>
+											</div>
+											<!-- solución 2 -->
+											<div class="card--solution dflex mg-t3">
+												<div class="flex frame--card">
+													<p class="text-small-sans fw-6 mg-01">
+														02 — La calculadora financiera es una herramienta que simula escenarios referenciales según monto, plazo y tasa estimada para apoyar un análisis.
+													</p>
+													<p class="text-small">
+														<strong class="text-small-sans fw-4">Antes: </strong>
+														Las herramientas percibidas como formularios extensos, sin orientación posterior.
+													</p>
+													<p class="text-small">
+														<strong class="text-small-sans fw-4">Después: </strong>
+														Calculadoras rediseñadas (perfil inversionista, calculadora de inversiones y calculadora de seguros de vida) que conectan el resultado directamente con una acción para agendar una asesoría.
+													</p>
+												</div>
+												<div class="flex2 effect-card br-2">
+													<figure class="figure--solution">
+														<img 
+															src="./src/img/goal/s--calculadora.png"
+															loading="lazy" decoding="async" data-nimg="1"
+															srcset="/src/img/goal/s--calculadora.png 88w" 
+															alt="imagen home" >
+													</figure>
+												</div>
+											</div>
+											<!-- solución 3 -->
+											<div class="card--solution dflex mg-t3">
+												<div class="flex frame--card">
+													<p class="text-small-sans fw-6 mg-01">
+														03 — Como usuario listo para hablar con un asesor, quiero un contacto rápido y humano, no un formulario impersonal
+													</p>
+													<p class="text-small">
+														<strong class="text-small-sans fw-4">Antes:</strong> El problema no era la ausencia de un canal de contacto, sino la fricción de la experiencia — los formularios tradicionales generaban abandono justo en el momento de mayor intención.
+													</p>
+													<p class="text-small">
+														<strong class="text-small-sans fw-4">Después:</strong> Un chatbot diseñado como asistente financiero (no como captador de datos), con un flujo de 3 pasos: seleccionar servicio → completar datos básicos → confirmación inmediata que refuerza la seguridad del proceso.
+													</p>
+												</div>
+												<div class="flex2 effect-card br-2">
+													<figure class="figure--solution">
+														<img
+															src="/src/img/goal/chatbot-design.webp"
+															loading="lazy" decoding="async" data-nimg="1"
+															srcset="/src/img/goal/chatbot-design.webp 16w"
+															alt="imagen home" >
+													</figure>
+												</div>
+											</div>
+											<!-- solución 4 -->
+											<div class="desicion--goal">
+												<div class="desicion--goal__content">
+													<ul>
+														<li class="body-text-sans fw-5 mg-02">
+															✦ Otras decisiones de solución:
+														</li>
+														<li class="text-small mg-01">
+															✦ Navegación optimizada para conectar con un asesor en el menor tiempo posible.
+														</li>
+														<li class="text-small mg-01">
+															✦ CTA visibles para agendar citas gratuitas.
+														</li>
+														<li class="text-small">
+															✦ Canal de podcast y sección de artículos/noticias con jerarquía por categoría, en vez de un listado plano.
+														</li>
+													</ul>
+												</div>
+											</div>
+										</article>
+									</article>
+								</section>
+								<!-- validación -->
+								<section class="validation validation--goal">
+									<div class="validation__content">
+										<h4 class="headline-h4 fw-4 mg-02">Validación</h4>
+										<p class="body-text">
+											3 usuarios finales, 3 tareas evaluadas. (Nota: no se conservó el registro detallado de la sesión — las cifras siguientes son el promedio recordado, no un dataset exacto.)
 										</p>
-										<p class="body-text mg-02">
-											Se evaluaron tareas clave:
-										</p>
-										<ul>
-											<li class="body-text mg-01">
-												✲ Agendar una asesoría mediante el chatbot
-											</li>
-											<li class="body-text mg-01">
-												✲ Utilizar herramientas financieras
-											</li>
-											<li class="body-text mg-04">
-												✲ Encontrar información sobre servicios
-											</li>
-										</ul>
-										<div class="dflex">
-											<ul class="flex1">
-												<li class="headline-h5-sans fw-4 mg-02">
-													✦ Resultados Cuantitativos
+										<div class="validation--table-goal effect-card br-2">
+											<div class="">
+												<table class="table-data-label br-2">
+													<thead>
+														<tr>
+															<th class="body-text-sans fw-4" style="width: 28%;">Tarea</th>
+															<th class="body-text-sans fw-4" style="width: 10%;">Éxito</th>
+															<th class="body-text-sans fw-4" style="width: 12%;">Impacto</th>
+															<th class="body-text-sans fw-4" style="width: 50%;">Recomendación</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td class="body-text" style="width: 28%;">Encontrar la sección de herramientas y usar la calculadora</td>
+															<td class="body-text" style="width: 10%;">3/3</td>
+															<td class="body-text" style="width: 12%;">Medio</td>
+															<td class="body-text" style="width: 50%;">Revisar affordance del input desplegable; validar estado visual del botón "Seleccionado"</td>
+														</tr>
+														<tr>
+															<td class="body-text" style="width: 28%;">Interactuar con el chatbot y solicitar asesoría</td>
+															<td class="body-text" style="width: 10%;">3/3</td>
+															<td class="body-text" style="width: 12%;">Medio</td>
+															<td class="body-text" style="width: 50%;">Mantener flujo; agregar spinner de carga tras enviar el formulario dentro del chat</td>
+														</tr>
+														<tr>
+															<td class="body-text" style="width: 28%;">Agendar asesoría y completar el formulario</td>
+															<td class="body-text" style="width: 10%;">3/3</td>
+															<td class="body-text" style="width: 12%;">Alto</td>
+															<td class="body-text" style="width: 50%;">1 de 3 usuarios demoró unos segundos más en completar esta tarea — revisar el punto de fricción específico antes de dar por cerrada la mejora</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+
+										</div>
+										<div class="validation--result">
+											<p class="body-text mg-02">
+												Los 3 participantes completaron las 3 tareas propuestas. La de mayor impacto (agendar asesoría) fue también la única con una demora perceptible en 1 de los 3 usuarios — coherente con haber sido, en el research inicial, el punto de mayor fricción identificado.
+											</p>
+											<ul class="result--mejoras">
+												<li class="body-text-sans mg-02">
+													Mejoras implementadas tras el testeo:
 												</li>
 												<li class="body-text mg-01">
-													✲ Duración promedio: 2 minutos por tarea
+													<strong class="body-text-sans fw-4">Chatbot: </strong> spinner de carga al completar el formulario, con mensaje de confirmación ("su solicitud ha sido enviada"); ajuste de padding en el cuerpo del chat.
 												</li>
-												<li class="body-text mg-01">
-													✲ Tasa de finalización: 95%
-												</li>
-												<li class="body-text mg-03">
-													✲ Errores críticos: 0
+												<li class="body-text">
+													Reducción de espaciado entre secciones.
 												</li>
 											</ul>
-											<div class="flex1">
-												<p class="headline-h5-sans fw-4 mg-01">
-													✦ Resultados Cualitativos
-												</p>
-												<p class="body-text mg-03">
-													Durante las sesiones, los participantes describieron la experiencia como:
-												</p>
-												<ul>
-													<li class="body-text">
-														✲ Mejor experiencia y navegación
-													</li>
-													<li class="body-text">
-														✲ Confiable y profesional
-													</li>
-													<li class="body-text mg-03">
-														✲ Más fácil para contactar a un asesor
-													</li>
-												</ul>
-											</div>
 										</div>
-										<p class="body-text">
-											El 80% expresó sentirse más seguro al interactuar con el chatbot en comparación con un formulario tradicional.
-										</p>
 									</div>
-								</article>
-								<!-- UI DESIGN -->
-								<article class="ui">
-									<div class="ui__content grid">
-										<div class="ui__wrapper">
-											<article class="spacing-section">
-												<h5 class="headline-h5 white mg-05">Espaciado</h5>
-												<figure class="spacing-ima">
-													<img
-														src="/src/img/goal/spacing.webp"
-														loading="lazy" decoding="async" data-nimg="1"
-														srcset="/src/img/goal/spacing.webp 16w"
-														alt="image">
-													<figcaption class="body-text white">
-														Usamos múltiplos de 8px para el espaciado y margen para el diseño. Aplicamos para tipografía, botones, espaciado, etc.
-													</figcaption>
-												</figure>
-											</article>
-											<article class="grid-section">
-												<h5 class="headline-h5 white mg-05">Grid</h5>
-												<div class="device-size dflex">
-													<!-- UI 1 -->
-													<figure class="device--desktop flex2">
-														<img class="img-desktop"
-														src="/src/img/goal/grid-desktop.png"
-														loading="lazy" decoding="async" data-nimg="1"
-														srcset="/src/img/goal/grid-desktop.png 16w"
-														alt="image">
-														<figcaption class="figure-description white">
-															<p class="font-body-tiny">Desktop / 1440PX</p>
-															<ul>
-																<li class="font-body-tiny">Column: 12</li>
-																<li class="font-body-tiny">Gutter: 24px</li>
-																<li class="font-body-tiny">Margin: 48px</li>
-															</ul>
-														</figcaption>
-													</figure>
-													<!-- UI 2 -->
-													<figure class="device--mobile flex1">
+								</section>
+								<!-- impacto -->
+								<!-- ui-kit -->
+								<section class="ui-kit">
+									<div class="ui-kit__wrapper">
+										<h4 class="headline-h1 fw-4">Guía de Estilos</h4>
+										<div class="ui-kit-content">
+												<!-- COLOR -->
+												<div class="color--ui mb">
+													<h5 class="headline-h5-sans fw-4 mg-02">
+														Color
+													</h5>
+													<figure class="figure--color">
 														<img
-															src="/src/img/goal/grid-mobile.png"
+															src="/src/img/goal/color.png"
 															loading="lazy" decoding="async" data-nimg="1"
-															srcset="/src/img/goal/grid-mobile.png 16w"
-															alt="image">
-														<figcaption class="white">
-															<div class="paragraph">
-																<p class="font-body-tiny">Mobile / 375PX</p>
-																<ul>
-																	<li class="font-body-tiny">Column: 4</li>
-																	<li class="font-body-tiny">Gutter: 16px</li>
-																	<li class="font-body-tiny">Margin: 16px</li>
-																</ul>
-															</div>
-														</figcaption>
+															srcset="/src/img/goal/color.png 250w"
+															alt="image" >
 													</figure>
 												</div>
-											</article>
+												<!-- TIPOGRAPHY -->
+												<div class="tipography--ui mb">
+														<h5 class="headline-h5-sans fw-4 mg-02">
+															Tipografía
+														</h5>
+														<figure class="figure--tipography">
+															<img
+																src="/src/img/goal/tipography.png"
+																loading="lazy" decoding="async" data-nimg="1"
+																srcset="/src/img/goal/tipography.png 16w"
+																alt="image" >
+														</figure>
+												</div>
+												<!-- SPACING -->
+												<div class="spacing--goal mb br-5">
+													<div class="spacing--goal-content br-2">
+														<h5 class="headline-h5 fw-3 mg-01 white">
+															Espaciado
+														</h5>
+														<figure class="figure--space">
+															<img 
+																src="/src/img/montesur/spaces.png"
+																loading="lazy" decoding="async" data-nimg="1"
+																srcset="/src/img/montesur/spaces.png 16w"
+																alt="image" >
+														</figure>
+													</div>
+												</div>
+												<!-- LAYOUT -->
+												<div class="grid--goal mb br-5">
+													<div class="grid--goal__content br-2">
+														<h5 class="headline-h5 mg-01 white">
+															Grid
+														</h5>
+														<div class="figure--grid dflex">
+															<figure class="figure--desktop flex3">
+																<img 
+																	src="/src/img/montesur/grid-desktop.png"
+																	loading="lazy" decoding="async" data-nimg="1"
+																	srcset="/src/img/montesur/grid-desktop.png 16w"
+																	alt="image" >
+															</figure>
+															<figure class="figure--mobile flex"> 
+																<img 
+																	src="/src/img/montesur/grid-mobile.png"
+																	loading="lazy" decoding="async" data-nimg="1"
+																	srcset="/src/img/montesur/grid-mobile.png 16w"
+																	alt="image" >
+															</figure>
+														</div>
+													</div>
+												</div>
+												<!-- COMPONENTS -->
+												<div class="components--ui">
+													<div class="components__content">
+														<h5 class="headline-h5-sans fw-5 mg-01">
+															Componentes
+														</h5>
+														<div class="effect-card br-2">
+															<figure>
+																<img
+																	src="/src/img/goal/components.webp"
+																	loading="lazy" decoding="async" data-nimg="1"
+																	srcset="/src/img/goal/components.webp"
+																	alt="image" >
+															</figure>
+														</div>
+													</div>
+												</div>
 										</div>
 									</div>
-								</article>
-								<!-- user-flow -->
-								<article class="components grid">
-									<div class="components__content">
-										<h5 class="body-text-sans fw-4 mg-02">Componentes</h5>
-										<figure>
-											<img class="img-typography1"
-												src="/src/img/goal/components.webp" loading="lazy" decoding="async" data-nimg="1"
-												srcset="/src/img/goal/components.webp 16w"
-												alt="image">
+								</section>
+							</div>
+						</section>
+						<!-- diseño visual -->
+						<section class="visual-design grid">
+							<div class="visual-design__wrapper">
+								<h2 class="headline-h1 fw-3">Diseño Visual</h2>
+								<div class="devices--goal">
+									<!-- card home -->
+									<div class="tablet--goal effect-card br-5">
+										<figure class="br-2"
+											data-scroll-image data-parallax-speed="12" >
+											<img
+												src="/src/img/goal/tablet-x01.webp"
+												loading="lazy" decoding="async" data-nimg="1"
+												srcset="/src/img/goal/tablet-x01.webp"
+												alt="image" >
 										</figure>
 									</div>
-								</article>
-								<!-- video -->
-								<article class="media">
-									<div class="videoFrame" style="height: 100%; width: 100%; aspect-ratio: 2800 / 1500; position: relative; overflow: hidden; margin-bottom: 1.6vw; border-radius: 0.85vw;">
-										<video  autoplay muted loop playsinline
-										src="src/img/goal/videoframe.mp4" style="width: 100%; height: auto; border-radius: 0.85vw; overflow: hidden;">
-										</video>
-									</div>
-								</article>
-								<!-- img-parallax -->
-								<article class="parallax grid">
-									<div class="parallax--content">
-										<section class="img-wrap section mediaInner" data-bg="/src/img/goal/screen-device.webp">
-											<div class="item-bg">
-											</div>
-										</section>
-									</div>
-								</article>
-								<!-- mobile  -->
-								<article class="mobile-parallax">
-									<div class="mobile-parallax__content grid">
-										<div class="mobile-text">
-											<h5 class="headline-h5-sans mg-01">Diseño Mobile</h5>
-											<p class="body-text">
-												El nuevo sistema de diseño nos permitió crear una experiencia consistente a través del color, la tipografía, la composición y el flujo en todos los tamaños de pantalla.
-											</p>
-										</div>
-										<div class="mobile-image">
-											<div class="dflex">
-												<div class="col-left flex1">
-													<!-- Mobile 1 -->
-													<section class="img-wrap section innerMobile mg-04" data-bg="/src/img/goal/Home-1x.png">
-														<div class="item-bg">
-														</div>
-													</section>
-													<!-- Mobile 2 -->
-													<section class="img-wrap section innerMobile mg-04" data-bg="/src/img/goal/Home-2x.png">
-														<div class="item-bg">
-														</div>
-													</section>
-													<!-- Mobile 3 -->
-													<section class="img-wrap section innerMobile" data-bg="/src/img/goal/servicios-1x.png">
-														<div class="item-bg">
-														</div>
-													</section>
-												</div>
-												<div class="col-right flex1">
-													<!-- Mobile 1 -->
-													<section class="img-wrap section innerMobile mg-04" data-bg="/src/img/goal/Herramientas-1x.png">
-														<div class="item-bg">
-														</div>
-													</section>
-													<!-- Mobile 2 -->
-													<section class="img-wrap section innerMobile mg-04" data-bg="/src/img/goal/Herramientas-2x.png">
-														<div class="item-bg">
-														</div>
-													</section>
-													<!-- Mobile 3 -->
-													<section class="img-wrap section innerMobile" data-bg="/src/img/goal/calculadora-1x.png">
-														<div class="item-bg">
-														</div>
-													</section>
-												</div>
-											</div>
+									<!-- devices--home -->
+									<div class="freme minimal--device frame-top">
+										<div class="br-5">
+											<figure
+												class="overflow br-5"
+												data-scroll-image 
+												data-parallax-speed="8" >
+												<img
+													src="/src/img/goal/desktop--x01.webp"
+													loading="lazy" decoding="async" data-nimg="1"
+													srcset="/src/img/goal/desktop--x01.webp 80w"
+													alt="image" >
+											</figure>
 										</div>
 									</div>
-								</article>
-								<!-- Reflexion -->
-								<article class="reflexion grid">
-									<div class="reflexion__content">
-										<h2 class="head-display fw-4 mg-03">Reflexión</h2>
-										<div class="description">
-											<p class="body-text mg-01">
-												Este proyecto representó mucho más que un rediseño web: fue un proceso de aprendizaje profundo sobre cómo conectar el negocio con las personas a través del diseño.
-											</p>
-											<p class="body-text mg-01">
-												Cada etapa desde la investigación hasta la validación me permitió entender mejor cómo un usuario busca confianza antes de tomar decisiones financieras. Explorar métodos de investigación cualitativa y de escritorio me ayudó a familiarizarme con el negocio y a transformar hallazgos, centradas en las necesidades y emociones de los usuarios.
-											</p>
+									<!-- devices--home -->
+									<div class="frame frame--desktop-goal frame-top">
+										<div class="effect-card desktop-figure">
+											<figure
+												class="overflow br-5"
+												data-scroll-image 
+												data-parallax-speed="8" >
+												<img
+													src="/src/img/goal/dv-x001.webp"
+													loading="lazy" decoding="async" data-nimg="1"
+													srcset="/src/img/goal/dv-x001.webp 80w"
+													alt="image" >
+											</figure>
 										</div>
 									</div>
-								</article>
-							</article>
-					</section>
-				</article>
-				<!-- footer -->
-				<footer class="footer-page">
-					<article class="footer-page__footer-content p1">
-						<div class="scroll-top">
-								<button class="btn-scroll-top" aria-label="Volver arriba">
-									<i class="ph ph-arrow-up"></i>
-								</button>
-						</div>
-						<div class="link-item-next">
-								<div>
-									<p class="font-body">Siguiente Caso de Estudio</p>
-									<a class="assets-container" href="electric.html">
-										<img class="swipeimage" src="src/img/hover/hover-promart.webp">
-										<div class="assets-container__inner">
-											<div class="title-study">
-												<h6 class="headline-display">EIRL Electric</h6>
-											</div>
-										</div>
-									</a>
+									<!-- card pantallas -->
+									<div class="devices--desktop-goal frame-top">
+										<figure class="frame-image overflow br-5"
+											data-scroll-image
+											data-parallax-speed="8">
+											<img
+												src="/src/img/goal/screen-device.webp"
+												loading="lazy" decoding="async" data-nimg="1"
+												srcset="/src/img/goal/screen-device.webp"
+												alt="image" >
+										</figure>
+									</div>
 								</div>
-						</div>
+								<!-- devices other -->
+								<div class="flex-devices frame-top dflex">
+									<div class="flex2">
+										<div >
+											<figure class="overflow br-5">
+												<img
+													src="/src/img/goal/phone-x01.webp"
+													loading="lazy" decoding="async" data-nimg="1"
+													srcset="/src/img/goal/phone-x01.webp 80w"
+													alt="image" >
+											</figure>
+										</div>
+									</div>
+									<div class="flex3">
+										<div class="overflow br-5">
+											<figure data-scroll-image data-parallax-speed="10">
+												<img
+													src="/src/img/goal/movil--x03.webp"
+													loading="lazy" decoding="async" data-nimg="1"
+													srcset="/src/img/goal/movil--x03.webp 80w"
+													alt="image" >
+											</figure>
+										</div>
+									</div>
+								</div>
+								<!-- devices other -->
+								<div class="visual--mobile br-5 frame-top">
+									<div class="visual--mobile-content overflow br-2">
+										<figure data-scroll-image data-parallax-speed="10">
+											<img
+												src="/src/img/goal/mobile--devices.webp"
+												loading="lazy" decoding="async" data-nimg="1"
+												srcset="/src/img/goal/mobile--devices.webp"
+												alt="image" >
+										</figure>
+									</div>
+								</div>
+								<!-- devices mobile -->
+								<div class="frame--devices br-5 frame-top">
+									<figure 
+										data-scroll-image data-parallax-speed="12"
+										class="frame-image br-2">
+										<img
+											src="/src/img/goal/decices--x04.webp"
+											loading="lazy" decoding="async" data-nimg="1"
+											srcset="/src/img/goal/decices--x04.webp"
+											alt="image" >
+									</figure>
+								</div>
+							</div>
+						</section>
+						<!-- definition -->
+						<section class="reflection grid">
+							<div class="reflection__content">
+								<h2 class="headline-h2 fw-5">Reflexión</h2>
+								<div class="reflection-description">
+									<p class="body-text mg-01">
+										El proyecto fue, antes que nada, la primera vez que trabajamos como dupla de principio a fin. No dividimos tareas por especialidad nos turnamos el research, el benchmark, la definición y el diseño, y cada fase pasó por un debate antes de una decisión.
+									</p>
+									<p class="body-text">
+										El reto no fue solo de diseño, fue de investigación: entender patrones de comportamiento digital en un sector — salud — donde casi no teníamos referencia previa. Buscar hallazgos e insights en un rubro médico significa algo distinto a comparar checkouts o dashboards: hay que entender qué genera confianza en un paciente, qué información necesita ver antes de comprometerse a una cita, y qué tan tolerante es a la fricción cuando el tema no es una compra, sino su salud. Ese aprendizaje — leer patrones ya conocidos de UX, pero traducidos a una categoría nueva — fue lo que más nos exigió como equipo.
+									</p>
+								</div>
+							</div>
+						</section>
 					</article>
-				</footer>
+				</section>
 			</section>
-		</main>
-	
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
-	<script src="/js/index.js"></script>
-	<!---<script src="https://unpkg.com/@studio-freight/lenis"></script>
-	<script src="/js/main.js"></script>
-  - <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.14.2/ScrollToPlugin.min.js"></script> 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.14.2/ScrollSmoother.min.js"></script>---->
-
+			
+		</section>
+	</main>
+	<!-- footer -->
+	<footer class="footer-page">
+		<article class="footer-page__footer-content p1">
+			<div class="link-item-next">
+				<p class="body-text text--link-next">Siguiente Caso de Estudio</p>
+				<a class="text--next-headline white" href="montesur.html">
+					Montesur
+				</a>
+			</div>
+		</article>
+	</footer>
+	<script src="https://cdn.jsdelivr.net/npm/lenis@1.3.26/dist/lenis.min.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/script.js"></script>
 </body>
 </html>

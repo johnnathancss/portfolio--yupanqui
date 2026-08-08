@@ -136,65 +136,40 @@ requestAnimationFrame(raf);
 
 
 
-//COPIED EMAIL
-document.querySelectorAll('.copy-btn').forEach(btn => {
-  const originalText = btn.textContent;
-  
-  btn.addEventListener('click', () => {
-    const email = btn.dataset.email;
-    navigator.clipboard.writeText(email);
-    
-    btn.textContent = "¡Copiado!";
-    btn.classList.add('copied');
-    
-    setTimeout(() => {
-      btn.textContent = originalText;
-      btn.classList.remove('copied');
-    }, 800);
-  });
-});
 
 
 //SCROLL OPCION 4
-document.addEventListener("DOMContentLoaded", () => {
-  gsap.registerPlugin(ScrollTrigger);
+//document.addEventListener("DOMContentLoaded", () => {
+//  gsap.registerPlugin(ScrollTrigger);//
 
-  gsap.utils.toArray(".section").forEach((section) => {
-    const bg = section.querySelector(".item-bg");
-    const img = section.dataset.bg;
+//  gsap.utils.toArray(".section").forEach((section) => {
+//    const bg = section.querySelector(".item-bg");
+//    const img = section.dataset.bg;//
 
-    if (!bg || !img) return;
+//    if (!bg || !img) return;//
 
-    // aplicar imagen
-    bg.style.backgroundImage = `url("${img}")`;
+//    // aplicar imagen
+//    bg.style.backgroundImage = `url("${img}")`;//
 
-    // PARALLAX REAL
-    gsap.fromTo(
-      bg,
-      { y: -150 },
-      {
-        y: 100,
-        ease: "none",
-        scrollTrigger: {
-          trigger: section,
-          start: "top bottom",
-          end: "bottom top",
-          scrub: 1.2, // 🔥 suavidad
-        }
-      }
-    );
-  });
+//    // PARALLAX REAL
+//    gsap.fromTo(
+//      bg,
+//      { y: -150 },
+//      {
+//        y: 100,
+//        ease: "none",
+//        scrollTrigger: {
+//          trigger: section,
+//          start: "top bottom",
+//          end: "bottom top",
+//          scrub: 1.2, // 🔥 suavidad
+//        }
+//      }
+//    );
+//  });
 
   // 🔥 importante para producción (Vercel)
-  window.addEventListener("load", () => {
-    ScrollTrigger.refresh();
-  });
-});
-
-//BUTTON DOWNLOAD CV
-document.getElementById("downloadCV").addEventListener("click", () => {
-  const link = document.createElement("a");
-  link.href = "/src/img/CV_Johnnathan_Yupanqui.pdf";
-  link.download = "CV_Johnnathan_Yupanqui.pdf";
-  link.click();
-});
+// window.addEventListener("load", () => {
+//   ScrollTrigger.refresh();
+// });
+//);

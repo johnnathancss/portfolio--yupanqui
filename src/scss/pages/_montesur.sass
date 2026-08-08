@@ -1,0 +1,380 @@
+@use '../tokens/_font' as font
+@use '../base/_base' as base
+@use '../tokens/_color' as color
+@use '../tokens/_spacing' as spacing
+
+//title	
+.page-case-study
+	&__header
+		margin: 3rem 0 7rem 0
+
+.header-page
+	&__content
+		grid-column: 2 / -5
+		@media (min-width: 720px) and (max-width: 920px)
+			grid-column: 2 / -6
+		@media (min-width: 320px) and (max-width: 600px)
+			grid-column: 2 / -2
+		.ux--title
+			width: 100%
+			margin-top: 2.5rem
+			.headline-h3
+				display: block
+				margin-bottom: .5rem
+			.tags--case
+				margin-top: spacing.$space-lg
+				gap: .75rem
+				.tag--headltcare
+					background-color: #ffffff65 !important
+					border-radius: 50rem
+					padding-inline: .75rem
+					text-align: center
+					.text-small
+						line-height: 1
+
+.content-wrapper
+	&__container
+		grid-column: 3 / -3
+		@media (min-width: 320px) and (max-width: 600px)
+			grid-column: 2 / -2
+		.resultado
+			margin-top: 9rem
+
+.resultado
+	.head--title-result
+		max-width: 340px
+		@media (min-width: 320px) and (max-width: 768px)
+			max-width: 100%
+
+.imagen-resultado
+	margin-top: spacing.$space--ldsg-4
+	&__wrapp
+		//figure
+		//	height: 750px
+
+.role--team
+	margin-top: spacing.$padding-xxl
+	@media (min-width: 320px) and (max-width: 720px)
+		margin-top: spacing.$space--ldsg-5
+	&__content
+		.dflex
+			align-items: stretch
+			align-content: stretch
+		.role--card
+			height: 116px
+				
+.problema
+	margin-top: spacing.$padding-xxl
+	@media (min-width: 320px) and (max-width: 720px)
+		margin-top: spacing.$space--ldsg-5
+	.pantallas--problema
+		margin-top: spacing.$space--ldsg-5
+		&__content
+			.pantallas--problema__item
+				gap: spacing.$space-md
+				.pantallas--problema__item-img
+					img
+						width: 100%
+						height: 100%
+						object-fit: cover
+			.pantallas--problema__item:nth-child(1),
+			.pantallas--problema__item:nth-child(2)
+				margin-bottom: spacing.$space-4xl
+	.problema--resumen,
+	.problema--componentes
+		margin-top: spacing.$space--ldsg-5
+	.impact--nivel
+		margin-top: spacing.$space--ldsg-8
+		.item--impact
+			margin-top: spacing.$space--ldsg
+			padding-bottom: spacing.$space-md
+			border-bottom: 1px solid
+			border-color: color.$color-black-overlay-100
+			@media (min-width: 320px) and (max-width: 720px)
+				margin-top: spacing.$space-md
+
+.research
+	margin-top: spacing.$padding-xxl
+	@media (min-width: 320px) and (max-width: 600px)
+		margin-top: spacing.$space--ldsg-5
+	&__content
+		.imagen-entrevistas
+			padding-bottom: 5rem
+		.entrevistas
+			padding-top: 3rem
+		.explore
+			.explore--content
+				border-radius: .25rem
+				padding: spacing.$space-3xl spacing.$space-lg 
+
+.benchmark
+	margin-top: 8rem
+	@media (min-width: 320px) and (max-width: 600px)
+		margin-top: spacing.$space--ldsg-5
+	&__wrapper
+		.benchmark--imagen
+			padding-block: 5rem
+		.cards-benchmark
+			margin-bottom: 5rem
+			.card-bench
+				border: 1px solid
+				border-color: #00000015
+				background-color: color.$color-white
+				border-radius: .25rem
+				padding: 1rem
+				.bb-line
+					border-bottom: 1px solid
+					border-color: #E4EAFF
+				.div--line
+					padding-bottom: .75rem
+				.div--line:nth-child(2)
+					padding-block: .75rem
+				.div--line:last-child
+					padding-top: .75rem
+				.text-green
+					color: #0FB720
+				.text-red
+					color: #EE1919
+		.conflicto
+			.coflicto--content
+				grid-column: 8 / 14
+				@media (min-width: 720px) and (max-width: 920px)
+					grid-column: 6 / 14
+				@media (min-width: 320px) and (max-width: 620px)
+					grid-column: 2 / -2
+
+.user
+	.user-figure
+		margin-top: spacing.$space-3xl
+		img:first-child
+			margin-bottom: spacing.$space-lg
+
+
+.definition
+	margin-top: spacing.$space--ldsg-8
+	@media (min-width: 320px) and (max-width: 920px)
+		margin-top: spacing.$space--ldsg-5
+		.hmw.flex2
+			flex: 0 0 100%
+	.hmw--cards
+		margin-top: spacing.$space--ldsg-2
+		@media (min-width: 720px) and (max-width: 920px)
+			margin-top: spacing.$space-lg
+		@media (min-width: 320px) and (max-width: 620px)
+			margin-top: spacing.$space-lg
+			.hmw--left
+				margin-bottom: spacing.$space-sm
+		.hmw--left
+			margin-bottom: spacing.$space-md
+	.hmw--cards.effect-card
+		padding: spacing.$space-sm
+	.definition--figure
+		margin-top: spacing.$space--ldsg-4
+		.figure-mind-map
+			margin-top: spacing.$space-lg
+			.images
+				overflow: hidden
+				.img-one
+					margin-bottom: spacing.$space-md
+		.task--flow
+			margin-top: spacing.$space--ldsg-4
+			.list--task
+				margin-top: spacing.$space--ldsg
+				.task--item
+					padding-bottom: spacing.$space-md
+					border-bottom: 1px solid
+					border-color: color.$color-black-overlay-100
+		.user-flow
+			margin-top: spacing.$space--ldsg-4
+			&__content
+				
+		.site-map
+			margin-top: spacing.$space--ldsg-7
+			&__content
+				.site-map--frame
+					margin-bottom: spacing.$space-4xl
+
+.solution
+	margin-top: spacing.$space--ldsg-x
+	@media (min-width: 320px) and (max-width: 600px)
+		margin-top: spacing.$space--ldsg-5
+	&__wrapper
+		.solution--description
+			.clave-design
+				margin-top: spacing.$space--ldsg-2
+				@media (min-width: 320px) and (max-width: 720px)
+					margin-top: spacing.$space-md
+		.solution--study
+			margin-top: spacing.$space--ldsg-xs
+			@media (min-width: 320px) and (max-width: 720px)
+				margin-top: spacing.$space--ldsg-7
+			.card--solution
+				gap: 4rem
+				@media (min-width: 320px) and (max-width: 920px)
+					gap: spacing.$space-md
+					flex-direction: column-reverse
+				@media (min-width: 720px) and (max-width: 920px)
+					.frame--card
+						max-width: 410px
+						height: min-content
+						@media (min-width: 320px) and (max-width: 576px)
+							max-width: 100%
+				.figure--solution
+					overflow: hidden
+					border-radius: .25rem
+
+.validation
+	margin-top: spacing.$space--ldsg-8
+	@media (min-width: 320px) and (max-width: 600px)
+		margin-top: spacing.$space--ldsg-5
+	.validation--table
+		margin-top: spacing.$space-4xl
+		.table--content
+			padding: 1rem 2rem
+			gap: 0
+			.dt--frame
+				padding-block: 1rem
+				border-bottom: 1px solid
+				border-color: #0000001c
+				.dt-sans
+					text-align: center
+					@media (min-width: 320px) and (max-width: 600px)
+						text-align: left
+			.dt--frame:first-child
+				padding-top: 0
+			.dt--frame:last-child
+				border-bottom: 0
+	.validation--result
+		margin-top: spacing.$space-3xl
+
+.impact
+	margin-top: spacing.$space-2xl
+	@media (min-width: 320px) and (max-width: 600px)
+		margin-top: spacing.$space--ldsg-5
+
+.ui-kit
+	margin-top: spacing.$space--ldsg-8
+	@media (min-width: 320px) and (max-width: 600px)
+		margin-top: spacing.$space--ldsg-5
+	.ui-kit-content
+		margin-top: spacing.$space-4xl
+		.mb
+			margin-bottom: spacing.$space--ldsg-7
+			@media (min-width: 320px) and (max-width: 619px)
+				margin-bottom: spacing.$space-2xl
+			@media (min-width: 719px) and (max-width: 919px)
+				margin-bottom: spacing.$space--ldsg-2
+		.spacing--montesur
+			&__content
+				background-color: #079DEA
+				padding: spacing.$padding-md
+				@media (min-width: 320px) and (max-width: 719px)
+					padding: spacing.$space-md
+				.figure--spacing
+					padding-top: spacing.$space--ldsg-4
+					@media (min-width: 320px) and (max-width: 619px)
+						padding-top: spacing.$space-2xl
+					@media (min-width: 719px) and (max-width: 919px)
+						padding-top: spacing.$space-lg
+		.grid--montesur
+			&__content
+				background-color: #1AB68D
+				padding: spacing.$padding-md
+				.figure--grid
+					padding-top: spacing.$space--ldsg-4
+					@media (min-width: 320px) and (max-width: 619px)
+						padding-top: spacing.$space-2xl
+					@media (min-width: 719px) and (max-width: 919px)
+						padding-top: spacing.$space-lg
+		.components--ui
+			.figue-components
+				margin-top: spacing.$space-lg
+				padding: spacing.$space--ldsg
+				@media (min-width: 320px) and (max-width: 619px)
+					padding: spacing.$space-sm
+				@media (min-width: 729px) and (max-width: 919px)
+					padding: spacing.$space-lg
+					margin-top: spacing.$space-3xl
+
+.visual-design
+	margin-top: spacing.$space--ldsg-sm
+	@media (min-width: 320px) and (max-width: 619px)
+		margin-top: spacing.$space--ldsg-5
+	@media (min-width: 719px) and (max-width: 919px)
+		margin-top: spacing.$space--ldsg-6
+	&__wrapper
+		grid-column: 2 / -2
+		.container--design
+			padding: .5rem
+			.design--devices
+				padding-bottom: spacing.$space-4xl
+			.card-visual-home
+				margin-top: spacing.$space--ldsg
+				.video
+					width: 100%
+					height: 100%
+					object-fit: cover
+					object-position: center
+					display: block
+			.card-responsive
+				margin-block: spacing.$space-4xl
+				.responsive--frame
+					display: flex
+					flex-wrap: wrap
+					align-items: center
+					justify-content: space-evenly
+					@media (min-width: 320px) and (max-width: 720px)
+						gap: 2rem
+					.mobile:nth-child(1)
+						margin-top: spacing.$space--ldsg
+						@media (min-width: 320px) and (max-width: 920px)
+							margin-top: 0
+					.mobile:nth-child(2)
+						margin-top: 20rem
+						box-sizing: border-box
+						@media (min-width: 720px) and (max-width: 920px)
+							margin-top: spacing.$space--ldsg-8
+						@media (min-width: 320px) and (max-width: 619px)
+							margin-top: 0
+					.mobile:last-child
+						@media (min-width: 720px) and (max-width: 920px)
+							margin-top: spacing.$space--ldsg
+			.card-visual-devices
+				margin-top: spacing.$space--ldsg-8
+				@media (min-width: 320px) and (max-width: 619px)
+					margin-top: spacing.$space--ldsg
+			.devices
+				margin-top: spacing.$space--ldsg-8
+				padding: spacing.$space-md
+				@media (min-width: 320px) and (max-width: 619px)
+					margin-top: spacing.$space--ldsg
+				.figure-devices
+					@media (min-width: 320px) and (max-width: 619px)
+						.flex
+							display: flex
+							justify-content: center
+							img
+								width: 200px
+				.figure-devices
+					gap: 5rem
+			.devices--desktop
+				margin-block: spacing.$space--ldsg-5
+				figure
+					overflow: hidden
+				@media (min-width: 320px) and (max-width: 619px)
+					margin-block-end: spacing.$space-lg
+			.devices--mobile
+				figure
+					overflow: hidden
+		
+.reflection
+	margin-block: spacing.$space--ldsg-8
+	&__content
+		grid-column: 3 / -3
+		@media (min-width: 320px) and (max-width: 619px)
+			grid-column: 2 / -2
+	@media (min-width: 320px) and (max-width: 619px)
+		margin-block-start: spacing.$space--ldsg-2
+		margin-block-end: spacing.$space--ldsg
+	.reflection-description
+		margin-top: spacing.$space-lg

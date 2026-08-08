@@ -13,31 +13,14 @@ $--breakpoint: 1024px
 	cursor: pointer
 	outline: none
 	transition: all .32s ease
-	font-size: font.$font-body
+	font-size: font.$font--text
 	font-family: 'SuizaDEMO-Regular'
 	line-height: 1.5
 	font-weight: 600
 	.ph
-		margin-right: spacing.$margin-xxs
+		margin-right: spacing.$space--ldsg-x
 	&:hover
 		color: color.$color-primary
-
-//button scroll
-.button-scroll
-	color: color.$color-white
-	cursor: pointer
-	outline: none
-	font-size: font.$font-body
-	transition: all .32s ease
-	display: flex
-	flex-direction: column
-	align-items: center
-	.ph
-		color: color.$color-white
-		font-size: font.$font-body
-		margin-bottom: spacing.$margin-xs
-	&:hover
-		color: #ffffffb4
 
 //MENU RESPONSIVE OVERLAY 
 .menu-trigger
@@ -54,13 +37,11 @@ $--breakpoint: 1024px
 	padding: .35rem .35rem
 	border-radius: .25rem
 	transition: opacity 0.3s ease
-
 	&:hover
 		opacity: 0.7
 
 .menu-overlay
 	position: absolute
-	//inset: 0
 	top: -2.764rem
 	right: 0             // ← clave: solo a la derecha
 	bottom: 0          // ancho típico en referencias (ajusta: 40%–60%)
@@ -84,11 +65,9 @@ $--breakpoint: 1024px
 		width: 100%
 		max-width: 100%
 		height: 100%
-
 	&.active
 		opacity: 1
 		visibility: visible
-
 	.menu-close
 		position: absolute
 		top: 0
@@ -115,18 +94,17 @@ $--breakpoint: 1024px
 			font-family: font.$font--text
 			text-transform: uppercase
 			font-weight: 600
-			text-align: right
+			text-align: left
 			color: color.$color-black
 			letter-spacing: -.15rem
 			display: block
 			transition: color 0.4s, transform 0.4s
 			@media (max-width: 768px)
-				text-align: center
 				font-size: font.$font-size-display
 			&:hover
-				color: lighten(color.$color-black, 30%)
+				color: color.$color-primary
+				//color: lighten(color.$color-black, 30%)
 				transform: translateX(10px)
-
 @media (max-width: 1024px)
 	.header__wrapper
 		justify-content: center
@@ -134,36 +112,6 @@ $--breakpoint: 1024px
 		display: none
 	.menu-trigger
 		display: block
-
-/*********************/
-.btn-scroll-top
-	position: fixed
-	bottom: 17rem
-	right: 32px
-	width: 48px
-	height: 48px
-	border-radius: 50%
-	border: 1px solid
-	border-color: transparent
-	background-color: transparent
-	color: #fff
-	font-size: font.$font-body
-	cursor: pointer
-	opacity: 0
-	pointer-events: none
-	transform: translateY(10px)
-	transition: opacity .3s ease, transform .3s ease
-	&:hover
-		border-color: #ffffff27
-		background-color: #1d1a1a54
-	@media (min-width: 320px) and (max-width:576px)
-		bottom: 20rem
-		right: 16px
-
-.btn-scroll-top.is-visible
-	opacity: 1
-	pointer-events: auto
-	transform: translateY(0)
 
 
 //ITEM LINK - FOOTER
@@ -187,64 +135,46 @@ $--breakpoint: 1024px
 		color: color.$color-primary
 
 
-
-/* From Uiverse.io by Creatlydev */ 
-.button
+/* From Uiverse.io by BHARGAVPATEL1244 */ 
+.button--cv
+	outline: none
 	cursor: pointer
 	border: none
+	padding: 0.9rem 2rem
+	margin: 0
+	position: relative
+	display: inline-block
+	letter-spacing: 0.05rem
+	font-size: 17px
+	border-radius: 500px
+	overflow: hidden
 	background: color.$color-primary
-	color: #fff
-	width: 100px
-	height: 100px
-	border-radius: 50%
-	overflow: hidden
+	color: ghostwhite
+
+.button--cv span
 	position: relative
-	display: grid
-	place-content: center
-	transition: background 300ms ease-in-out, transform 200ms
+	z-index: 10
+	transition: color 0.4s
 
-.button__text
+.button--cv:hover span
+	color: color.$color-white
+
+.button--cv::before,
+.button--cv::after
 	position: absolute
-	inset: 0
-	animation: text-rotation 8s linear infinite
-	&>span
-		position: absolute
-		transform: rotate(calc(19deg * var(--index)))
-		inset: 3px
-		margin-right: .25rem
-  
-.button__circle
-	position: relative
-	width: 40px
-	height: 40px
-	overflow: hidden
-	background: #fff
-	color: color.$color-primary
-	border-radius: 50%
-	display: flex
-	align-items: center
-	justify-content: center
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+	z-index: 0
 
-.button__icon--copy
-	position: absolute
-	transform: translate(-150%, 150%)
+.button--cv::before
+	content: ""
+	background: color.$color-black
+	width: 120%
+	left: -10%
+	transform: skew(30deg)
+	transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1)
 
-.button:hover 
-	background: #000
-	transform: scale(1.05)
-
-.button:hover .button__icon
-	color: #000
-
-.button:hover .button__icon:first-child
-	transition: transform 0.3s ease-in-out
-	transform: translate(150%, -150%)
-
-.button:hover .button__icon--copy
-	transition: transform 0.3s ease-in-out 0.1s
-	transform: translate(0)
-
-@keyframes text-rotation
-	to
-		rotate: 360deg
-  
+.button--cv:hover::before
+	transform: translate3d(100%, 0, 0)

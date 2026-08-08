@@ -47,6 +47,12 @@
 						<ul class="nav_bar">
 							<li>
 								<a href="#projects" class="nav-item" data-section="projects">
+									<span class="f_migra">01 </span>
+									Inicio
+								</a>
+							</li>
+							<li>
+								<a href="#projects" class="nav-item" data-section="projects">
 									<span class="f_migra">02 </span>
 									Proyectos
 								</a>
@@ -75,20 +81,13 @@
 						
 						<nav class="menu-mobile">
 							<ul class="menu-mobile__list">
-								<li><a class="menu-mobile__nav-item--link" href="#home">HOME</a></li>     <!-- Agregué HOME como en ref 3 -->
-								<li><a class="menu-mobile__nav-item--link" href="#proyectos">02 PROYECTOS</a></li>
-								<li><a class="menu-mobile__nav-item--link" href="#about">03 ABOUT</a></li>
-								<li><a class="menu-mobile__nav-item--link" href="#contacto">04 CONTACTO</a></li>
+								<li><a class="menu-mobile__nav-item--link" href="#home">01. HOME</a></li>     <!-- Agregué HOME como en ref 3 -->
+								<li><a class="menu-mobile__nav-item--link" href="#proyectos">02. PROYECTOS</a></li>
+								<li><a class="menu-mobile__nav-item--link" href="#about">03. ABOUT</a></li>
+								<li><a class="menu-mobile__nav-item--link" href="#contacto">04. CONTACTO</a></li>
 							</ul>
 						</nav>
-		
-						<!-- Redes sociales al fondo, como en tu ref 
-						<div class="menu-social">
-							<a href="#" target="_blank">LINKEDIN</a>
-							<a href="#" target="_blank">BEHANCE</a>
-							<a href="#" target="_blank">INSTAGRAM</a>
-						</div>-->
-						</article>
+					</article>
 				</div>
 			</div>
 		</header>
@@ -97,7 +96,7 @@
 			<section class="wrapper">
 				<!-- hero-section -->
 				<section class="hero-section grid">
-					<!-- hero-section -->
+					<!-- hero-section
 					<article class="pointer">
 						<img class="pointer__img full__img" 
 						src="/src/img/hover_hero/full1.webp" 
@@ -130,16 +129,19 @@
 						<img class="pointer__img " src="/src/img/hover_hero/9.webp" alt="Some image" loading="lazy" />
 						<img class="pointer__img " src="/src/img/hover_hero/10.webp" alt="Some image" loading="lazy" />							
 					</article>
-					<article class="title_index col-1 grid">
-						<div class="index-frame">
-						<!--	<span class="name-subtitle">Soy Johnnathan, Diseñador UX/UI</span> 
-							1. Transformo problemas complejos en experiencias UX para marcas que conectan con los usuarios
-							-->
-							<h1 class="hero-section__title pointer__title">
-								Transformo problemas digitales en experiencias para marcas que conectan con los usuarios
-							</h1>
-						</div>
-					</article>
+					-->
+					<div class="hero-section__wrapper">
+						<article class="hero--description">
+							<div class="index-frame">
+								<h1 class="index-frame__title pointer__title">
+									Diseño para que la confianza no dependa de un acto — investigo antes de decidir, y decido antes de diseñar.
+									<!-- 
+									Transformo problemas digitales en experiencias para marcas que conectan con los usuarios
+									-->
+								</h1>
+							</div>
+						</article>
+					</div>
 				</section>
 				<!-- freelance -->
 				<section class="section-intro grid">
@@ -149,98 +151,121 @@
 						</figure>
 						<div class="section-intro__text-intro">
 							<p class="section-intro__headline-h2 headline-h2 fw-2">
-								Cada proyecto empieza por entender el problema, el usuario y el negocio.
+								No empiezo por diseñar pantallas atractivas. Empiezo por el problema — y sigo ahí investigando que haga falta antes de pensar en una solución. Esto es lo que ese proceso construyo.
 							</p>
 						</div>
 						<figure class="icon_logo icon-bottom">
 							<img src="/src/img/icon_logo.svg" alt="">
 						</figure>
-					</arti>
+					</article>
 				</section>
 				<!-- projects -->
-				<section class="case-study" id="projects">
-					<article class="case-study__content content-head grid">
-						<article class="case-study__head">
-							<h3 class="head-display fw-4">Casos de Estudio</h3>
+				<section class="case-study grid" id="projects">
+					<div class="case-study__wrapper">
+						<article class="content-head">
+							<div class="content-head__head--title">
+								<h2 class="headline-h1 fw-4 mg-01">Casos de Estudio</h2>
+							</div>
+							<div class="content-head__description">
+								<p class="headline-h5">
+									Cada uno de estos proyectos parte de un problema real, no de una idea de solución perfecto. Estos son los proyectos de marcas memorables.
+									<!--- 
+									Algunos proyectos seleccionados que muestran mi pasión por crear productos digitales para marcas memorables.-->
+								</p>
+							</div>
 						</article>
-						<article class="case-study__text">
-							<p class="headline-h5">
-								Algunos proyectos seleccionados que muestran mi pasión por crear productos digitales para marcas memorables.
-							</p>
+						<article class="assets--content">
+						<div class="assets-frame">
+							<!-- projects  -->
+							<article role="assets-projects" class="projects-swip">
+								<!-- assets 1 -->
+								<a class="assets-container" href="montesur.html">
+									<!-- https://assets.codepen.io/16327/portrait-image-3.jpg -->
+									<img class="swipeimage" src="src/img/hover/hover--montesur.webp">
+									<div class="assets-container__inner">
+										<div class="assets--subtitle">
+											<h6 class="headline-h2 fw-4">Clínica Montesur</h6>
+											<i class="ph ph-arrow-down-right"></i>
+										</div>
+										<div class="assets--description">
+											<p class="text-small">UX/UI/Design Web/Responsive<span class="headline-h4 fw-6 separator"> *</span></p>
+										</div>
+										<div class="assets--subject">
+											<p class="text-small">Rediseño Web</p>
+										</div>
+									</div>
+								</a>
+								<!-- assets 2 -->
+								<a class="assets-container" href="goal-capital.html">
+									<!-- https://assets.codepen.io/16327/portrait-image-3.jpg -->
+									<img class="swipeimage" src="src/img/hover/hover-goal.webp">
+									<div class="assets-container__inner">
+										<div class="assets--subtitle">
+											<h6 class="headline-h2 fw-4">Goal Capital</h6>
+											<i class="ph ph-arrow-down-right"></i>
+										</div>
+										<div class="assets--description">
+											<p class="text-small">UX/UI/Web/Responsive/Maquetación-Web<span class="headline-h4 fw-6 separator"> *</span></p>
+										</div>
+										<div class="assets--subject">
+											<p class="text-small">Rediseño Web</p>
+										</div>
+									</div>
+								</a>
+								<!-- assets 3 
+								<a class="assets-container" href="electric.html">
+									https://assets.codepen.io/16327/portrait-image-1.jpg
+									<img class="swipeimage" src="src/img/hover/hover-electric.webp">
+									<div class="assets-container__inner">
+										<div class="assets--subtitle">
+											<h6 class="headline-h2 fw-4">EIRL Electric</h6>
+											<i class="ph ph-arrow-down-right"></i>
+										</div>
+										<div class="assets--description">
+											<p class="text-small">UX/UI/Visual/Web/Mobile <span class="headline-h4 fw-6 separator"> *</span></p>
+										</div>
+										<div class="assets--subject">
+											<p class="text-small">Diseño Plataforma</p>
+										</div>
+									</div>
+								</a>-->
+								<!-- assets 4 
+								<a class="assets-container" href="vuelve-compostario.html">
+									https://assets.codepen.io/16327/portrait-image-3.jpg
+									<img class="swipeimage" src="src/img/hover/hover-vuelve.webp">
+									<div class="assets-container__inner">
+										<div class="assets--subtitle">
+											<h6 class="headline-h2 fw-4">V. Compostario</h6>
+											<i class="ph ph-arrow-down-right"></i>
+										</div>
+										<div class="assets--description">
+											<p class="text-small">UX/UI/Web/Mobile<span class="headline-h4 fw-6 separator"> *</span></p>
+										</div>
+										<div class="assets--subject">
+											<p class="text-small">Diseño Dashboard Web</p>
+										</div>
+									</div>
+								</a>-->
+								<!-- assets 4
+								<a class="assets-container" href="promart.html">
+									<img class="swipeimage" src="src/img/hover/hover-promart.webp">
+									<div class="assets-container__inner">
+										<div class="assets--subtitle">
+											<h6 class="headline-h2 fw-4">Promart</h6>
+											<i class="ph ph-arrow-down-right"></i>
+										</div>
+										<div class="assets--description">
+											<p class="text-small">UI/Visual/Web/Mobile <span class="headline-h4 fw-6 separator"> *</span></p>
+										</div>
+										<div class="assets--subject">
+											<p class="text-small">Diseño Web Ecommerce</p>
+										</div>
+									</div>
+								</a> -->
+							</article>
+						</div>
 						</article>
-					</article>
-					<article class="case-study__projects-case-study p1">
-						<!-- projects  -->
-						<article role="assets-projects" class="projects-swip">
-							<!-- assets 1 -->
-							<a class="assets-container" href="goal-capital.html">
-								<!-- https://assets.codepen.io/16327/portrait-image-3.jpg -->
-								<img class="swipeimage" src="src/img/hover/hover-goal.webp">
-								<div class="assets-container__inner">
-									<div class="assets--subtitle">
-										<h6 class="headline-h2 fw-4">Goal Capital</h6>
-										<i class="ph ph-arrow-down-right"></i>
-									</div>
-									<div class="assets--description">
-										<p class="text-small">UX/UI/Web/Mobile/Maquetación-Web <span class="headline-h4 fw-6 separator"> *</span></p>
-									</div>
-									<div class="assets--subject">
-										<p class="text-small">Rediseño Web</p>
-									</div>
-								</div>
-							</a>
-							<!-- assets 2 -->
-							<a class="assets-container" href="electric.html">
-								<!-- https://assets.codepen.io/16327/portrait-image-1.jpg -->
-								<img class="swipeimage" src="src/img/hover/hover-electric.webp">
-								<div class="assets-container__inner">
-									<div class="assets--subtitle">
-										<h6 class="headline-h2 fw-4">EIRL Electric</h6>
-										<i class="ph ph-arrow-down-right"></i>
-									</div>
-									<div class="assets--description">
-										<p class="text-small">UX/UI/Visual/Web/Mobile <span class="headline-h4 fw-6 separator"> *</span></p>
-									</div>
-									<div class="assets--subject">
-										<p class="text-small">Diseño Plataforma</p>
-									</div>
-								</div>
-							</a>
-							<!-- assets 3 -->
-							<a class="assets-container" href="vuelve-compostario.html">
-								<!-- https://assets.codepen.io/16327/portrait-image-3.jpg -->
-								<img class="swipeimage" src="src/img/hover/hover-vuelve.webp">
-								<div class="assets-container__inner">
-									<div class="assets--subtitle">
-										<h6 class="headline-h2 fw-4">V. Compostario</h6>
-										<i class="ph ph-arrow-down-right"></i>
-									</div>
-									<div class="assets--description">
-										<p class="text-small">UX/UI/Web/Mobile<span class="headline-h4 fw-6 separator"> *</span></p>
-									</div>
-									<div class="assets--subject">
-										<p class="text-small">Diseño Dashboard Web</p>
-									</div>
-								</div>
-							</a>
-							<!-- assets 4
-							<a class="assets-container" href="promart.html">
-								<img class="swipeimage" src="src/img/hover/hover-promart.webp">
-								<div class="assets-container__inner">
-									<div class="assets--subtitle">
-										<h6 class="headline-h2 fw-4">Promart</h6>
-										<i class="ph ph-arrow-down-right"></i>
-									</div>
-									<div class="assets--description">
-										<p class="text-small">UI/Visual/Web/Mobile <span class="headline-h4 fw-6 separator"> *</span></p>
-									</div>
-									<div class="assets--subject">
-										<p class="text-small">Diseño Web Ecommerce</p>
-									</div>
-								</div>
-							</a> -->
-						</article>
-					</article>
+					</div>
 				</section>
 				<!-- project design -->
 				<section class="about-me" id="about">
@@ -256,89 +281,35 @@
 								<img src="src/img/johnnathan.png" alt="Mi foto">
 							</figure>
 							<div class="paragraph">
-								<p class="font-body mg-02">
+								<p class="body-text mg-02">
 									Soy Johnnathan Yupanqui, Diseñador UX/UI con 3 años de experiencia trabajando en rediseños web y productos digitales para empresas de sectores financiero y servicios.
 								</p>
-								<p class="font-body mg-02">
+								<p class="body-text">
 									Mi proceso siempre empieza en la investigación — entrevistas, benchmarks, flujos — para que cada decisión de diseño tenga una razón clara de negocio. 
 								</p>
-								<div class="button-download">
+								<div class="button--download">
 									<!-- From Uiverse.io by Creatlydev --> 
-									<button class="button" id="downloadCV">
-										<p class="button__text">
-											<span class="body-text-sans" style="--index: 0;">V </span>
-											<span class="body-text-sans" style="--index: 1;">E </span>
-											<span class="body-text-sans" style="--index: 2;"> R </span>
-											<span class="body-text-sans" style="--index: 3;"></span>
-											<span class="body-text-sans" style="--index: 4;">C </span>
-											<span class="body-text-sans" style="--index: 5;">V </span>
-											<span class="body-text-sans" style="--index: 6;"> </span>
-											<span class="body-text-sans" style="--index: 7;">●</span>
-											<span class="body-text-sans" style="--index: 8;"> </span>
-											<span class="body-text-sans" style="--index: 9;">V </span>
-											<span class="body-text-sans" style="--index: 10;">E </span>
-											<span class="body-text-sans" style="--index: 11;">R </span>
-											<span class="body-text-sans" style="--index: 12;"> </span>
-											<span class="body-text-sans" style="--index: 13;">C </span>
-											<span class="body-text-sans" style="--index: 14;">V </span>
-											<span class="body-text-sans" style="--index: 15;"> </span>
-											<span class="body-text-sans" style="--index: 16;">●</span>
-										</p>
-
-										<div class="button__circle">
-											<svg
-												viewBox="0 0 14 15"
-												fill="none"
-												xmlns="http://www.w3.org/2000/svg"
-												class="button__icon"
-												width="14"
-											>
-												<path
-													d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
-													fill="currentColor"
-												></path>
-											</svg>
-
-											<svg
-												viewBox="0 0 14 15"
-												fill="none"
-												width="14"
-												xmlns="http://www.w3.org/2000/svg"
-												class="button__icon button__icon--copy"
-											>
-												<path
-													d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
-													fill="currentColor"
-												></path>
-											</svg>
-										</div>
+									<button class="button--cv" id="downloadCV">
+										<span class="body-text-sans fw-5">Descargar CV</span>
 									</button>
-<!-- 
-									<a href="/src/img/CV-UX-UI-JOHNNATHAN.pdf" download class="cv-btn">
-										<span class="text headline-h5-sans fw-4">Ver CV</span>
-										<span class="icon">↓</span>
-									</a>
-									
-									<a class="button-ghost headline-h5" href="/src/img/CV-UX-UI-JOHNNATHAN.pdf" target="_blank">
-									<span class="button_content">My CV</span>
-									</a>
-									-->
 								</div>
 							</div>
+
 							<figure class="my_photo">
 								<img src="src/img/johnnathan.png" alt="Mi foto">
 							</figure>
 						</div>
 						<article class="skill col-1 grid">
 							<div class="skill__content_skill">
-								<h5 class="headline-h1 fw-6">Skill</h5>
+								<h5 class="headline-h1 fw-5">Skill</h5>
 								<ul class="skill__list">
 									<li class="skill_modules frame-origin">
 										<article class="skill_ux">
 											<input type="checkbox" id="ux1">
 											<label class="skill_ux__head_skill" for="ux1">
 												<div class="number">
-													<h4 class="headline-h2 fw-4"><i class="ph ph-arrow-down-right"></i></h4>
+													<h4 class="headline-h2 fw-4">
+														<i class="ph ph-arrow-down-right"></i></h4>
 												</div>
 												<div class="title_skill">
 													<h4 class="headline-h2 fw-4">Diseño UX-UI</h4>
@@ -346,8 +317,8 @@
 												<i class="i_icon"></i>
 											</label>
 											<div class="skill_ux__body_description">
-												<p class="font-text">Diseño UX, Investigación de usuarios, Arquitectura de la información, Wireframe, Creación de prototipos,</p>
-												<p class="font-text">Pruebas de usabilidad, Moodboard, Diseño de interfaz, Diseño visual, Sistemas de diseño, UI-Kit.</p>
+												<p class="body-text">Diseño UX, Investigación de usuarios, Arquitectura de la información, Wireframe, Creación de prototipos,</p>
+												<p class="body-text">Pruebas de usabilidad, Moodboard, Diseño de interfaz, Diseño visual, Sistemas de diseño, UI-Kit.</p>
 											</div>
 										</article>
 									</li>
@@ -365,7 +336,7 @@
 												<i class="i_icon"></i>
 											</label>
 											<div class="skill_ux__body_description transition">
-												<p class="font-text">Diseño visual, Principios del diseño, Teoría y uso de Colores, Tipografías, Estética visual, Concepto de diseño.</p>
+												<p class="body-text">Diseño visual, Principios del diseño, Teoría y uso de Colores, Tipografías, Estética visual, Concepto de diseño.</p>
 											</div>
 										</article>
 									</li>
@@ -383,7 +354,7 @@
 												<i class="i_icon"></i>
 											</label>
 											<div class="skill_ux__body_description transition">
-												<p class="font-text">Brief, Bocetos, Principios del diseño, Moodboard, Wireframe, Tipografía, Interfaz de Usuario, UI-Kit & Diseño visual</p>
+												<p class="body-text">Brief, Bocetos, Principios del diseño, Moodboard, Wireframe, Tipografía, Interfaz de Usuario, UI-Kit & Diseño visual</p>
 											</div>
 										</article>
 									</li>
@@ -401,7 +372,7 @@
 												<i class="i_icon"></i>
 											</label>
 											<div class="skill_ux__body_description">
-												<p class="font-text">
+												<p class="body-text">
 													HTML, CSS3, SASSS, JavaScript, Responive & Github </p>
 											</div>
 										</article>
@@ -420,7 +391,7 @@
 												<i class="i_icon"></i>
 											</label>
 											<div class="skill_ux__body_description transition">
-												<p class="font-text">Creatividad, Colaboración, Resolución de Problemas, Pensamiento crítico, Comunicación</p>
+												<p class="body-text">Creatividad, Colaboración, Resolución de Problemas, Pensamiento crítico, Comunicación</p>
 											</div>
 										</article>
 									</li>
@@ -445,7 +416,7 @@
 					<div class="data">
 						<span class="headline-h3 fw-3">Contacto</span>
 						<div class="data-contact">
-              <div class="email mg-3">
+              <div class="email mg-03">
 								<span class="headline-h5 fw-2">Email:</span>
 								<button class="headline-h1 fw-2 copy-btn" data-email="hello@midominio.com">
 									jq.yupanqui@outlook.com
@@ -480,10 +451,8 @@
 	
 	<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/ScrollTrigger.min.js"></script>
-	<script src="../js/imagesloaded.pkgd.min.js"></script>
-	<script src="../js/index.js"></script>
-	<!--  <script src="./js/demo2.js"></script> -->
-	<script src="../js/main.js"></script>
-	<script src="../js/script.js"></script>
+	<script src="js/imagesloaded.pkgd.min.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/script.js"></script>
 </body>
 </html>

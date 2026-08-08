@@ -7,53 +7,33 @@
 //HERO SECTION
 .hero-section
 	position: relative
-	padding-block: 10rem
-	margin-top: spacing.$margin-ldsg-5
 	overflow: hidden
-	@media (min-width: 992px) and (max-width: 1199.98px)
-		padding-block: 7rem
-	@media (min-width: 768px) and (max-width: 991.98px)	
-		padding-block-start: 5rem
-		padding-block-end: 7rem
-	@media (min-width: 344px) and (max-width:576px)
-		margin-top: 0
-		padding-block-start: 8.5rem
-		padding-block-end: 6.5rem
-	&__title
-		font-size: font.$font-size-display-sm
-		font-family: font.$font--headline
-		//text-transform: uppercase
-		font-weight: 400
-		position: relative
-		z-index: 100
-		line-height: 1.1
-		pointer-events: none
-		//@media (min-width: 992px) and (max-width: 1199.18px)
-		//	font-size: font.$font-size-base
-	.index-frame
-		grid-column: 2 / -2
-		position: relative
-		padding-inline-end: 2.5rem
-		//.name-subtitle
-		//	font-family: font.$font--text
-		//	font-size: font.$font-size-h4
-		//	pointer-events: none
-		//	position: relative
-		//	z-index: 100
-		//	display: block
-		//	margin-bottom: spacing.$space-md
+	&__wrapper
+		grid-column: 2 / -5
+		padding-block: 10rem
+		//@media (min-width: 992px) and (max-width: 1199.98px)
+		//	padding-block: 7rem
+		//@media (min-width: 768px) and (max-width: 991.98px)	
+		//	padding-block-start: 5rem
+		//	padding-block-end: 7rem
+		@media (min-width: 320px) and (max-width:576px)
+			padding-block-start: spacing.$space--ldsg-5
+			padding-block-end: spacing.$space--ldsg-5
+		.index-frame
+			&__title
+				font-size: font.$font-size-display-sm
+				font-family: font.$font--headline
+				font-weight: 400
+				position: relative
+				z-index: 100
+				line-height: 1.1
+				pointer-events: none
 		
 //FREELANCE
 .section-intro
-	position: relative
-	padding-block-start: 7rem
-	padding-block-end: 15rem
-	@media (min-width: 768px) and (max-width: 991.98px)	
-		padding-block-start: 4rem
-		padding-block-end: 10rem
-	@media (min-width: 360px) and (max-width:576px)
-		padding-block-start: 0rem
-		padding-block-end: 7rem
+	margin-top: spacing.$space--ldsg
+	@media (min-width: 320px) and (max-width:991.98px)
+		margin-top: spacing.$space-2xl
 	&__description
 		grid-column: 4 / -4
 		max-width: unset
@@ -66,11 +46,11 @@
 		.headline-h3
 			text-align: center
 			line-height: 1.75
-			margin-block: spacing.$margin-ldsg-7
+			margin-block: spacing.$space--ldsg-7
 			@media (min-width: 768px) and (max-width: 991.98px)
-				margin-block: spacing.$margin-ldsg-5	
+				margin-block: spacing.$space--ldsg-5
 			@media (min-width: 320px) and (max-width:576px)
-				margin-block: spacing.$margin-xxxl
+				margin-block: spacing.$space--ldsg-4
 		.icon_logo
 			display: flex
 			flex-direction: column
@@ -85,26 +65,18 @@
 
 //FREELANCE
 .case-study
-	margin-bottom: spacing.$margin-ldsg-12
+	margin-block: spacing.$space--ldsg-8
 	@media (min-width: 768px) and (max-width: 991.98px)	
-		margin-bottom: spacing.$margin-ldsg-7
+		margin-bottom: spacing.$space--ldsg-7
 	@media (min-width: 320px) and (max-width:576px)
-		margin-bottom: spacing.$margin-ldsg-5
-	&__head
-		grid-column: 2 / -8
-		@media (min-width: 320px) and (max-width:576px)
-			grid-column: 2 / -3
-	&__projects-case-study
-		grid-column: 1 / -1
-	&__text
-		grid-column: 2 / -9
-		margin: spacing.$space-md 0 spacing.$space--ldsg-7 0
-		@media (min-width: 768px) and (max-width: 991.98px)
-			grid-column: 2 / -4
-			margin: spacing.$margin-s 0 spacing.$margin-ldsg-5 0
-		@media (min-width: 320px) and (max-width:576px)
-			grid-column: 2 / -2
-			margin: spacing.$margin-xs 0 spacing.$margin-xl 0
+		margin-bottom: spacing.$space--ldsg-2
+	&__wrapper
+		grid-column: 2 / -2
+		.content-head
+			&__description
+				max-width: 680px
+		.assets--content
+			margin-top: spacing.$space--ldsg-6
 
 //ABOUTE ME
 .about-me
@@ -116,9 +88,9 @@
 			@media (min-width: 768px) and (max-width: 991.98px)
 				grid-column: 2 / -5
 	&__description
-		margin-top: spacing.$margin-ldsg-5
-		@media (min-width: 320px) and (max-width:576px)
-			margin-top: spacing.$margin-md
+		margin-top: spacing.$space--ldsg-5
+		@media (min-width: 320px) and (max-width: 919px)
+			margin-top: spacing.$space-md
 	&__content
 		gap: 1.5rem	
 		max-width: unset
@@ -126,33 +98,32 @@
 			grid-column: 3 / -10
 			@media (min-width: 768px) and (max-width: 991.98px)
 				grid-column: 2 / -9
+				margin-bottom: spacing.$space-4xl
 			@media (min-width: 320px) and (max-width:576px)
 				grid-column: 2 / -2
-				margin-bottom: spacing.$margin-md
+				margin-top: 0
 		.my_photo-mobile
 			display: none
 			@media (min-width: 320px) and (max-width: 576px)
 				display: block
 				grid-column: 2 / -2
-				margin-bottom: spacing.$margin-md
+				margin-block-start: spacing.$space--ldsg
+				margin-block-end: spacing.$space-2xl
 		.paragraph
 			grid-column: 10 / -10
 			max-width: unset
-			margin-top: spacing.$margin-ldsg-10
-			@media (min-width: 768px) and (max-width: 991.98px)
+			margin-top: spacing.$space--ldsg-8
+			@media (min-width: 719px) and (max-width: 991.98px)
 				grid-column: 2 / -9
-				margin-top: spacing.$margin-md
+				margin-top: 0
 			@media (min-width: 320px) and (max-width:576px)
 				grid-column: 2 / -2
 				margin-top: 0
 				.font-body.mg-3
-					margin-bottom: spacing.$margin-s
-			.button-download
-				position: relative
-				margin-top: spacing.$margin-xxxl
-				@media (min-width: 320px) and (max-width:576px)
-					.button-ghost
-						padding: 1rem 7.75rem
+					margin-bottom: spacing.$space--ldsg-2
+			.button--download
+				margin-top: spacing.$space--ldsg-2
+				
 		.my_photo
 			grid-column: 10 / 14
 			max-width: unset
@@ -162,7 +133,7 @@
 				display: none
 
 .skill
-	margin-top: spacing.$margin-ldsg-7
+	margin-top: spacing.$space--ldsg-8
 	&__content_skill
 		grid-column: 3 / -3
 		//@media (min-width: 360px) and (max-width:576px)
@@ -172,16 +143,16 @@
 		display: flex
 		flex-direction: column
 		flex-wrap: nowrap
-		margin-top: spacing.$margin-xxl
+		margin-top: spacing.$space--ldsg
 		@media (min-width: 320px) and (max-width:576px)
-			margin-top: spacing.$margin-s
+			margin-top: spacing.$space--ldsg-2
 		.skill_modules
 			.skill_ux
 				&__head_skill
 					display: flex
 					align-items: center
 					flex-wrap: nowrap
-					gap: .5rem
+					gap: spacing.$space-xs
 					.ph
 						color: #1a1a1a71
 					@media (min-width: 320px) and (max-width:576px)

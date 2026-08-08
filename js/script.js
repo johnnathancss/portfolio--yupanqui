@@ -187,3 +187,29 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
 });
+
+//COPIED EMAIL
+document.querySelectorAll('.copy-btn').forEach(btn => {
+  const originalText = btn.textContent;
+  
+  btn.addEventListener('click', () => {
+    const email = btn.dataset.email;
+    navigator.clipboard.writeText(email);
+    
+    btn.textContent = "¡Copiado!";
+    btn.classList.add('copied');
+    
+    setTimeout(() => {
+      btn.textContent = originalText;
+      btn.classList.remove('copied');
+    }, 800);
+  });
+});
+
+//BUTTON DOWNLOAD CV
+document.getElementById("downloadCV").addEventListener("click", () => {
+  const link = document.createElement("a");
+  link.href = "/src/img/CV_Johnnathan_Yupanqui.pdf";
+  link.download = "CV_Johnnathan_Yupanqui.pdf";
+  link.click();
+});

@@ -46,12 +46,8 @@ body
   color: color.$color-black
 
 p, li
-  font-size: font.$font-body
   line-height: 1.5
 
-//PADDING
-.p1
-  padding-inline: spacing.$padding
 
 img
   //max-width: 1600px
@@ -61,25 +57,26 @@ img
 
 //LI ITEMS
 .item-li
-  font-size: font.$font-small-tiny
   line-height: 1.5
 
 .item-li-bold
   font-weight: 700
 
 .header-main
-  margin-bottom: spacing.$margin-ldsg-7
+  margin-bottom: spacing.$space--ldsg-7
   .heading-h2
     max-width: 20rem
-    margin-top: spacing.$margin-xxl
+    margin-top: spacing.$space-3xl
 
 /*  HERO BANNER */
 .dflex
   display: flex
   flex-wrap: wrap
-  gap: 1.5rem
+  gap: spacing.$space-md
   @media (min-width: 320px) and (max-width:576px)
     flex-direction: column
+  @media (min-width: 320px) and (max-width: 620px)
+    gap: spacing.$space-sm
 
 .flex
   flex: 1 0 0
@@ -88,6 +85,11 @@ img
 
 .flex2
   flex: 2 0 0
+  @media (min-width: 320px) and (max-width:576px)
+    flex: 0 0 100%
+  
+.flex3
+  flex: 3 0 0
   @media (min-width: 320px) and (max-width:576px)
     flex: 0 0 100%
 
@@ -99,6 +101,63 @@ img
 
 .white
   color: color.$color-white
+
+.overflow
+  overflow: hidden
+
+.card-shadow
+  background-color: color.$color-light-neutro-bg
+  box-shadow: 0 6px 12px -2px rgba(0, 0, 0, 0.25), 0 12px 24px -4px rgba(0, 0, 0, 0.2), 0 0 0 6px rgba(255, 255, 255, 0.08)
+
+.card-shadow-light
+  background-color: color.$color-light-neutro-bg
+  box-shadow: 0 6px 8px -2px rgba(0, 0, 0, 0.08), 0 12px 24px -4px rgba(0, 0, 0, 0.1), 0 0 0 8px rgba(255, 255, 255, 0.705)
+
+.card-shadow-black
+  background-color: color.$color-light-neutro-bg
+  box-shadow: 0 6px 8px -2px rgba(0, 0, 0, 0.08), 0 12px 24px -3px rgba(0, 0, 0, 0.062), 0 0 0 8px rgba(19, 16, 16, 0.062)
+
+.effect-card
+  background-color: #00000007
+  border: 1px solid
+  padding: .5rem
+  border-color: color.$color-black-overlay-100
+
+.content-card-white
+  background-color: #ffffffd8
+  //border: 1px solid
+  //border-color: color.$color-black-100
+  padding: .5rem
+
+//GRID COLUM A TODOS LOS HEADS
+.col--head
+  grid-column: 1 / -8
+  @media (min-width: 720px) and (max-width: 920px)
+    grid-column: 2 / -6
+  @media (min-width: 320px) and (max-width: 620px)
+    grid-column: 1 / -1
+
+.col--center
+  grid-column: 4 / -4
+  @media (min-width: 320px) and (max-width: 620px)
+    grid-column: 1 / -1
+
+.br-2
+  border-radius: .25rem
+
+.br-5
+  border-radius: .5rem
+  @media (min-width: 720px) and (max-width: 920px)
+    border-radius: .25rem
+
+.br-7
+  border-radius: .75rem
+
+.br-1rm
+  border-radius: 1rem
+
+.dblock
+  display: block
 
 
 //LOADER ANIMATION
@@ -113,8 +172,6 @@ img
     inset: 0
     top: 0
     left: 0
-    //z-index: -1
-    //padding-top: 56.25%
     background-size: cover
     will-change: transform
     background-repeat: no-repeat
@@ -133,4 +190,60 @@ img
       grid-column: 2 / -2
 
 .frame_sectionTop
-  margin-top: spacing.$margin-ldsg-7
+  margin-top: spacing.$space--ldsg-7
+
+.card-frame .card-place-content
+  position: relative
+  width: 100%
+.card-frame
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  width: 100%
+  .frame-container
+    background-color: color.$color-black
+    padding: .5rem
+    width: 87%
+    box-sizing: border-box
+    border-radius: 2rem
+    @media (min-width: 320px) and (max-width: 619px)
+      border-radius: 1rem
+      padding: .35rem
+    @media (min-width: 320px) and (max-width: 919px)
+      width: 100%
+    .frame-image
+      position: relative
+      z-index: 1
+      width: 100%
+      overflow: hidden
+      border-radius: 1.7rem
+      @media (min-width: 320px) and (max-width: 619px)
+        border-radius: .75rem
+      img
+        width: 100%
+        max-width: 100%
+        object-fit: cover
+        object-position: top
+
+.mobile.mobile-place-content
+  position: relative
+.mobile.mobile
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  .mobile-container
+    //background-color: color.$color-black
+    //padding: .45rem
+    width: 16rem
+    //border-radius: 2rem
+    .figure--mobile
+      position: relative
+      z-index: 1
+      width: 100%
+      max-width: 100%
+      height: 550px
+      overflow: hidden
+      border-radius: 1.7rem
+
