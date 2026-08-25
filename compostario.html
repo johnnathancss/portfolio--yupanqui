@@ -1,0 +1,961 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Dashboard CRM - Vuelve Compostario</title>
+
+	<link rel="stylesheet" href="dist/css/main.css">
+  <link rel="stylesheet" href="dist/css/reset.css">
+
+	<!-- FONT stack-sans-text -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Stack+Sans+Text:wght@200..700&display=swap" rel="stylesheet">
+
+	<!-- FONT stack-sans-headline -->
+	<link 
+		rel="preconnect" href="https://fonts.googleapis.com"
+	/>
+	<link 
+		rel="preconnect" href="https://fonts.gstatic.com" crossorigin 
+	/>
+	<link 
+		href="https://fonts.googleapis.com/css2?family=Stack+Sans+Headline:wght@200..700&display=swap" rel="stylesheet"
+	/>
+
+	<!-- ICON -->
+	<link
+    rel="stylesheet"
+    type="text/css"
+    href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"
+  />
+  <link
+    rel="stylesheet"
+    type="text/css"
+    href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css"
+  />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lenis@1.3.26/dist/lenis.css">
+</head>
+<body class="body-page-main">
+	<!-- header -->
+	<header class="header--nav grid">
+		<div class="container--header">
+			<div class="container-desktop">
+				<div class="logo">
+					<a href="index.html" class="logo__name-logo">
+						<span class="name">J<span class="text_migra">o</span>hnnathan</span>	
+						<span class="name">Y<span class="text_migra">u</span>panqui</span>
+					</a>
+				</div>
+				<nav class="navigation menu-desktop">
+					<ul class="nav_bar">
+						<li>
+							<a href="index.html#projects" class="nav-item body-text-sans fw-4" data-section="projects">
+								<span class="f_migra">02 </span>
+								Proyectos
+							</a>
+						</li>
+						<li>
+							<a href="index.html#about" class="nav-item body-text-sans fw-4" data-section="about">
+								<span class="font_migra">03 </span> Acerca de mi
+							</a>
+						</li>
+						<li>
+							<a href="index.html#contact" class="nav-item body-text-sans fw-4" data-section="contact">
+								<span class="font_migra">04 </span> Contacto
+							</a>
+						</li>
+					</ul>
+				</nav>
+				<!-- Trigger mobile: solo visible < ~1024px -->
+				<button class="menu-trigger" aria-label="Abrir menú" aria-expanded="false">
+					Menu
+				</button>
+			</div>
+			<!-- Menú overlay mobile (se muestra al clic) -->
+			<div class="menu-container">
+				<article class="menu-overlay" id="menuOverlay">
+					<button class="menu-close" aria-label="Cerrar menú">×</button>
+					
+					<nav class="menu-mobile">
+						<ul class="menu-mobile__list">
+							<li><a class="menu-mobile__nav-item--link" href="index.html">HOME</a></li>     <!-- Agregué HOME como en ref 3 -->
+							<li><a class="menu-mobile__nav-item--link" href="index.html#proyectos">02 PROYECTOS</a></li>
+							<li><a class="menu-mobile__nav-item--link" href="index.html#about">03 ABOUT</a></li>
+							<li><a class="menu-mobile__nav-item--link" href="index.html#contacto">04 CONTACTO</a></li>
+						</ul>
+					</nav>
+					</article>
+			</div>
+		</div>
+	</header>
+	<!-- main -->
+	<main>
+		<section class="hmtl-page">
+			<section class="html-page-content">
+				<!-- case study -->
+				<section class="page-case-study">
+					<article class="page-case-study__container">
+						<!-- header -->
+						<header class="header-page grid">
+							<article class="header-page__content">
+								<a href="index.html#projects" class="btn-text-link">
+									<span class="body-text-sans fw-5">◁</span>
+									<!-- 
+									<i class="ph ph-arrow-left"></i>
+									-->
+									<span>Ir a Proyectos</span>
+								</a>
+								<div class="ux--title">
+									<p class="headline-h4 mg-01">Vuelve Compostario</p>
+									<h2 class="headline-display fw-4">
+										Investigación y diseño UX para un sistema centralizado — CRM multi-rol para el primer servicio de compostaje
+									</h2>
+									<div class="tags--case dflex">
+										<div class="tag--headltcare">
+											<p class="body-text">Petcare</p>
+										</div>
+										<div class="tag--headltcare">
+											<p class="body-text">Sostenibilidad</p>
+										</div>
+										<div class="tag--headltcare">
+											<p class="body-text">B2B interno</p>
+										</div>
+										<div class="tag--headltcare">
+											<p class="body-text">UX/UI</p>
+										</div>
+										<div class="tag--headltcare">
+											<p class="body-text">Caso de estudio</p>
+										</div>
+										<div class="tag--headltcare">
+											<p class="body-text">Atomic Design + Guia de Estilos</p>
+										</div>
+									</div>
+								</div>
+							</article>
+						</header>
+						<section class="content-wrapper grid">
+							<div class="content-wrapper__container">
+								<!-- resultado -->
+								<section class="resultado">
+									<div class="resultado--content grid">
+										<div class="col col--center">
+											<h4 class="headline-h1 fw-5 mg-03">Resultados del proyecto</h4>
+											<p class="headline-h5 mg-01">
+												Diseñamos la primera versión de un dashboard CRM para Vuelve Compostario, centralizando en una sola plataforma lo que antes se sostenía entre WhatsApp, Excel, Google Forms y Trello.
+											</p>
+											<p class="headline-h5">
+												Validamos con el stakeholder los wireframes de los 4 perfiles del sistema (administrador general, administrador ayudante, operario y cliente) y avanzamos hasta diseño de alta fidelidad en desktop y mobile. El proyecto quedó como base validada para una siguiente etapa de desarrollo — el testing de usabilidad con usuarios finales no llegó a realizarse por decisión del stakeholder de fasear el proyecto.
+											</p>
+										</div>
+									</div>
+									<div class="imagen-resultado">
+										<div class="imagen-resultado__wrapp">
+											<figure 
+											data-scroll-image data-parallax-speed="12"
+											class=" card--figure br-2">
+												<img
+												src="/src/img/vuelve/screen_macbook.webp"
+												loading="lazy" decoding="async" data-nimg="1"
+												srcset="/src/img/vuelve/screen_macbook.webp 250w 80w 16w"
+												alt="image" >
+											</figure>
+										</div>
+									</div>
+								</section>
+								<!-- resultado -->
+								<section class="role--team effect-card br-2">
+									<div class="role--team__content">
+										<div class="dflex">
+											<div class="card--wrap flex3">
+												<div class="role--card content-card-white br-2 flex3 mg-01">
+													<p class="body-text-sans fw-6">Mi Rol</p>
+													<p class="body-text">
+														Diseño UX/UI —  investigación, definición, arquitectura de información, wireframes, UI final
+													</p>
+												</div>
+												<div class="role-card--goal content-card-white br-2 flex3">
+													<p class="body-text-sans fw-6">Equipo</p>
+													<p class="body-text">Fui el único diseñador UX/UI</p>
+												</div>
+											</div>
+											<div class="card--wrap flex3">
+												<div class="role--card content-card-white br-2 flex3 mg-01">
+													<p class="body-text-sans fw-6">Cliente</p>
+													<p class="body-text">
+														Vuelve Compostario (servicio de biotransformación de mascotas, Perú)
+													</p>
+												</div>
+												<div class="role--card content-card-white br-2 flex3">
+													<p class="body-text-sans fw-6">Timeline</p>
+													<p class="body-text">
+														~2 meses y 3 semanas · diseño UX/UI end-to-end, entrega en Figma
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</section>
+								<!-- resultado -->
+								<section class="problema">
+									<div class="problema__wrapper">
+										<div class="problema--content">
+											<h4 class="headline-h1 fw-5 mg-03">El Problema</h4>
+											<p class="body-text mg-01">
+												Vuelve Compostario nació para resolver algo muy humano: qué hacer cuando una mascota muere y no hay un lugar adecuado para despedirla, sin recurrir a la incineración y su huella ambiental.
+											</p>
+											<p class="body-text mg-01">
+												El servicio creció rápido — pero por dentro, seguía sostenido con WhatsApp, Excel y formularios de Google, fragmentando la información entre el equipo interno, los operarios y los clientes.
+											</p>
+											<p class="body-text">
+												Cada tarea, cada mascota, cada etapa del compostaje vivía en una herramienta distinta, sin trazabilidad real.
+											</p>
+											<article class="problema--resumen">
+												<div class="container grid">
+													<div class="wrapp col--center">
+														<h4 class="headline-h5-sans fw-6 mg-01">
+															Resumen del problema:
+														</h4>
+														<p class="body-text">
+															Vuelve Compostario necesitaba centralizar su operación del equipo interno, operarios y clientes en una sola plataforma, porque las herramientas dispersas fragmentaban la información y limitaban su capacidad de crecer sin perder la cercanía y transparencia que definen a la marca.
+														</p>
+													</div>
+												</div>
+											</article>
+											<!-- COMPONENTS -->
+											<article class="problema--componentes grid">
+												<div class="problema--componentes__content col--center">
+													<div class="wrapp mg-03">
+														<h4 class="headline-h5-sans fw-6 mg-01">Componentes del problema:</h4>
+													</div>
+													<div class="item--components">
+														<div class="content-item">
+															<ul class="componentes--item">
+																<li class="body-text mg-01">
+																	<span class="body-text-sans fw-4">✦ Procesos manuales:</span>
+																	tareas repetitivas que consumían tiempo operativo y aumentaban el margen de error.
+																</li>
+																<li class="body-text mg-01">
+																	<span class="body-text-sans fw-4">✦ Seguimiento ineficiente:</span>
+																	no existía una vista centralizada del estado de cada servicio de compostaje.
+																</li>
+																<li class="body-text mg-01">
+																	<span class="body-text-sans fw-4">✦ Comunicación desconectada:</span>
+																	la coordinación entre equipo interno, operarios y clientes carecía de estructura y trazabilidad.
+																</li>
+																<li class="body-text">
+																	<span class="body-text-sans fw-4">✦ Gestión de datos manual:</span>
+																	información de clientes y mascotas recolectada por WhatsApp debía trasladarse a mano a Excel; Trello se usaba para tareas, también con copia manual.
+																</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+											</article>
+											<!-- IMPACT -->
+											<article class="impact--nivel">
+												<h4 class="headline-h4 fw-5 mg-02">Impacto por nivel:</h4>
+												<ul class="impact--nivel-item dflex">
+													<li class="body-text item--impact flex">
+														<span class="body-text-sans fw-6">✦ Usuario (equipo interno):</span>
+														<br>
+														<span>
+															El flujo de trabajo evitaría tareas repetitivas y le daría a cada operario un timeline administrable de sus propias tareas.
+														</span>
+													</li>
+													<li class="body-text item--impact flex">
+														<span class="body-text-sans fw-6">✦ Negocio:</span>
+														<br>
+														<span>
+															El modelo de Vuelve depende de acompañar el proceso de principio a fin — desde la recogida de la mascota hasta la ceremonia simbólica y la entrega del compost final — y ese acompañamiento no podía sostenerse escalando solo con herramientas manuales.
+														</span>
+													</li>
+													<li class="body-text item--impact flex">
+														<span class="body-text-sans fw-6">✦ Marca:</span>
+														<br>
+														<span>
+															Vuelve se posiciona como un servicio ecoamigable y respetuoso; una operación interna caótica pone en riesgo justamente la transparencia y cercanía que la marca promete a las familias en un momento emocionalmente sensible.
+														</span>
+													</li>
+												</ul>
+											</article>
+										</div>
+									</div>
+								</section>
+								<!-- research -->
+								<section class="research">
+									<div class="research__content">
+										<div class="research--header grid">
+											<div class="col col--head">
+												<h4 class="headline-h1 fw-6 mg-03">
+													Investigación
+												</h4>
+												<p class="body-text">
+													Al ser la primera empresa en Perú dedicada al compostaje de mascotas, la investigación se centró en entrevistas con el stakeholder principal y con los operarios, en vez de un benchmark de producto — no existía una referencia local de la cual partir.
+												</p>
+											</div>
+										</div>
+										<article class="entrevistas">
+											<!--
+											<p class="body-text mg-03">
+												¿Qué problemas enfrentan los usuarios al agendar una cita y la web?
+											</p>
+											-->
+											<div class="imagen-entrevistas">
+												<figure class="">
+													<img 
+														src="./src/img/vuelve/diagrama--compostario.jpg"
+														loading="lazy" decoding="async" data-nimg="1"
+														srcset="./src/img/vuelve/diagrama--compostario.jpg 200w 80w 16w" 
+														alt="imagen entrevista" >
+												</figure>
+
+											</div>
+										</article>
+										<!-- EXPLORE -->
+										<article class="explore effect-card br-2">
+											<div class="explore--content dflex content-card-white">
+												<div class="explore--card flex2">
+													<p class="body-text-sans fw-5 mg-02">Qué exploré</p>
+													<ul class="">
+															<li class="body-text">
+																✦ Cómo funciona el servicio y el mercado de compostaje en Perú
+															</li>
+															<li class="body-text">
+																✦ Cómo se coordina hoy el equipo interno
+															</li>
+															<li class="body-text">
+																✦ Cómo se gestionan los datos de clientes y mascotas
+															</li>
+															<li class="body-text">
+																✦ Qué necesitaban los operarios para hacer seguimiento
+															</li>
+													</ul>
+												</div>
+												<div class="explore--card flex2">
+													<p class="body-text-sans fw-5 mg-02">Qué encontré</p>
+													<ul class="">
+															<li class="body-text">
+																✦ Es un servicio pionero: el proceso acompaña a las familias en dos etapas — desde la recepción hasta la entrega final de una planta y un certificado conmemorativo
+															</li>
+															<li class="body-text">
+																✦ La comunicación depende casi enteramente de WhatsApp, generando un historial disperso que exige búsqueda constante de información
+															</li>
+															<li class="body-text">
+																✦ Se recolectan por WhatsApp y se trasladan a mano a Excel; Trello se usa para tareas, también copiadas manualmente
+															</li>
+															<li class="body-text">
+																✦ No hay sistema de recordatorios automatizado — los operarios no siempre están pendientes de tareas programadas, causando retrasos, especialmente durante la cosecha
+															</li>
+													</ul>
+												</div>
+											</div>
+										</article>
+									</div>
+								</section>
+								<!-- Insight -->
+								<section class="insigth--goal">
+									<div class="insigth--goal__wrapper">
+										<div class="insigth--goal--header grid">
+											<div class="insigth--goal-content col col--head">
+												<h4 class="headline-h4 fw-4 mg-02">
+													Insights
+												</h4>
+												<ul>
+													<li class="body-text mg-01">
+														<strong class="body-text-sans">
+															I1:
+														</strong>
+														Los operarios necesitan visualizar con claridad qué tarea sigue y quién es responsable de cada etapa, para ejecutar sin confusiones.
+													</li>
+													<li class="body-text mg-01">
+														<strong class="body-text-sans">
+															I2:
+														</strong>
+														El administrador general necesita visión clara y actualizada del trabajo diario — su falta de visibilidad genera retrasos y dificulta decisiones.
+													</li>
+													<li class="body-text mg-01">
+														<strong class="body-text-sans">
+															I3:
+														</strong>
+														Cada usuario requiere un perfil enfocado en sus tareas específicas, mientras que el administrador necesita acceso más amplio para gestión y control.
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</section>
+								<!-- benchmark -->
+								<section class="benchmark">
+									<div class="benchmark__wrapper">
+										<div class="benchmark--header grid">
+											<div class="col col--head">
+												<h4 class="headline-h4 fw-5 mg-01">
+													Benchmark competitivo
+												</h4>
+												<p class="body-text mg-01">
+													Se realizó un benchmark de competencia indirecta, encontrando solo una empresa similar en Colombia, con un modelo de negocio distinto y sin sistema CRM propio.
+												</p>
+												<p class="body-text">
+													Al no existir una referencia directa de un CRM multi-rol para este tipo de servicio, el benchmark se apoyó en ejemplos generales de dashboards administrables encontrados en la web, más que en una comparación estructurada de competidores — el hallazgo en sí (ausencia total de referencia directa) confirmó que el reto no era digitalizar un proceso ya resuelto en otro lugar, sino construir una herramienta a medida desde cero.
+												</p>
+											</div>
+										</div>
+									</div>
+								</section>
+								<!-- user -->
+								<div class="user frame-top">
+									<h4 class="headline-h4 fw-4 mg-03">User persona</h4>
+									<figure class="mg-05 flex-direction">
+										<img
+											src="/src/img/vuelve/user-persona-admin.png"
+											loading="lazy" decoding="async" data-nimg="1"
+											srcset="/src/img/vuelve/user-persona-admin.png 200w 80w"
+											alt="image" >
+										<figcaption class="body-text mg-01">User Persona - Admin</figcaption>
+									</figure>
+									<figure class="mg-05 flex-direction">
+										<img
+											src="/src/img/vuelve/proto-persona-maria.png"
+											loading="lazy" decoding="async" data-nimg="1"
+											srcset="/src/img/vuelve/user-persona-maria.png 200w 80w"
+											alt="image" >
+										<figcaption class="body-text mg-01">Proto-Persona - María</figcaption>
+									</figure>
+									<figure class="flex-direction">
+										<img
+											src="/src/img/vuelve/proto-persona-diego.png"
+											loading="lazy" decoding="async" data-nimg="1"
+											srcset="/src/img/vuelve/proto-persona-diego.png 200w 80w"
+											alt="image" >
+										<figcaption class="body-text mg-01">Proto-Persona - Diego</figcaption>
+									</figure>
+								</div>
+								<!-- task flow -->
+								<div class="user-flow-vuelve frame-top">
+									<div class="user-flow__content">
+										<h4 class="headline-h5-sans fw-4">
+											Flujo de usuario
+										</h4>
+										<div class="effect-card br-2">
+											<div class="content-card-white br-2">
+												<figure class="figure--user-flow mg-04 flex-direction">
+													<img src="./src/img/vuelve/vuelve_userflow_admin.png"
+														loading="lazy" decoding="async" data-nimg="1"
+														srcset="/src/img/vuelve/vuelve_userflow_admin.png 200w 80w 16w" 
+														alt="flujo admin">
+														<figcaption class="body-text">Flujo Admin</figcaption>
+												</figure>
+												<figure class="figure--user-flow flex-direction">
+													<img src="./src/img/vuelve/vuelve_userflow_operario.png"
+														loading="lazy" decoding="async" data-nimg="1"
+														srcset="/src/img/goal/vuelve_userflow_operario.png 200w 80w 16w" 
+														alt="flujo operario">
+														<figcaption class="body-text mg-01">Flujo Operario</figcaption>
+												</figure>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- task flow -->
+								<div class="user-flow-vuelve proto-user-journey-map frame-top">
+									<div class="user-flow__content">
+										<h4 class="headline-h5-sans fw-4">
+											Proto - User Journey Map
+										</h4>
+										<div class="effect-card br-2">
+											<div class="content-card-white br-2">
+												<figure class="figure--user-flow flex-direction">
+													<img src="./src/img/vuelve/Proto-User-Admin.jpg"
+														loading="lazy" decoding="async" data-nimg="1"
+														srcset="/src/img/vuelve/Proto-User-Admin.jpg 250w 80w 16w" 
+														alt="flujo admin">
+														<figcaption class="body-text mg-01">Admin</figcaption>
+												</figure>
+												<figure class="figure--user-flow flex-direction">
+													<img src="./src/img/vuelve/Proto-User-cliente.jpg"
+														loading="lazy" decoding="async" data-nimg="1"
+														srcset="/src/img/goal/Proto-User-cliente.jpg 250w 80w 16w" 
+														alt="flujo operario">
+														<figcaption class="body-text mg-01">Cliente</figcaption>
+												</figure>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- task flow -->
+								<div class="site-map site-map-vuelve frame-top">
+									<div class="site-map__content">
+										<div class="site-map--description grid">
+											<div class="site-map--frame col--head">
+												<h4 class="headline-h5-sans fw-4 mg-01">
+													Mapa de Sitio
+												</h4>
+											</div>
+										</div>
+										<div class="effect-card br-2">
+											<figure class="site-map-compostario content-card-white br-2">
+												<img 
+													src="./src/img/vuelve/siteMap.png"
+													loading="lazy" decoding="async" data-nimg="1"
+													srcset="./src/img/vuelve/siteMap.png 200w 80w" 
+													alt="mapa de sitio" >
+											</figure>
+										</div>
+									</div>
+								</div>
+								<!-- definition -->
+								<section class="definition definition--goal">
+									<div class="definition__content">
+										<div class="definition__content definition--goal__content">
+											<div class="definition--titles">
+												<h2 class="headline-h1 fw-4 mg-03">Definición</h2>
+												<h4 class="headline-h4">
+													HMW — ¿Cómo podríamos?
+												</h4>
+											</div>
+											<table class="table-data-label-goal" style="width: 100%; border-collapse: collapse;">
+													<thead>
+														<tr>
+															<th class="body-text-sans fw-5 tr--column">Insights</th>
+															<th class="body-text-sans fw-5 tr--column">POV (Point of View)</th>
+															<th class="body-text-sans fw-5 tr--column">¿Cómo podríamos? (HMW)</th>
+														</tr>
+													</thead>
+													<tbody>
+														<!-- tr 1 -->
+														<tr>
+															<td class="text-small fw-2 tr--column">
+																Los usuarios sienten desconfianza al no entender claramente los servicios financieros.
+															</td>
+															<td class="text-small fw-2 tr--column">
+																Carlos necesita conocer qué tipo de asesoría ofrece Goal Capital y cómo puede ayudarle a invertir con seguridad.
+															</td>
+															<td class="text-small fw-2 tr--column">
+																¿Cómo podríamos comunicar los servicios financieros de forma clara y visual para generar confianza inmediata?
+															</td>
+														</tr>
+														<!-- tr 2 -->
+														<tr>
+															<td class="text-small fw-2 tr--column">
+																Los usuarios abandonan el formulario de asesoría por ser extenso y poco guiado.
+															</td>
+															<td class="text-small fw-2 tr--column">
+																Mariana necesita poder agendar una cita en menos pasos y sentir que hay un asesor disponible para resolver sus dudas.
+															</td>
+															<td class="text-small fw-2 tr--column">
+																¿Cómo podríamos simplificar el flujo de agendamiento rápido y confiable?
+															</td>
+														</tr>
+														<!-- tr 3 -->
+														<tr>
+															<td class="text-small fw-2 tr--column">
+																Los usuarios usan las herramientas financieras pero no saben qué hacer con los resultados.
+															</td>
+															<td class="text-small fw-2 tr--column">
+																Andrés necesita entender cómo interpretar los resultados de la calculadora y qué pasos seguir después.
+															</td>
+															<td class="text-small fw-2 tr--column">
+																¿Cómo podríamos conectar los resultados de las herramientas con una acción concreta (agendar asesoría)?
+															</td>
+														</tr>
+													</tbody>
+											</table>
+										</div>
+									</div>
+								</section>
+								<!-- solución -->
+								<section class="solution">
+									<article class="solution__wrapper">
+										<article class="solution--description">
+											<h2 class="headline-h2 fw-5 mg-03">Solución</h2>
+											<div class="clave-design grid">
+												<div class="clave-design--content col--center">
+													<h5 class="headline-h5-sans fw-5 mg-02">
+														Decisiones clave de diseño
+													</h5>
+													<ul>
+														<li class="body-text mg-02">
+															<strong class="body-text-sans fw-5">✦ Qué encontramos: </strong> al analizar las entrevistas con el stakeholder y el equipo operativo, organizamos los hallazgos en post-its y flujos operativos, identificando las áreas donde se generaban más fricciones. Dada la etapa inicial del producto, el trabajo de diseño necesitaba enfocarse en establecer hipótesis de estructura, no en pulir pantallas — sin un modelo de referencia previo, cada decisión debía validarse directamente con quienes conocían el flujo real del negocio.
+														</li>
+														<li class="body-text">
+															<strong class="body-text-sans fw-5">✦ Qué resolvimos: </strong>
+															definimos perfiles diferenciados para cada rol — administrador, ayudante, operario y cliente — cada uno con una vista enfocada solo en lo que necesita para su tarea, en vez de una interfaz genérica para todos. Construimos una visualización de timeline que sigue a cada mascota desde la recolección hasta la entrega del compost, visible en tiempo real tanto para operarios como para administradores. Priorizamos wireframes de baja fidelidad sobre pantallas pulidas — la etapa del producto pedía validar la estructura del sistema con el stakeholder antes de invertir en diseño visual, y esa validación fue la que definió qué pantallas merecían pasar a alta fidelidad. El proceso avanzó en formato de sprints: proponer, presentar al stakeholder, ajustar, y volver a presentar hasta llegar al wireframe final.
+														</li>
+													</ul>
+												</div>
+											</div>
+										</article>
+										<article class="solution--study">
+											<!-- solución 1 -->
+											<div class="card--solution dflex mg-t3">
+												<div class="flex frame--card">
+													<p class="text-small-sans fw-6 mg-01">
+														01 — Como administradora, quiero ver en un solo panel el estado general de la operación, para tomar decisiones sin reunir información dispersa entre WhatsApp, Excel y Trello
+													</p>
+													<p class="text-small mg-01">
+														<strong class="text-small-sans fw-4">Antes:</strong> la información vivía repartida entre WhatsApp, Excel y Trello, sin una vista consolidada del día a día.
+													</p>
+													<p class="text-small">
+														<strong class="text-small-sans fw-4">Después:</strong> un dashboard único que resume servicios recientes, servicios extras, total de clientes y de compost generado, además de recordatorios automáticos (como la cosecha de Scamp) y un timeline de operarios con el estado de cada recojo — en vez de tener que preguntar uno por uno.
+													</p>
+												</div>
+												<div class="flex2 effect-card br-2">
+													<figure class="figure--solution">
+														<img
+															src="/src/img/vuelve/perfilManagement.webp"
+															loading="lazy" decoding="async" data-nimg="1"
+															srcset="/src/img/vuelve/perfilManagement.webp 250w 80w 16w"
+															alt="Perfil Management" >
+													</figure>
+												</div>
+											</div>
+											<!-- solución 2 -->
+											<div class="card--solution dflex mg-t3">
+												<div class="flex frame--card">
+													<p class="text-small-sans fw-6 mg-01">
+														02 — Como operario de compostaje, quiero ver solo las tareas y mascotas que tengo asignadas, para ejecutar sin revisar información que no me corresponde.
+													</p>
+													<p class="text-small mg-01">
+														<strong class="text-small-sans fw-4">Antes:</strong> los operarios dependían de indicaciones manuales del administrador, sin un registro propio de sus tareas del día.
+													</p>
+													<p class="text-small">
+														<strong class="text-small-sans fw-4">Después:</strong> un panel personalizado ("Hola, Felipe") que muestra únicamente sus actividades del día, el total de compost generado bajo su responsabilidad, y tarjetas de cada mascota en compostaje con acceso directo a "Ver ficha" — sin necesidad de preguntar qué sigue.
+													</p>
+												</div>
+												<div class="flex2 effect-card br-2">
+													<figure class="figure--solution">
+														<img
+															src="/src/img/vuelve/perfilOperario.webp"
+															loading="lazy" decoding="async" data-nimg="1"
+															srcset="/src/img/vuelve/perfilOperario.webp 16w"
+															alt="Perfil Operario" >
+													</figure>
+												</div>
+											</div>
+											<!-- solución 3 -->
+											<div class="card--solution dflex mg-t3">
+												<div class="flex frame--card">
+													<p class="text-small-sans fw-6 mg-01">
+														03 — Como cliente, quiero hacer seguimiento del proceso de mi mascota sin tener que escribir para preguntar cómo va, para sentir acompañamiento y transparencia durante todo el servicio.
+													</p>
+													<p class="text-small mg-01">
+														<strong class="text-small-sans fw-4">Antes:</strong> el cliente dependía por completo de mensajes de WhatsApp para saber en qué estado se encontraba el proceso de su mascota.
+													</p>
+													<p class="text-small">
+														<strong class="text-small-sans fw-4">Después:</strong> un perfil propio con seguimiento visible del servicio contratado, los datos de su mascota, y un mensaje de acompañamiento ("Nunca se fue, solo volvió para crear más vida") que sostiene el tono emocional del servicio incluso dentro de la plataforma.
+													</p>
+												</div>
+												<div class="flex2 effect-card br-2">
+													<figure class="figure--solution">
+														<img
+															src="/src/img/vuelve/perfilCliente.webp"
+															loading="lazy" decoding="async" data-nimg="1"
+															srcset="/src/img/vuelve/perfilCliente.webp 250w 80w 16w"
+															alt="Perfil Cliente" >
+													</figure>
+												</div>
+											</div>
+											<!-- solución 4 -->
+											<div class="card--solution dflex mg-t3">
+												<div class="flex frame--card">
+													<p class="text-small-sans fw-6 mg-01">
+														04 — Como operario, quiero ver el detalle completo de cada mascota asignada desde la recepción hasta la cosecha para hacer seguimiento sin depender de papeles o mensajes sueltos.
+													</p>
+													<p class="text-small mg-01">
+														<strong class="text-small-sans fw-4">Antes:</strong> el seguimiento de cada mascota se hacía de forma manual, sin un registro visual del avance por etapas.
+													</p>
+													<p class="text-small">
+														<strong class="text-small-sans fw-4">Después:</strong> una ficha individual con timeline de etapas (recepción de la mascota, subir fotos, inicio de compostaje, monitoreos, cosecha), que el operario actualiza directamente conforme avanza — dejando trazabilidad real de cada etapa del proceso.
+													</p>
+												</div>
+												<div class="flex2 effect-card br-2">
+													<figure class="figure--solution">
+														<img
+															src="/src/img/vuelve/fichaMascota.png"
+															loading="lazy" decoding="async" data-nimg="1"
+															srcset="/src/img/vuelve/fichaMascota.png 250W 80W 16w"
+															alt="imagen home" >
+													</figure>
+												</div>
+											</div>
+										</article>
+									</article>
+								</section>
+								<!-- validación -->
+								<section class="validation">
+									<div class="validation__content">
+										<h4 class="headline-h4 fw-5 mg-02">Validación</h4>
+										<p class="body-text">
+											Se realizó una prueba de wireframes con el stakeholder para validar funciones y pantallas del dashboard, cubriendo los 4 perfiles y los flujos de registro, inicio de sesión y selección de servicio. Tras esa validación, no se llegó a realizar el testing de usabilidad final con usuarios reales (operarios o clientes) — por límite de tiempo y decisión del stakeholder de dejar esta etapa como base para retomar el desarrollo en un ciclo posterior.
+										</p>
+									</div>
+								</section>
+								<!-- validación -->
+								<article class="wireframe frame-top">
+									<div class="wireframe-content">
+										<h4 class="headline-h4 fw-5 mg-04">Wireframes</h4>
+										<div class="boceto mg-04">
+											<p class="body-text-sans fw-4 mg-01">Idea inicial</p>
+											<p class="body-text mg-03">
+												Diseñé un producto digital tipo CRM para la gestión y almacenamiento de datos de clientes. El proyecto comenzó con investigación cualitativa (entrevistas a stakeholders y análisis de procesos) para comprender sus necesidades y flujos de trabajo.
+											</p>
+											<figure>
+												<img 
+													src="./src/img/vuelve/bocetos.webp"
+													loading="lazy" decoding="async" data-nimg="1"
+													srcset="./src/img/vuelve/bocetos.webp 200w 80w" 
+													alt="mapa de sitio" >
+											</figure>
+										</div>
+										<div class="wireframe-figure">
+											<div class="col-wireframe dflex mg-03">
+												<figure class="flex2">
+													<img 
+														src="./src/img/vuelve/wAdmin.png"
+														loading="lazy" decoding="async" data-nimg="1"
+														srcset="./src/img/vuelve/wAdmin.png 200w 80w" 
+														alt="mapa de sitio" >
+												</figure>
+												<figure class="flex2">
+													<img 
+														src="./src/img/vuelve/wOperario.png"
+														loading="lazy" decoding="async" data-nimg="1"
+														srcset="./src/img/vuelve/wOperario.png 200w 80w" 
+														alt="mapa de sitio" >
+												</figure>
+											</div>
+											<div class="col-wireframe dflex mg-03">
+												<figure class="flex2">
+													<img 
+														src="./src/img/vuelve/wConductor.png"
+														loading="lazy" decoding="async" data-nimg="1"
+														srcset="./src/img/vuelve/wConductor.png 200w 80w" 
+														alt="mapa de sitio" >
+												</figure>
+												<figure class="flex2">
+													<img 
+														src="./src/img/vuelve/wServicio-x01.png"
+														loading="lazy" decoding="async" data-nimg="1"
+														srcset="./src/img/vuelve/wServicio-x01.png 200w 80w" 
+														alt="mapa de sitio" >
+												</figure>
+											</div>
+											<div class="col-wireframe dflex">
+												<figure class="flex2">
+													<img 
+														src="./src/img/vuelve/wPerfil.png"
+														loading="lazy" decoding="async" data-nimg="1"
+														srcset="./src/img/vuelve/wPerfil.png 200w 80w" 
+														alt="mapa de sitio" >
+												</figure>
+												<figure class="flex2">
+													<img 
+														src="./src/img/vuelve/wForm.png"
+														loading="lazy" decoding="async" data-nimg="1"
+														srcset="./src/img/vuelve/wForm.png 200w 80w" 
+														alt="mapa de sitio" >
+												</figure>
+											</div>
+										</div>
+									</div>
+								</article>
+								<!-- ui-kit -->
+								<section class="ui-kit">
+									<div class="ui-kit__wrapper">
+										<h4 class="headline-h1 fw-4">Guía de Estilos</h4>
+										<div class="ui-kit-content">
+											<!-- COLOR -->
+											<article class="color--ui">
+												<h5 class="headline-h5-sans fw-4 mg-02">
+													Color
+												</h5>
+												<figure class="figure--color">
+													<img
+														src="/src/img/vuelve/color.png"
+														loading="lazy" decoding="async" data-nimg="1"
+														srcset="/src/img/vuelve/color.png 250w 80w 20w"
+														alt="image" >
+												</figure>
+											</article>
+											<!-- TIPOGRAPHY -->
+											<article class="tipography--ui frame-top">
+													<h5 class="headline-h5-sans fw-4 mg-02">
+														Tipografía
+													</h5>
+													<figure class="figure--tipography">
+														<img
+															src="/src/img/vuelve/tipography.png"
+															loading="lazy" decoding="async" data-nimg="1"
+															srcset="/src/img/vuelve/tipography.png 250w 80w 16w"
+															alt="image" >
+													</figure>
+											</article>
+											<!-- ESPACING -->
+											<article class="spacing--vuelve frame-top">
+												<div class="spacing--vuelve__content br-5">
+													<h5 class="headline-h5-sans mg-01 white">
+														Espaciado
+													</h5>
+													<figure class="figure--spacing">
+														<img 
+															src="/src/img/montesur/spaces.png"
+															loading="lazy" decoding="async" data-nimg="1"
+															srcset="/src/img/montesur/spaces.png 16w"
+															alt="image" >
+													</figure>
+												</div>
+											</article>
+											<!-- LAYOUT -->
+											<article class="grid--vuelve frame-top">
+												<div class="grid--vuelve__content br-5">
+													<h5 class="headline-h5-sans mg-01 white">
+														Grid
+													</h5>
+													<div class="figure--grid dflex">
+														<figure class="figure--desktop flex3">
+															<img 
+																src="/src/img/vuelve/grid--desktop.png"
+																loading="lazy" decoding="async" data-nimg="1"
+																srcset="/src/img/vuelve/grid--desktop.png 200w 80w 16w"
+																alt="image" >
+														</figure>
+														
+													</div>
+												</div>
+											</article>
+											<!-- LAYOUT -->
+											
+											<!-- COMPONENTES -->
+											<article class="components--ui frame-top">
+												<div class="components__content">
+													<h5 class="headline-h5-sans fw-5">
+														Componentes
+													</h5>
+													<figure class="effect-card br-5 figue-components">
+														<img
+															src="/src/img/vuelve/components.png"
+															loading="lazy" decoding="async" data-nimg="1"
+															srcset="/src/img/vuelve/components.png 200w 80w 16w"
+															alt="image" >
+													</figure>
+												</div>
+											</article>
+										</div>
+									</div>
+								</section>
+							</div>
+						</section>
+						<!-- diseño visual -->
+						<section class="visual-design grid">
+							<div class="visual-design__wrapper">
+								<h2 class="headline-h2 fw-5">Diseño Visual</h2>
+								<div class="container--design">
+									<!-- devices--home -->
+									<div class="freme figure--desktop frame-top">
+										<figure
+											class="overflow br-5"
+											data-scroll-image 
+											data-parallax-speed="8" >
+											<img
+												src="/src/img/vuelve/macbook_ui.webp"
+												loading="lazy" decoding="async" data-nimg="1"
+												srcset="/src/img/vuelve/macbook_ui.webp 250w 80w 16w"
+												alt="image" >
+										</figure>
+									</div>
+									<!-- card home -->
+									<div class="tablet--montesur br-5 frame-top">
+										<figure class="br-2"
+											data-scroll-image data-parallax-speed="12" >
+											<img
+											src="/src/img/vuelve/iPad.webp"
+											loading="lazy" decoding="async" data-nimg="1"
+											srcset="/src/img/vuelve/iPad.webp 200w 40w"
+											alt="image" >
+
+										</figure>
+									</div>
+									<!-- card pantallas -->
+									<div class="devices--desktop-montesur frame-top">
+										<figure class="frame-image overflow br-5"
+											data-scroll-image
+											data-parallax-speed="10">
+											<img
+												src="/src/img/vuelve/screen_desptok.webp"
+												loading="lazy" decoding="async" data-nimg="1"
+												srcset="/src/img/vuelve/screen_desptok.webp 200w 40w"
+												alt="image" >
+										</figure>
+									</div>
+									<!-- card pantallas -->
+									<div class="devices frame-top">
+										<figure class="frame-image overflow br-5"
+											data-scroll-image
+											data-parallax-speed="10">
+											<img
+												src="/src/img/vuelve/screenResponsive.webp"
+												loading="lazy" decoding="async" data-nimg="1"
+												srcset="/src/img/vuelve/screenResponsive.webp 250w 80w 16w"
+												alt="image" >
+										</figure>
+									</div>
+									<!-- devices other -->
+									<div class="visual--mobile br-5 frame-top">
+										<figure data-scroll-image data-parallax-speed="10">
+											<img
+												src="/src/img/vuelve/iPhone.webp"
+												loading="lazy" decoding="async" data-nimg="1"
+												srcset="/src/img/vuelve/iPhone.webp 250w 80w 16w"
+												alt="image" >
+										</figure>
+									</div>
+									<!-- devices mobile -->
+									<div class="visual--mobile br-5 frame-top">
+										<figure data-scroll-image data-parallax-speed="10">
+											<img
+												src="/src/img/vuelve/screenMobile.webp"
+												loading="lazy" decoding="async" data-nimg="1"
+												srcset="/src/img/montesur/screenMobile.webp 250w 80w 16w"
+												alt="image" >
+										</figure>
+									</div>
+							</div>
+						</section>
+						<!-- definition -->
+						<section class="reflection grid">
+							<div class="reflection__content">
+								<h2 class="headline-h2 fw-5">Reflexión</h2>
+								<p class="body-text mg-01">
+									Este proyecto fue mi primer CRM multi-rol como diseñador UX/UI sin referencia previa — el benchmark solo pudo comparar sitios web, no sistemas similares, y sin IA como apoyo de research. El reto no era visual, era traducir un flujo operativo real en un sistema digital, sin ningún modelo del cual partir.
+								</p>
+								<p class="body-text mg-01">
+									Con los avances de ideas con bocetos entre bocetos, ejemplos externos y sesiones tipo sprint con el stakeholder — proponer, presentar, ajustar — hasta llegar a un wireframe alineado con su operación real, validando cada decisión directamente con quien conocía el negocio.
+								</p>
+								<p class="body-text">
+									<strong class="body-text-sans fw-4">Aprendizaje: </strong> el proyecto se extendió más de lo estimado y el testing quedó fuera del alcance final. La lección: sin precedente claro, hay que estimar tiempo con más margen — y proteger el testing como parte no negociable del alcance, no como lo primero que se sacrifica.
+								</p>
+							</div>
+						</section>
+					</article>
+				</section>
+			</section>
+		</section>
+	</main>
+	<!-- footer -->
+	<footer class="footer-page">
+		<article class="footer-page__footer-content p1">
+			<div class="link-item-next">
+				<p class="body-text text--link-next">Siguiente Caso de Estudio</p>
+				<a href="goal-capital.html" class="text--next-headline white">
+					Goal Capital
+				</a>
+			</div>
+		</article>
+	</footer>
+	<script src="https://cdn.jsdelivr.net/npm/lenis@1.3.26/dist/lenis.min.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>
