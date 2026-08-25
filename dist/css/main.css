@@ -2814,13 +2814,17 @@ img {
   font-weight: 100;
 }
 .footer-page__footer-content .link-item-next .text--next-headline {
-  letter-spacing: 1px;
   font-size: clamp(1.4757rem, -0.4919rem + 8.7447vw, 7.3783rem);
   font-family: "Stack Sans Headline", sans-serif;
   font-weight: 100;
+  letter-spacing: 1px;
+  margin-top: 1.5rem;
   text-align: center;
   display: block;
-  margin-top: 1.5rem;
+  transition: all 0.32s ease-out;
+}
+.footer-page__footer-content .link-item-next .text--next-headline:hover {
+  color: rgba(255, 255, 255, 0.6156862745);
 }
 
 .copy-btn {
