@@ -1,0 +1,403 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Café de la Carreta</title>
+
+	<link rel="stylesheet" href="dist/css/main.css">
+  <link rel="stylesheet" href="dist/css/reset.css">
+
+	<!-- FONT stack-sans-text -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Stack+Sans+Text:wght@200..700&display=swap" rel="stylesheet">
+
+	<!-- FONT stack-sans-headline -->
+	<link 
+		rel="preconnect" href="https://fonts.googleapis.com"
+	/>
+	<link 
+		rel="preconnect" href="https://fonts.gstatic.com" crossorigin 
+	/>
+	<link 
+		href="https://fonts.googleapis.com/css2?family=Stack+Sans+Headline:wght@200..700&display=swap" rel="stylesheet"
+	/>
+
+	<!-- ICON -->
+	<link
+    rel="stylesheet"
+    type="text/css"
+    href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"
+  />
+  <link
+    rel="stylesheet"
+    type="text/css"
+    href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css"
+  />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lenis@1.3.26/dist/lenis.css">
+</head>
+<body class="body-page-main">
+	<!-- header -->
+		<header class="header--nav grid">
+			<div class="container--header">
+				<div class="container-desktop">
+					<div class="logo">
+						<a href="index.html" class="logo__name-logo">
+							<span class="name">J<span class="text_migra">o</span>hnnathan</span>	
+							<span class="name">Y<span class="text_migra">u</span>panqui</span>
+						</a>
+					</div>
+					<nav class="navigation menu-desktop">
+						<ul class="nav_bar">
+							<li>
+								<a href="index.html#projects" class="nav-item body-text-sans fw-4" data-section="projects">
+									<span class="f_migra">02 </span>
+									Proyectos
+								</a>
+							</li>
+							<li>
+								<a href="index.html#about" class="nav-item body-text-sans fw-4" data-section="about">
+									<span class="font_migra">03 </span> Acerca de mi
+								</a>
+							</li>
+							<li>
+								<a href="index.html#contact" class="nav-item body-text-sans fw-4" data-section="contact">
+									<span class="font_migra">04 </span> Contacto
+								</a>
+							</li>
+						</ul>
+					</nav>
+					<!-- Trigger mobile: solo visible < ~1024px -->
+					<button class="menu-trigger" aria-label="Abrir menú" aria-expanded="false">
+						Menu
+					</button>
+				</div>
+				<!-- Menú overlay mobile (se muestra al clic) -->
+				<div class="menu-container">
+					<article class="menu-overlay" id="menuOverlay">
+						<button class="menu-close" aria-label="Cerrar menú">×</button>
+						
+						<nav class="menu-mobile">
+							<ul class="menu-mobile__list">
+								<li><a class="menu-mobile__nav-item--link" href="index.html">HOME</a></li>     <!-- Agregué HOME como en ref 3 -->
+								<li><a class="menu-mobile__nav-item--link" href="index.html#proyectos">02 PROYECTOS</a></li>
+								<li><a class="menu-mobile__nav-item--link" href="index.html#about">03 ABOUT</a></li>
+								<li><a class="menu-mobile__nav-item--link" href="index.html#contacto">04 CONTACTO</a></li>
+							</ul>
+						</nav>
+						</article>
+				</div>
+			</div>
+		</header>
+	<!-- main -->
+	<main>
+		<section class="hmtl-page">
+			<section class="html-page-content">
+				<!-- banenr header 
+				<section class="hero-banner">
+					<div class="img-wrap section" data-bg="/src/img/goal/heroGoal.webp">
+						<div class="item-bg"></div>
+					</div>
+				</section>-->
+				<!-- case study -->
+				<section class="page-case-study">
+					<article class="page-case-study__container">
+						<!-- header -->
+						<header class="header-page grid">
+							<article class="header-page__content">
+								<a href="index.html#projects" class="btn-text-link">
+									<span class="body-text-sans fw-5">◁</span>
+									<!-- 
+									<i class="ph ph-arrow-left"></i>
+									-->
+									<span>Ir a Proyectos</span>
+								</a>
+								<div class="ux--title">
+									<p class="headline-h4 mg-01">Café de la Carreta</p>
+									<h2 class="headline-display fw-4">
+										Marketing y Redes sociales
+									</h2>
+									<div class="tags--case dflex">
+										<div class="tag--headltcare">
+											<p class="body-text">Café</p>
+										</div>
+										<div class="tag--headltcare">
+											<p class="body-text">Marketing Digital</p>
+										</div>
+										<div class="tag--headltcare">
+											<p class="body-text">Diseño Redes</p>
+										</div>
+										<div class="tag--headltcare">
+											<p class="body-text">Redes sociales</p>
+										</div>
+										<div class="tag--headltcare">
+											<p class="body-text">Diseño Gráfico</p>
+										</div>
+									</div>
+								</div>
+							</article>
+						</header>
+						<section class="content-wrapper grid">
+							<div class="content-wrapper__container">
+								<figure 
+									data-scroll-image data-parallax-speed="12"
+									class="frame-top">
+									<img
+										src="/src/img/coffee/header-coffe.webp"
+										loading="lazy" decoding="async" data-nimg="1"
+										srcset="/src/img/coffee/header-coffe.webp 86w"
+										alt="image" >
+								</figure>
+								<!-- resultado -->
+								<section class="proyecto-coffe">
+									<div class="resultado--content ">
+										<div class="col col--center">
+											<div class="text-proyecto dflex">
+												<div class="text-description flex3">
+													<h4 class="headline-h1 fw-5 mg-03">El Proyecto</h4>
+													<div class="frame-text">
+														<p class="headline-h5 mg-02">
+															Café de la Carreta es un caso conceptual de estrategia y creación de contenido para una marca móvil de café de origen peruano.
+														</p>
+														<p class="body-text">
+															El proyecto explora cómo convertir su origen, preparación y formato sobre ruedas en una comunicación reconocible para redes sociales.
+														</p>
+													</div>
+												</div>
+												<div class="rol-proyecto flex2">
+													<h4 class="headline-h5-sans fw-5 mg-01">Rol</h4>
+													<p class="body-text mg-02">
+														Estrategia de contenido, dirección creativa, diseño gráfico y audiovisual.
+													</p>
+													<div class="canales">
+														<p class="body-text-sans fw-5">Canales</p>
+														<div class="icons-flex mg-01">
+															<figure class="icon-item">
+																<i class="ph ph-instagram-logo headline-h5-sans"></i>
+																<i class="ph ph-tiktok-logo headline-h5-sans"></i>
+														</div>
+														<p class="body-text-sans fw-5 mg-01">Herramientas</p>
+														<p class="body-text mg-01">Figma · A. Photoshop · A. Illustrator  · IA Generativa · Capcut</p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</section>						
+								<!-- resultado -->
+								<section class="desafio-coffe frame-top">
+									<div class="desafio-coffe--content ">
+										<div class="col col--center">
+											<div class="dflex">
+												<div class="flex2 desafio-text">
+													<h4 class="headline-h1 fw-5 mg-03">El Desafío</h4>
+													<p class="headline-h5 mg-01">
+														¿Cómo hacer que una carreta de café sea reconocible por algo más que una taza bonita?
+													</p>
+													<p class="body-text mg-01">
+														Café de la Carreta cuenta con tres activos claros: café proveniente de Villa Rica, preparación al momento y una carreta que forma parte de la experiencia urbana.
+													</p>
+													<p class="body-text">
+														El reto fue transformar esos elementos en una comunicación capaz de generar curiosidad, antojo y 	reconocimiento de marca.
+													</p>
+												</div>
+												<figure class="flex2 dflex figure-perfil">
+													<img src="/src/img/coffee/movil.webp" alt="Project Image">
+												</figure>
+											</div>
+										</div>
+									</div>
+								</section>						
+								<!-- resultado -->
+								<section class="idea-coffe frame-top">
+									<div class="dflex idea--content">
+										<figure class="flex3 figure-idea">
+											<img src="/src/img/coffee/holdi.jpg" alt="Project Image">
+										</figure>
+										<div class="flex3 idea-flex-bottom">
+											<div class="idea-container-text">
+												<h4 class="headline-h1 fw-5 mg-03">La Idea</h4>
+												<p class="headline-h5-sans fw-4">
+													El buen café sale a tu encuentro
+												</p>
+												<p class="body-text mg-04">
+													La ciudad mantiene a las personas en movimiento. Café de la Carreta propone una pausa dentro de ese recorrido.
+												</p>
+												<div class="idea-list dflex">
+													<div class="body-text flex">
+														<span></span>
+														<p class="body-text-sans fw-4">MOVIMIENTO</p>
+														<span class="body-text">La Ciudad</span>
+													</div>
+													<div class="body-text flex">
+														<span></span>
+														<p class="body-text-sans fw-4">PAUSA</p>
+														<span class="body-text">El café</span>
+													</div>
+													<div class="body-text flex">
+														<span></span>
+														<p class="body-text-sans fw-4">ENCUENTRO</p>
+														<span class="body-text">Las personas</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</section>	
+								<!-- resultado -->
+								<section class="estrategia-coffe frame-top">
+									<div class="estrategia--content">
+										<div class="col col--center">
+											<h4 class="headline-h1 fw-5 mg-05">Estrategia de Contenido</h4>
+											<div class="idea list dflex">
+												<div class="body-text flex2">
+													<figure class="mg-01">
+														<img src="/src/img/coffee/content-x1.webp" alt="Project Image">
+													</figure>
+													<p class="body-text-sans fw-5">Origen</p>
+													<span class="body-text">De dónde viene nuestro café.</span>
+												</div>
+												<div class="body-text flex2">
+													<figure class="mg-01">
+														<img src="/src/img/coffee/content-x2.webp" alt="Project Image">
+													</figure>
+													<p class="body-text-sans fw-5">Preparación</p>
+													<span class="body-text">Lo que sucede antes del primer sorbo.</span>
+												</div>
+												<div class="body-text flex2">
+													<figure class="mg-01">
+														<img src="/src/img/coffee/content-x3.webp" alt="Project Image">
+													</figure>
+													<p class="body-text-sans fw-5">Ciudad</p>
+													<span class="body-text">El buen café sale a tu encuentro.</span>
+												</div>
+												<div class="body-text flex2">
+													<figure class="mg-01">
+														<img src="/src/img/coffee/content-x4.webp" alt="Project Image">
+													</figure>
+													<p class="body-text-sans fw-5">Encuentro</p>
+													<span class="body-text">¿Nos tomamos un café?</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</section>						
+								<!-- moodboard -->
+								<section class="moodboard frame-top">
+									<div class="moodboard--content">
+										<div class="col col--center">
+											<h4 class="headline-h1 fw-5 mg-03">Moodboard</h4>
+											<figure>
+												<img src="/src/img/coffee/moodboard.webp" alt="Moodboard Image">
+											</figure>
+										</div>
+									</div>
+								</section>
+								<!-- resultado -->
+								<section class="hero-reel frame-top">
+									<div class="hero-reel--content">
+										<div class="col col--center hero-reel-text">
+											<h4 class="headline-h1 fw-5 mg-03">Hero Reels</h4>
+											<p class="headline-h5-sans fw-4">
+												Contenido audiovisual
+											</p>
+											<p class="body-text mg-01">
+												Storytelling · Dirección creativa · Edición
+											</p>
+											<p class="body-text">
+												Una pieza audiovisual construida para presentar la experiencia de Café de la Carreta desde el origen, la preparación, la ciudad y el encuentro.
+											</p>
+										</div>
+										<section class="videos-reel">
+											<div class="video">
+												<iframe
+													src="https://www.youtube.com/embed/T7Fvm8RLOz4"
+													title="Video 1"
+													loading="lazy"
+													allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+													referrerpolicy="strict-origin-when-cross-origin"
+													allowfullscreen>
+												</iframe>
+											</div>
+											<div class="video">
+												<iframe
+													src="https://www.youtube.com/embed/7h-N0P1mF1E"
+													title="Video 2"
+													loading="lazy"
+													allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+													referrerpolicy="strict-origin-when-cross-origin"
+													allowfullscreen>
+												</iframe>
+											</div>
+										</section>
+									</div>
+								</section>
+								<!-- carrousel -->
+								<section class="carrousel frame-top">
+									<div class="corrousel--content">
+										<div class="col col--center">
+											<h4 class="headline-h1 fw-5 mg-03">Carrousel</h4>
+											<figure>
+												<img src="/src/img/coffee/carrousel-ig.webp" alt="Project Image">
+											</figure>
+										</div>
+									</div>
+								</section>					
+								<!-- stories -->
+								<section class="Stories frame-top">
+									<div class="stories-content">
+										<div class="col col--center">
+											<h4 class="headline-h1 fw-5 mg-03">Stories</h4>
+											<figure>
+												<img src="/src/img/coffee/stories_ig.webp" alt="Project Image">
+											</figure>
+										</div>
+									</div>
+								</section>					
+								<!-- stories -->
+								<section class="post-ig frame-top">
+									<div class="post-ig--content">
+										<div class="col col--center">
+											<h4 class="headline-h1 fw-5 mg-03">Diseño de Post</h4>
+											<div class="figure-post dflex mg-01">	
+												<figure class="flex2">
+													<img src="/src/img/coffee/americano.webp" alt="Project Image">
+												</figure>
+												<figure class="flex2">
+													<img src="/src/img/coffee/moca.webp" alt="Project Image">
+												</figure>
+											</div>
+											<div class="figure-post dflex">	
+												<figure class="flex2">
+													<img src="/src/img/coffee/espresso.webp" alt="Project Image">
+												</figure>
+												<figure class="flex2">
+													<img src="/src/img/coffee/flat.webp" alt="Project Image">
+												</figure>
+											</div>
+									</div>
+								</section>					
+							</div>
+						</section>		
+					</article>
+				</section>
+			</section>
+		</section>
+	</main>
+	<!-- footer -->
+	<footer class="footer-page frame-top">
+		<article class="footer-page__footer-content p1">
+			<div class="link-item-next">
+				<p class="body-text text--link-next">Siguiente</p>
+				<a href="diseno-visual.html" class="text--next-headline white">
+					Diseño gráfico Visual
+				</a>
+			</div>
+		</article>
+	</footer>
+	<script src="https://cdn.jsdelivr.net/npm/lenis@1.3.26/dist/lenis.min.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>
