@@ -38,3 +38,91 @@
 				padding-top: spacing.$space-2xl
 			@media (min-width: 719px) and (max-width: 919px)
 				padding-top: spacing.$space-lg
+
+
+/* ========================= TABLA========================= */
+
+.content-pillars__table
+	width: 100%
+	border-top: 1px solid rgba(0, 0, 0, 0.2)
+	margin-bottom: 7rem
+
+.pillar-row
+	display: grid
+	grid-template-columns: #{minmax(220px, 1.5fr) minmax(120px, 0.75fr) minmax(200px, 1.35fr) minmax(200px, 1.35fr) minmax(90px, 0.55fr)}
+	border-bottom: 1px solid rgba(0, 0, 0, 0.2)
+
+.pillar-row--header
+	align-items: center
+
+.pillar-row--header > div
+	padding: 1rem
+
+.pillar-cell
+	padding: 1.5rem 1rem
+
+.pillar-cell h3,
+.pillar-cell p
+	margin: 0
+
+.pillar-cell h3
+	margin-bottom: 0.4rem
+
+.pillar-cell--weight
+	display: flex
+	align-items: flex-start
+
+
+/* ========================= TABLET ========================= */
+
+@media (max-width: 1024px)
+	.pillar-row
+		grid-template-columns: #{minmax(190px, 1.3fr) minmax(110px, 0.7fr) 1fr 1fr 90px}
+
+	.pillar-cell	
+		padding: 1.25rem 0.75rem
+
+/* ========================= MOBILE ========================= */
+
+@media (max-width: 768px)
+	.content-pillars__header
+		margin-bottom: 2rem
+
+	.pillar-row
+		display: grid
+		grid-template-columns: 1fr 1fr
+
+		padding: 1.5rem 0
+		gap: 1.5rem 1rem
+
+	.pillar-cell:first-child
+		grid-column: 1 / -1
+
+	.pillar-cell
+		padding: 0
+
+	.pillar-cell:not(:first-child)::before
+		content: attr(data-label)
+		display: block
+		margin-bottom: 0.4rem
+		font-size: 0.7rem
+		text-transform: uppercase
+		letter-spacing: 0.08em
+		opacity: 0.55
+
+	.pillar-cell--weight
+		display: block
+
+
+/* ========================= MOBILE PEQUEÑO ========================= */
+
+@media (max-width: 480px)
+	.pillar-row
+		grid-template-columns: 1fr
+		gap: 1.25rem
+
+	.pillar-cell:first-child
+		grid-column: auto
+
+	.pillar-cell--weight span
+		font-size: 1.75rem
